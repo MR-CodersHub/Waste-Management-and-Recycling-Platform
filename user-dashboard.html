@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Sustainability Portal – ReCycleHub</title>
+  <meta name="description" content="View your personal recycling statistics, track live active collections, inspect certified digital manifests, and redeem eco-reward points.">
+  
+  <!-- Favicon & Touch Icons -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body class="dashboard-page">
+
+  <!-- Top Announcement Bar -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-ticker">
+        <span class="topbar-badge">Live EcoOps</span>
+        <span>Electric fleet active across all metro sectors • 99.4% MRF optical sorting purity achieved today</span>
+      </div>
+      <div class="topbar-actions">
+        <a href="tel:1800732925" class="topbar-link">
+          <i class="fa-solid fa-phone"></i> <span>1-800-RECYCLE</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="ReCycleHub Homepage">
+        <div class="brand-icon">
+          <i class="fa-solid fa-recycle"></i>
+        </div>
+        <span>ReCycle<span class="accent">Hub</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="home-2.html" class="nav-link">Home 2</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="categories.html" class="nav-link">Categories</a></li>
+          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <button class="header-icon-btn theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="header-icon-btn header-text-btn rtl-toggle-btn" title="Toggle RTL/LTR"
+          aria-label="Toggle Layout Direction">
+          <span class="rtl-toggle-label">RTL</span>
+        </button>
+        <div class="nav-item profile-menu">
+          <button class="header-icon-btn profile-toggle-btn" aria-label="Open Profile Menu" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="fa-solid fa-user"></i>
+          </button>
+          <ul class="dropdown-menu profile-dropdown">
+            <li>
+              <a href="login.html" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-right-to-bracket"></i></div>
+                <span>Login/Signup</span>
+              </a>
+            </li>
+            <li>
+              <a href="user-dashboard.html" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-user"></i></div>
+                <span>Customer Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="admin-dashboard.html" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <span>Admin Dashboard</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="pickup-request.html" class="btn btn-lime btn-sm header-cta-btn">
+          <i class="fa-solid fa-truck-pickup"></i> <span class="cta-label">Book Pickup</span>
+        </a>
+        <button class="mobile-toggle" aria-label="Open Mobile Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon"><i class="fa-solid fa-recycle"></i></div>
+        <span>ReCycle<span class="accent">Hub</span></span>
+      </a>
+      <button class="drawer-close" aria-label="Close Mobile Menu">&times;</button>
+    </div>
+    <ul class="drawer-nav">
+      <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="home-2.html"><i class="fa-solid fa-city"></i> Home 2</a></li>
+      <li><a href="about.html"><i class="fa-solid fa-leaf"></i> About</a></li>
+      <li><a href="services.html"><i class="fa-solid fa-boxes-stacked"></i> Services</a></li>
+      <li><a href="categories.html"><i class="fa-solid fa-tags"></i> Categories</a></li>
+      <li><a href="pricing.html"><i class="fa-solid fa-tags"></i> Pricing</a></li>
+      <li><a href="blog.html"><i class="fa-solid fa-newspaper"></i> Blog</a></li>
+      <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      <li class="drawer-nav-divider" role="presentation"></li>
+      <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Login/Signup</a></li>
+      <li><a href="user-dashboard.html"><i class="fa-solid fa-user"></i> Customer Dashboard</a></li>
+      <li><a href="admin-dashboard.html"><i class="fa-solid fa-shield-halved"></i> Admin Dashboard</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <div style="display:flex;gap:0.5rem;">
+        <button class="btn btn-outline btn-sm btn-block theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="btn btn-outline btn-sm btn-block rtl-toggle-btn" aria-label="Toggle Layout Direction">
+          <span class="rtl-toggle-label">RTL</span>
+        </button>
+      </div>
+      <a href="pickup-request.html" class="btn btn-lime btn-block">Book Pickup</a>
+    </div>
+  </aside>
+
+  <div class="dashboard-wrapper">
+    
+    <!-- User Sidebar Navigation -->
+    <aside class="dashboard-sidebar" id="userSidebar">
+      <div class="sidebar-header">
+        <a href="index.html" class="sidebar-brand">
+          <div class="brand-icon" style="width:36px;height:36px;font-size:1.1rem;"><i class="fa-solid fa-recycle"></i></div>
+          <span>ReCycle<span style="color:var(--color-lime);">Hub</span></span>
+        </a>
+        <span class="sidebar-brand-badge" style="background:var(--color-emerald);color:#fff;">Member</span>
+      </div>
+
+      <ul class="sidebar-nav">
+        <li class="sidebar-heading">My Impact Hub</li>
+        <li class="sidebar-item active">
+          <a href="#overview"><i class="fa-solid fa-chart-line"></i> Eco Dashboard</a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#activePickupSection"><i class="fa-solid fa-truck-fast"></i> Live Pickup Tracker</a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#historySection"><i class="fa-solid fa-clock-rotate-left"></i> Pickup History</a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#rewardsSection"><i class="fa-solid fa-gift"></i> Rewards Store</a>
+        </li>
+        <li class="sidebar-item">
+          <a href="pickup-request.html"><i class="fa-solid fa-plus-circle"></i> Book New Collection</a>
+        </li>
+        
+        <li class="sidebar-heading">Navigation</li>
+        <li class="sidebar-item">
+          <a href="categories.html"><i class="fa-solid fa-tags"></i> 7 Streams Guide</a>
+        </li>
+        <li class="sidebar-item">
+          <a href="admin-dashboard.html"><i class="fa-solid fa-shield-halved"></i> Switch to Admin</a>
+        </li>
+        <li class="sidebar-item">
+          <a href="index.html"><i class="fa-solid fa-house"></i> Back to Website</a>
+        </li>
+      </ul>
+
+      <div class="sidebar-footer">
+        <div class="user-mini">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&q=80" alt="Sarah Jenkins">
+          <div class="user-mini-info">
+            <h6>Sarah Jenkins</h6>
+            <span id="userTierBadge">EcoGuardian Platinum</span>
+          </div>
+        </div>
+        <a href="login.html" title="Sign Out" style="color:rgba(255,255,255,0.6);"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <div class="dashboard-main">
+      
+      <!-- =========================================================================
+           SECTION 1: DASHBOARD TOPBAR & USER WELCOME
+           ========================================================================= -->
+      <header class="dash-topbar">
+        <div class="dash-topbar-left">
+          <button class="dash-sidebar-toggle" id="btnSidebarToggle" aria-label="Toggle Sidebar Menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="dash-page-title">Personal Sustainability Portal</div>
+        </div>
+
+        <div class="dash-topbar-right">
+
+          <a href="pickup-request.html" class="btn btn-lime btn-sm">
+            <i class="fa-solid fa-calendar-plus"></i> Schedule Pickup
+          </a>
+        </div>
+      </header>
+
+      <div class="dashboard-body">
+        
+        <!-- Welcome Banner -->
+        <div style="background:linear-gradient(135deg, var(--color-forest) 0%, var(--color-forest-dark) 100%);color:#fff;padding:2rem 2.5rem;border-radius:var(--radius-xl);margin-bottom:2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem;">
+          <div>
+            <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem;">
+              <span class="badge badge-lime">MEMBER LEVEL 4</span>
+              <span style="font-size:0.8rem;color:rgba(255,255,255,0.7);">Member since March 2025</span>
+            </div>
+            <h2 style="color:#fff;margin-bottom:0.35rem;">Welcome Back, Sarah!</h2>
+            <p style="color:rgba(250,252,248,0.85);font-size:0.95rem;margin:0;">
+              Your residential sorted collection is scheduled for today between 09:00 AM – 12:00 PM.
+            </p>
+          </div>
+
+          <div style="display:flex;gap:0.75rem;">
+            <a href="pickup-request.html" class="btn btn-lime">
+              <i class="fa-solid fa-plus"></i> Book Another Pickup
+            </a>
+          </div>
+        </div>
+
+        <!-- =========================================================================
+             SECTION 2: 4 PERSONAL ECO-IMPACT METRICS
+             ========================================================================= -->
+        <section id="userDashboardMetrics" style="display:grid;grid-template-columns:repeat(auto-fit, minmax(210px, 1fr));gap:1.25rem;margin-bottom:2rem;">
+          
+          <div class="metric-card">
+            <div class="metric-header">
+              <span class="metric-label">LIFETIME RECYCLED</span>
+              <div class="metric-icon-wrap" style="background:var(--color-mint);color:var(--color-forest);">
+                <i class="fa-solid fa-recycle"></i>
+              </div>
+            </div>
+            <div class="metric-value" id="userTotalRecycled">840 kg</div>
+            <div class="metric-footer">
+              <span style="color:var(--color-emerald);font-weight:700;">Top 5% in San Francisco</span>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-header">
+              <span class="metric-label">CARBON OFFSET</span>
+              <div class="metric-icon-wrap" style="background:#DCFCE7;color:#16A34A;">
+                <i class="fa-solid fa-leaf"></i>
+              </div>
+            </div>
+            <div class="metric-value" id="userCo2Saved" style="color:#16A34A;">1,512 kg</div>
+            <div class="metric-footer">
+              <span style="color:var(--text-muted);">Equivalent to 3,600 car miles</span>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-header">
+              <span class="metric-label">TREES PRESERVED</span>
+              <div class="metric-icon-wrap" style="background:#E0F2FE;color:#0284C7;">
+                <i class="fa-solid fa-tree"></i>
+              </div>
+            </div>
+            <div class="metric-value" id="userTreesSaved" style="color:#0284C7;">36 Trees</div>
+            <div class="metric-footer">
+              <span style="color:var(--text-muted);">Via certified pulp recovery</span>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-header">
+              <span class="metric-label">ECO-REWARD POINTS</span>
+              <div class="metric-icon-wrap" style="background:#FEF3C7;color:#D97706;">
+                <i class="fa-solid fa-coins"></i>
+              </div>
+            </div>
+            <div class="metric-value" id="userRewardPoints" style="color:#D97706;">4,200</div>
+            <div class="metric-footer">
+              <span style="color:var(--color-forest);font-weight:700;"><a href="#rewardsSection">Redeem in Store &rarr;</a></span>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- =========================================================================
+             SECTION 3: LIVE ACTIVE PICKUP TRACKER CARD
+             ========================================================================= -->
+        <section id="activePickupSection" style="margin-bottom:2rem;">
+          <h4 style="margin-bottom:1rem;display:flex;align-items:center;gap:0.5rem;">
+            <i class="fa-solid fa-location-crosshairs" style="color:var(--color-emerald);"></i> Active Pickup Tracker
+          </h4>
+
+          <div id="userActivePickupContainer">
+            <!-- Dynamically populated via dashboard-user.js -->
+          </div>
+        </section>
+
+        <!-- =========================================================================
+             SECTION 4: MONTHLY CARBON OFFSET TREND CHART
+             ========================================================================= -->
+        <section style="margin-bottom:2rem;">
+          <div class="chart-card">
+            <div class="chart-header">
+              <div>
+                <h5 style="margin-bottom:0.25rem;">My Monthly Carbon Diversion Trend (kg CO₂)</h5>
+                <div style="font-size:0.775rem;color:var(--text-muted);">Measured continuously across all your scheduled collections</div>
+              </div>
+              <span class="badge badge-emerald">Positive Acceleration</span>
+            </div>
+            <div class="chart-canvas-wrap">
+              <canvas id="userImpactTrendChart" style="width:100%;height:260px;"></canvas>
+            </div>
+          </div>
+        </section>
+
+        <!-- =========================================================================
+             SECTION 5: PAST PICKUPS HISTORY TABLE & DIGITAL MANIFESTS
+             ========================================================================= -->
+        <section id="historySection" class="table-card">
+          <div class="table-header-bar">
+            <div>
+              <h4 class="table-title">My Collection Records & Chain of Custody</h4>
+              <div style="font-size:0.8rem;color:var(--text-muted);">Click the certificate icon to view &amp; print your authenticated digital manifest.</div>
+            </div>
+          </div>
+
+          <div class="table-responsive">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>TRACKING REF</th>
+                  <th>MATERIAL STREAM</th>
+                  <th>WEIGHT</th>
+                  <th>COLLECTION DATE</th>
+                  <th>LIFECYCLE STATUS</th>
+                  <th>CARBON OFFSET</th>
+                  <th>CERTIFICATE</th>
+                </tr>
+              </thead>
+              <tbody id="userPickupsTableBody">
+                <!-- Dynamically populated via dashboard-user.js -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- =========================================================================
+             SECTION 6: ECO-REWARDS REDEMPTION STORE
+             ========================================================================= -->
+        <section id="rewardsSection" style="margin-bottom:2rem;">
+          <div class="section-header reveal" style="margin-bottom:1.5rem;">
+            <span class="section-tag"><i class="fa-solid fa-gift"></i> Rewards Wallet</span>
+            <h3>Redeem Your Eco-Reward Points</h3>
+            <p style="color:var(--text-muted);font-size:0.9rem;margin:0.25rem 0 0;">
+              Turn your separated waste into sustainable lifestyle perks. Points are deducted instantly from your balance.
+            </p>
+          </div>
+
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:1.5rem;">
+            
+            <div class="reward-card">
+              <div>
+                <span class="badge badge-emerald" style="margin-bottom:0.5rem;">Voucher Perk</span>
+                <h5>$10 Organic Compost Credit</h5>
+                <p style="font-size:0.8rem;color:var(--text-muted);margin:0.25rem 0 0.75rem;">Redeemable at regional city farm supply depots.</p>
+                <strong style="color:var(--color-forest);">500 Eco-Points</strong>
+              </div>
+              <button class="btn btn-outline btn-sm btn-redeem-reward" data-cost="500" data-title="$10 Organic Compost Credit">
+                Redeem
+              </button>
+            </div>
+
+            <div class="reward-card">
+              <div>
+                <span class="badge badge-lime" style="margin-bottom:0.5rem;">Local Food</span>
+                <h5>Zero-Waste Cafe Voucher</h5>
+                <p style="font-size:0.8rem;color:var(--text-muted);margin:0.25rem 0 0.75rem;">Free beverage &amp; bakery treat at participating sustainable cafes.</p>
+                <strong style="color:var(--color-forest);">800 Eco-Points</strong>
+              </div>
+              <button class="btn btn-outline btn-sm btn-redeem-reward" data-cost="800" data-title="Zero-Waste Cafe Voucher">
+                Redeem
+              </button>
+            </div>
+
+            <div class="reward-card">
+              <div>
+                <span class="badge badge-forest" style="margin-bottom:0.5rem;">Conservation</span>
+                <h5>Plant 5 Urban Native Trees</h5>
+                <p style="font-size:0.8rem;color:var(--text-muted);margin:0.25rem 0 0.75rem;">Direct planting deed executed with City Forestry Dept.</p>
+                <strong style="color:var(--color-forest);">1,200 Eco-Points</strong>
+              </div>
+              <button class="btn btn-outline btn-sm btn-redeem-reward" data-cost="1200" data-title="Plant 5 Urban Native Trees">
+                Redeem
+              </button>
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Column 1: Company -->
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="ReCycleHub Homepage">
+            <div class="brand-icon"><i class="fa-solid fa-recycle"></i></div>
+            <span>ReCycle<span class="accent">Hub</span></span>
+          </a>
+          <p>ReCycleHub is an eco-tech platform pioneering high-purity material recovery, zero-emission collection logistics, and circular enterprise accountability.</p>
+          <div class="footer-socials">
+<a href="https://www.instagram.com" class="social-icon-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://www.facebook.com" class="social-icon-btn" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="https://x.com" class="social-icon-btn" aria-label="X / Twitter" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+<a href="https://www.youtube.com" class="social-icon-btn" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col footer-col-links">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home-2.html">Home 2</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Us -->
+        <div class="footer-col">
+          <h5>Contact Us</h5>
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <div>450 Circular Blvd, Sector 9</div>
+              <div>San Francisco, CA 94107</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:1800732925">1-800-RECYCLE (732-925)</a>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:support@recyclehub.org">support@recyclehub.org</a>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-clock"></i>
+            <div>Mon – Sun: 07:00 AM – 07:00 PM</div>
+          </div>
+        </div>
+
+        <!-- Column 4: Newsletter -->
+        <div class="footer-col">
+          <h5>Newsletter</h5>
+          <p class="newsletter-desc">Subscribe to receive the latest updates, news, offers, and circular economy insights.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Subscribed', 'Thank you for joining our circular community!', 'success'); this.reset();">
+            <input type="email" class="form-control" placeholder="Enter your email address" required aria-label="Email address">
+            <button type="submit" class="btn btn-lime">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copyright">&copy; 2026 ReCycleHub Platform Inc. All rights reserved.</div>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <span>|</span>
+          <a href="#">Terms & Conditions</a>
+          <span>|</span>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/charts.js"></script>
+  <script src="assets/js/dashboard-user.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    const sidebarToggle = document.getElementById('btnSidebarToggle');
+    const userSidebar = document.getElementById('userSidebar');
+    if (sidebarToggle && userSidebar) {
+      sidebarToggle.addEventListener('click', () => {
+        userSidebar.classList.toggle('show');
+      });
+    }
+  </script>
+</body>
+</html>
+

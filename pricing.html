@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transparent Pricing & Enterprise Plans – ReCycleHub</title>
+  <meta name="description"
+    content="Simple, predictable pricing for residential and commercial waste collection. Zero hidden hauling surcharges, maximum commodity rebates.">
+
+  <!-- Favicon & Touch Icons -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+
+<body>
+  <div class="scroll-progress-bar"></div>
+
+  <!-- Top Announcement Bar -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-ticker">
+        <span class="topbar-badge">Live EcoOps</span>
+        <span>Electric fleet active across all metro sectors • 99.4% MRF optical sorting purity achieved today</span>
+      </div>
+      <div class="topbar-actions">
+        <a href="tel:1800732925" class="topbar-link">
+          <i class="fa-solid fa-phone"></i> <span>1-800-RECYCLE</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="ReCycleHub Homepage">
+        <div class="brand-icon">
+          <i class="fa-solid fa-recycle"></i>
+        </div>
+        <span>ReCycle<span class="accent">Hub</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="home-2.html" class="nav-link">Home 2</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="categories.html" class="nav-link">Categories</a></li>
+          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <button class="header-icon-btn theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="header-icon-btn header-text-btn rtl-toggle-btn" title="Toggle RTL/LTR"
+          aria-label="Toggle Layout Direction">
+          <span class="rtl-toggle-label">RTL</span>
+        </button>
+        <div class="nav-item profile-menu">
+          <button class="header-icon-btn profile-toggle-btn" aria-label="Open Profile Menu" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="fa-solid fa-user"></i>
+          </button>
+          <ul class="dropdown-menu profile-dropdown">
+            <li>
+              <a href="login.html" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-right-to-bracket"></i></div>
+                <span>Login/Signup</span>
+              </a>
+            </li>
+            <li>
+              <a href="user-dashboard.html" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-user"></i></div>
+                <span>Customer Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="admin-dashboard.html" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <span>Admin Dashboard</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="pickup-request.html" class="btn btn-lime btn-sm header-cta-btn">
+          <i class="fa-solid fa-truck-pickup"></i> <span class="cta-label">Book Pickup</span>
+        </a>
+        <button class="mobile-toggle" aria-label="Open Mobile Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon"><i class="fa-solid fa-recycle"></i></div>
+        <span>ReCycle<span class="accent">Hub</span></span>
+      </a>
+      <button class="drawer-close" aria-label="Close Mobile Menu">&times;</button>
+    </div>
+    <ul class="drawer-nav">
+      <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="home-2.html"><i class="fa-solid fa-city"></i> Home 2</a></li>
+      <li><a href="about.html"><i class="fa-solid fa-leaf"></i> About</a></li>
+      <li><a href="services.html"><i class="fa-solid fa-boxes-stacked"></i> Services</a></li>
+      <li><a href="categories.html"><i class="fa-solid fa-tags"></i> Categories</a></li>
+      <li><a href="pricing.html"><i class="fa-solid fa-tags"></i> Pricing</a></li>
+      <li><a href="blog.html"><i class="fa-solid fa-newspaper"></i> Blog</a></li>
+      <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      <li class="drawer-nav-divider" role="presentation"></li>
+      <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Login/Signup</a></li>
+      <li><a href="user-dashboard.html"><i class="fa-solid fa-user"></i> Customer Dashboard</a></li>
+      <li><a href="admin-dashboard.html"><i class="fa-solid fa-shield-halved"></i> Admin Dashboard</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <div style="display:flex;gap:0.5rem;">
+        <button class="btn btn-outline btn-sm btn-block theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="btn btn-outline btn-sm btn-block rtl-toggle-btn" aria-label="Toggle Layout Direction">
+          <span class="rtl-toggle-label">RTL</span>
+        </button>
+      </div>
+      <a href="pickup-request.html" class="btn btn-lime btn-block">Book Pickup</a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- =========================================================================
+         SECTION 1: PRICING HEADER WITH BILLING CYCLE TOGGLE
+         ========================================================================= -->
+    <section class="section" style="padding-top:4.5rem;padding-bottom:3.5rem;">
+      <div class="container text-center reveal">
+        <span class="section-tag"><i class="fa-solid fa-tags"></i> Transparent Tiers</span>
+        <h1>Predictable, Value-Backed <span style="color:var(--color-emerald);">Circularity Pricing</span></h1>
+        <p class="section-desc" style="max-width:680px;margin:0 auto 2rem;">
+          No fuel surcharges. No municipal tipping fee penalties. Simple monthly subscriptions or pay-per-kilogram
+          on-demand dispatches.
+        </p>
+
+        <!-- Monthly / Annual Toggle Switch -->
+        <div
+          style="display:inline-flex;align-items:center;background:var(--bg-surface-alt);border:1px solid var(--color-border);padding:0.35rem;border-radius:var(--radius-full);gap:0.5rem;">
+          <button class="filter-btn active" id="btnMonthly" onclick="setBillingCycle('monthly')">Monthly
+            Billing</button>
+          <button class="filter-btn" id="btnAnnual" onclick="setBillingCycle('annual')">
+            Annual Billing <span class="badge badge-lime" style="font-size:0.7rem;margin-left:0.3rem;">Save 20%</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 2: 3-TIER PRICING CARDS
+         ========================================================================= -->
+    <section class="section section-alt" style="padding-top:3.5rem;padding-bottom:4.5rem;">
+      <div class="container">
+        <div
+          style="display:grid;grid-template-columns:repeat(auto-fit, minmax(310px, 1fr));gap:2.5rem;align-items:stretch;">
+
+          <!-- Tier 1: Residential EcoStarter -->
+          <div class="pricing-card reveal">
+            <span class="badge badge-forest" style="align-self:flex-start;">Household & Apartments</span>
+            <h3 style="margin-top:0.75rem;">EcoStarter Residential</h3>
+            <p style="font-size:0.875rem;color:var(--text-muted);">
+              Ideal for eco-conscious urban residents and small family homes wanting clean curbside collection.
+            </p>
+
+            <div class="pricing-price">
+              <span id="priceStarter">$29</span>
+              <span class="pricing-period">/ month</span>
+            </div>
+            <div style="font-size:0.75rem;color:var(--text-muted);" id="billingNoteStarter">Billed monthly • Cancel
+              anytime</div>
+
+            <ul class="pricing-features">
+              <li><i class="fa-solid fa-check check"></i> 2 Scheduled Doorstep Pickups / Mo</li>
+              <li><i class="fa-solid fa-check check"></i> Up to 60 kg Total Materials / Mo</li>
+              <li><i class="fa-solid fa-check check"></i> Plastics, Paper, Glass & Compost</li>
+              <li><i class="fa-solid fa-check check"></i> Onboard Dynamic Scale Weighing</li>
+              <li><i class="fa-solid fa-check check"></i> Customer Portal & Eco-Points (5 Pts/kg)</li>
+              <li><i class="fa-solid fa-xmark uncheck"></i> Commercial Compactor Bins</li>
+              <li><i class="fa-solid fa-xmark uncheck"></i> Dedicated Account Manager</li>
+            </ul>
+
+            <a href="pickup-request.html?plan=starter" class="btn btn-outline btn-block">
+              Choose EcoStarter
+            </a>
+          </div>
+
+          <!-- Tier 2: GreenBusiness Pro (Popular) -->
+          <div class="pricing-card popular reveal reveal-delay-1">
+            <span class="pricing-popular-badge">Most Popular for Offices</span>
+            <span class="badge badge-emerald" style="align-self:flex-start;">Commercial Offices</span>
+            <h3 style="margin-top:0.75rem;">GreenBusiness Pro</h3>
+            <p style="font-size:0.875rem;color:var(--text-muted);">
+              For medium offices, retail stores, and cafes needing weekly scheduled sweeps and audited reports.
+            </p>
+
+            <div class="pricing-price">
+              <span id="pricePro" style="color:var(--color-emerald);">$149</span>
+              <span class="pricing-period">/ month</span>
+            </div>
+            <div style="font-size:0.75rem;color:var(--color-muted);" id="billingNotePro">Billed monthly • Includes 2
+              rolling carts</div>
+
+            <ul class="pricing-features">
+              <li><i class="fa-solid fa-check check"></i> <strong>Weekly Scheduled EV Dispatch (4/mo)</strong></li>
+              <li><i class="fa-solid fa-check check"></i> <strong>Up to 500 kg Materials / Mo</strong></li>
+              <li><i class="fa-solid fa-check check"></i> Two 64-Gal Commercial Rolling Totes</li>
+              <li><i class="fa-solid fa-check check"></i> Certified E-Waste & Shredding Console</li>
+              <li><i class="fa-solid fa-check check"></i> Monthly Scope 3 ESG Audit Manifests</li>
+              <li><i class="fa-solid fa-check check"></i> Staff Zero-Waste Onboarding Kit</li>
+              <li><i class="fa-solid fa-xmark uncheck"></i> Heavy Industrial Baler Leasing</li>
+            </ul>
+
+            <a href="pickup-request.html?plan=pro" class="btn btn-lime btn-block">
+              Get Started with Pro
+            </a>
+          </div>
+
+          <!-- Tier 3: CircularEnterprise Custom -->
+          <div class="pricing-card reveal reveal-delay-2">
+            <span class="badge badge-forest" style="align-self:flex-start;">Campuses & Industrial</span>
+            <h3 style="margin-top:0.75rem;">CircularEnterprise</h3>
+            <p style="font-size:0.875rem;color:var(--text-muted);">
+              High-tonnage custom logistics for high-rises, distribution centers, and manufacturing plants.
+            </p>
+
+            <div class="pricing-price">
+              <span id="priceEnterprise">$499</span>
+              <span class="pricing-period">/ month start</span>
+            </div>
+            <div style="font-size:0.75rem;color:var(--text-muted);">Custom tonnage & rebate share model</div>
+
+            <ul class="pricing-features">
+              <li><i class="fa-solid fa-check check"></i> <strong>Unlimited Dynamic IoT-Triggered Hauls</strong></li>
+              <li><i class="fa-solid fa-check check"></i> <strong>Multi-Ton Capacity (Compactors / Balers)</strong></li>
+              <li><i class="fa-solid fa-check check"></i> Ultrasonic Fill Sensor Suite Included</li>
+              <li><i class="fa-solid fa-check check"></i> Guaranteed Commodity Scrap Rebate Payouts</li>
+              <li><i class="fa-solid fa-check check"></i> Dedicated Lead Environmental Scientist</li>
+              <li><i class="fa-solid fa-check check"></i> 4-Hour Emergency Container Swap SLA</li>
+              <li><i class="fa-solid fa-check check"></i> Custom ERP & Sustainability API Stream</li>
+            </ul>
+
+            <a href="contact.html?audit=enterprise" class="btn btn-primary btn-block">
+              Request Enterprise SLA
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 3: INTERACTIVE CUSTOM VOLUME & ADD-ON CALCULATOR
+         ========================================================================= -->
+    <section class="section">
+      <div class="container">
+        <div class="card card-luxury" style="padding:2.5rem;max-width:920px;margin:0 auto;">
+          <div
+            style="display:grid;grid-template-columns:1fr;gap:2rem; @media(min-width:992px){grid-template-columns:1.2fr 1fr;}">
+
+            <div>
+              <span class="section-tag"><i class="fa-solid fa-sliders"></i> Custom Quoter</span>
+              <h3 style="margin-bottom:0.75rem;">Build Your Custom Plan</h3>
+              <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:1.5rem;">
+                Select your required container hardware, collection frequency, and special stream add-ons.
+              </p>
+
+              <div class="form-group">
+                <label class="form-label" style="display:flex;justify-content:space-between;">
+                  <span>Number of 64-Gal Commercial Carts:</span>
+                  <strong id="calcCartNum">2 Carts</strong>
+                </label>
+                <input type="range" class="form-control" id="cartSlider" min="1" max="10" value="2"
+                  oninput="updateCustomPlanCalc()">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Pickup Frequency</label>
+                <select class="form-control" id="frequencySelect" onchange="updateCustomPlanCalc()">
+                  <option value="1">Bi-Weekly (2 pick-ups / month)</option>
+                  <option value="2" selected>Weekly (4 pick-ups / month)</option>
+                  <option value="4">Twice Weekly (8 pick-ups / month)</option>
+                  <option value="8">Daily Weekdays (20 pick-ups / month)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Special Stream Add-ons</label>
+                <div style="display:flex;flex-direction:column;gap:0.5rem;font-size:0.875rem;">
+                  <label style="display:flex;align-items:center;gap:0.5rem;">
+                    <input type="checkbox" id="addEwaste" onchange="updateCustomPlanCalc()"> Secure Certified E-Waste
+                    Bin (+$35/mo)
+                  </label>
+                  <label style="display:flex;align-items:center;gap:0.5rem;">
+                    <input type="checkbox" id="addBioCompost" checked onchange="updateCustomPlanCalc()"> Odor-Sealed
+                    Kitchen Bio-Compost Tote (+$25/mo)
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Result Box -->
+            <div
+              style="display:flex;flex-direction:column;justify-content:space-between;background:var(--bg-surface-alt);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:1.75rem;">
+              <div>
+                <span class="badge badge-emerald" style="margin-bottom:0.75rem;">ESTIMATED CUSTOM QUOTE</span>
+                <div
+                  style="font-family:var(--font-heading);font-size:2.5rem;font-weight:800;color:var(--color-forest);line-height:1;"
+                  id="customMonthlyTotal">
+                  $174
+                </div>
+                <div style="font-size:0.8rem;color:var(--text-muted);margin-top:0.25rem;">Per month • Zero installation
+                  fee</div>
+
+                <div
+                  style="margin-top:1.5rem;padding-top:1rem;border-top:1px dashed var(--color-border);font-size:0.85rem;color:var(--text-body);">
+                  <div style="display:flex;justify-content:space-between;margin-bottom:0.35rem;">
+                    <span>Monthly Capacity:</span>
+                    <strong id="calcMonthlyCapacity">500 kg</strong>
+                  </div>
+                  <div style="display:flex;justify-content:space-between;">
+                    <span>Projected CO₂ Offset:</span>
+                    <strong style="color:var(--color-emerald);" id="calcMonthlyCo2">900 kg / mo</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div style="margin-top:1.5rem;">
+                <a href="pickup-request.html" class="btn btn-lime btn-block">Lock In This Plan</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 4: COMPREHENSIVE WHAT'S INCLUDED FEATURE MATRIX
+         ========================================================================= -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag"><i class="fa-solid fa-table-list"></i> Full Comparison</span>
+          <h2>Detailed Plan Specifications</h2>
+          <p class="section-desc">Transparent comparison of features across residential and commercial service tiers.
+          </p>
+        </div>
+
+        <div class="table-responsive card" style="padding:0;overflow:hidden;border-radius:var(--radius-xl);">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th style="width:34%;">Feature / Capability</th>
+                <th style="width:22%;">EcoStarter ($29/mo)</th>
+                <th style="width:22%;">GreenBusiness Pro ($149/mo)</th>
+                <th style="width:22%;">CircularEnterprise (Custom)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Primary Intended Use</strong></td>
+                <td>Residential Household</td>
+                <td>Offices, Cafes & Retail</td>
+                <td>Industrial, Campus & Towers</td>
+              </tr>
+              <tr>
+                <td><strong>Included Monthly Weight</strong></td>
+                <td>Up to 60 kg</td>
+                <td>Up to 500 kg</td>
+                <td>Multi-Ton Heavy Volume</td>
+              </tr>
+              <tr>
+                <td><strong>Collection Schedule</strong></td>
+                <td>Bi-Weekly Scheduled</td>
+                <td>Weekly Scheduled</td>
+                <td>IoT Fill-Triggered Daily</td>
+              </tr>
+              <tr>
+                <td><strong>Hardware Deployed</strong></td>
+                <td>Home Bio-Caddy</td>
+                <td>Two 64-Gal Rolling Totes</td>
+                <td>Compactors / Balers / IoT Bins</td>
+              </tr>
+              <tr>
+                <td><strong>Weighing Precision</strong></td>
+                <td>Calibrated Hand Scales</td>
+                <td>NTEP Onboard Lift Scales</td>
+                <td>Gross Axle & Platform Scales</td>
+              </tr>
+              <tr>
+                <td><strong>Digital ESG Manifest</strong></td>
+                <td>Personal Portal Record</td>
+                <td>Certified Monthly PDF</td>
+                <td>Automated API Stream & Audit</td>
+              </tr>
+              <tr>
+                <td><strong>Contamination Policy</strong></td>
+                <td>Advisory Notification</td>
+                <td>Free Educational Audit</td>
+                <td>Dedicated Station Auditing</td>
+              </tr>
+              <tr>
+                <td><strong>Emergency Haul SLA</strong></td>
+                <td>Next-Day Window</td>
+                <td>24-Hour Dispatch</td>
+                <td>4-Hour Guaranteed Swap</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 5: CONTAMINATION & ZERO SURCHARGE CHARTER
+         ========================================================================= -->
+    <section class="section">
+      <div class="container">
+        <div
+          style="display:grid;grid-template-columns:1fr;gap:2.5rem;align-items:center; @media(min-width:992px){grid-template-columns:1.2fr 0.8fr;}">
+          <div class="reveal">
+            <span class="section-tag" style="background:#FFE4E6;color:#E11D48;">Our Integrity Pledge</span>
+            <h2>Zero Hidden Surcharges & Fair Contamination Policy</h2>
+            <p class="section-desc">
+              Traditional waste haulers hide fuel surcharges, environmental fees, and punitive contamination fines in
+              fine print. At ReCycleHub, we treat you as a circular supply partner.
+            </p>
+            <div style="display:flex;flex-direction:column;gap:1rem;margin-top:1.5rem;">
+              <div style="display:flex;gap:0.75rem;">
+                <i class="fa-solid fa-check" style="color:var(--color-emerald);font-size:1.2rem;margin-top:0.2rem;"></i>
+                <div>
+                  <strong>Photo-Verified Guidance:</strong> If non-conforming items appear in your bin, our drivers snap
+                  a photo and advise your team politely. We never assess punitive fines on first occurrences.
+                </div>
+              </div>
+              <div style="display:flex;gap:0.75rem;">
+                <i class="fa-solid fa-check" style="color:var(--color-emerald);font-size:1.2rem;margin-top:0.2rem;"></i>
+                <div>
+                  <strong>Transparent True-Up Overages:</strong> If your monthly weight exceeds your tier allowance,
+                  excess material is billed at the exact category commodity rate ($0.30 to $0.45/kg).
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal reveal-delay-2">
+            <div class="card card-forest" style="padding:2rem;">
+              <h4 style="color:#fff;margin-bottom:0.75rem;">30-Day Risk-Free Guarantee</h4>
+              <p style="color:rgba(255,255,255,0.85);font-size:0.9rem;margin-bottom:1.5rem;">
+                If ReCycleHub does not improve your building's diversion rate within 30 days of onboarding, cancel with
+                zero termination penalties.
+              </p>
+              <a href="contact.html?audit=trial" class="btn btn-lime btn-sm">Start 30-Day Trial</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 6: CORPORATE ESG CONSULTATION & RFP REQUEST
+         ========================================================================= -->
+    <section class="section section-forest">
+      <div class="container text-center reveal">
+        <span class="section-tag" style="background:rgba(182, 217, 87, 0.2);color:var(--color-lime);">Enterprise
+          Procurement</span>
+        <h2 style="color:#fff;margin-bottom:1rem;">Issuing an RFP for Municipal or Corporate Hauling?</h2>
+        <p style="color:rgba(250,252,248,0.85);font-size:1.1rem;max-width:680px;margin:0 auto 2rem;">
+          Our municipal tender and enterprise procurement directors provide comprehensive technical proposals, vehicle
+          fleet telemetry data, and ISO documentation.
+        </p>
+        <div style="display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap;">
+          <a href="contact.html?type=rfp" class="btn btn-lime btn-lg">Submit RFP / Tender Spec</a>
+          <a href="tel:1800732925" class="btn btn-outline-white btn-lg">Call Procurement Desk</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Column 1: Company -->
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="ReCycleHub Homepage">
+            <div class="brand-icon"><i class="fa-solid fa-recycle"></i></div>
+            <span>ReCycle<span class="accent">Hub</span></span>
+          </a>
+          <p>ReCycleHub is an eco-tech platform pioneering high-purity material recovery, zero-emission collection logistics, and circular enterprise accountability.</p>
+          <div class="footer-socials">
+<a href="https://www.instagram.com" class="social-icon-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://www.facebook.com" class="social-icon-btn" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="https://x.com" class="social-icon-btn" aria-label="X / Twitter" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+<a href="https://www.youtube.com" class="social-icon-btn" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col footer-col-links">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home-2.html">Home 2</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Us -->
+        <div class="footer-col">
+          <h5>Contact Us</h5>
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <div>450 Circular Blvd, Sector 9</div>
+              <div>San Francisco, CA 94107</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:1800732925">1-800-RECYCLE (732-925)</a>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:support@recyclehub.org">support@recyclehub.org</a>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-clock"></i>
+            <div>Mon – Sun: 07:00 AM – 07:00 PM</div>
+          </div>
+        </div>
+
+        <!-- Column 4: Newsletter -->
+        <div class="footer-col">
+          <h5>Newsletter</h5>
+          <p class="newsletter-desc">Subscribe to receive the latest updates, news, offers, and circular economy insights.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Subscribed', 'Thank you for joining our circular community!', 'success'); this.reset();">
+            <input type="email" class="form-control" placeholder="Enter your email address" required aria-label="Email address">
+            <button type="submit" class="btn btn-lime">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copyright">&copy; 2026 ReCycleHub Platform Inc. All rights reserved.</div>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <span>|</span>
+          <a href="#">Terms & Conditions</a>
+          <span>|</span>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    let isAnnual = false;
+
+    function setBillingCycle(cycle) {
+      isAnnual = cycle === 'annual';
+      document.getElementById('btnMonthly').classList.toggle('active', !isAnnual);
+      document.getElementById('btnAnnual').classList.toggle('active', isAnnual);
+
+      const starter = isAnnual ? '$23' : '$29';
+      const pro = isAnnual ? '$119' : '$149';
+      const enterprise = isAnnual ? '$399' : '$499';
+
+      document.getElementById('priceStarter').textContent = starter;
+      document.getElementById('pricePro').textContent = pro;
+      document.getElementById('priceEnterprise').textContent = enterprise;
+
+      document.getElementById('billingNoteStarter').textContent = isAnnual ? 'Billed annually ($276/yr)' : 'Billed monthly • Cancel anytime';
+      document.getElementById('billingNotePro').textContent = isAnnual ? 'Billed annually ($1,428/yr)' : 'Billed monthly • Includes 2 rolling carts';
+    }
+
+    function updateCustomPlanCalc() {
+      const carts = parseInt(document.getElementById('cartSlider').value);
+      const freq = parseInt(document.getElementById('frequencySelect').value);
+      const ewaste = document.getElementById('addEwaste').checked ? 35 : 0;
+      const compost = document.getElementById('addBioCompost').checked ? 25 : 0;
+
+      document.getElementById('calcCartNum').textContent = `${carts} Cart${carts > 1 ? 's' : ''}`;
+
+      const basePlan = 60 + (carts * 25) + (freq * 20) + ewaste + compost;
+      const capacityKg = carts * freq * 60;
+      const co2Kg = Math.round(capacityKg * 1.8);
+
+      document.getElementById('customMonthlyTotal').textContent = `$${basePlan}`;
+      document.getElementById('calcMonthlyCapacity').textContent = `${capacityKg} kg`;
+      document.getElementById('calcMonthlyCo2').textContent = `${co2Kg} kg / mo`;
+    }
+  </script>
+</body>
+
+</html>

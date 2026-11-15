@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReCycleHub – Eco-Tech Luxury Waste Management & Recycling Platform</title>
+  <meta name="description"
+    content="Production-ready premium waste management and circular recycling platform. Schedule residential and commercial collections, track live statuses, and offset your carbon footprint.">
+
+  <!-- Favicon & Touch Icons -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <!-- Google Fonts: Sora + Manrope -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Modular CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+
+<body>
+  <!-- Reading Progress Bar -->
+  <div class="scroll-progress-bar"></div>
+
+  <!-- Top Announcement Bar -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-ticker">
+        <span class="topbar-badge">Live EcoOps</span>
+        <span>Electric fleet active across all metro sectors • 99.4% MRF optical sorting purity achieved today</span>
+      </div>
+      <div class="topbar-actions">
+        <a href="tel:1800732925" class="topbar-link">
+          <i class="fa-solid fa-phone"></i> <span>1-800-RECYCLE</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="ReCycleHub Homepage">
+        <div class="brand-icon">
+          <i class="fa-solid fa-recycle"></i>
+        </div>
+        <span>ReCycle<span class="accent">Hub</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="home-2.html" class="nav-link">Home 2</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="categories.html" class="nav-link">Categories</a></li>
+          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <button class="header-icon-btn theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="header-icon-btn header-text-btn rtl-toggle-btn" title="Toggle RTL/LTR"
+          aria-label="Toggle Layout Direction">
+          <span class="rtl-toggle-label">RTL</span>
+        </button>
+        <div class="nav-item profile-menu">
+          <button class="header-icon-btn profile-toggle-btn" aria-label="Open Profile Menu" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="fa-solid fa-user"></i>
+          </button>
+          <ul class="dropdown-menu profile-dropdown">
+            <li>
+              <a href="login.html" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-right-to-bracket"></i></div>
+                <span>Login/Signup</span>
+              </a>
+            </li>
+            <li>
+              <a href="user-dashboard.html" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-user"></i></div>
+                <span>Customer Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="admin-dashboard.html" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <span>Admin Dashboard</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="pickup-request.html" class="btn btn-lime btn-sm header-cta-btn">
+          <i class="fa-solid fa-truck-pickup"></i> <span class="cta-label">Book Pickup</span>
+        </a>
+        <button class="mobile-toggle" aria-label="Open Mobile Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon"><i class="fa-solid fa-recycle"></i></div>
+        <span>ReCycle<span class="accent">Hub</span></span>
+      </a>
+      <button class="drawer-close" aria-label="Close Mobile Menu">&times;</button>
+    </div>
+    <ul class="drawer-nav">
+      <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="home-2.html"><i class="fa-solid fa-city"></i> Home 2</a></li>
+      <li><a href="about.html"><i class="fa-solid fa-leaf"></i> About</a></li>
+      <li><a href="services.html"><i class="fa-solid fa-boxes-stacked"></i> Services</a></li>
+      <li><a href="categories.html"><i class="fa-solid fa-tags"></i> Categories</a></li>
+      <li><a href="pricing.html"><i class="fa-solid fa-tags"></i> Pricing</a></li>
+      <li><a href="blog.html"><i class="fa-solid fa-newspaper"></i> Blog</a></li>
+      <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      <li class="drawer-nav-divider" role="presentation"></li>
+      <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Login/Signup</a></li>
+      <li><a href="user-dashboard.html"><i class="fa-solid fa-user"></i> Customer Dashboard</a></li>
+      <li><a href="admin-dashboard.html"><i class="fa-solid fa-shield-halved"></i> Admin Dashboard</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <div style="display:flex;gap:0.5rem;">
+        <button class="btn btn-outline btn-sm btn-block theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="btn btn-outline btn-sm btn-block rtl-toggle-btn" aria-label="Toggle Layout Direction">
+          <span class="rtl-toggle-label">RTL</span>
+        </button>
+      </div>
+      <a href="pickup-request.html" class="btn btn-lime btn-block">Book Pickup</a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- =========================================================================
+         SECTION 1: HERO SHOWCASE (Eco-Tech Luxury with Live Metrics)
+         ========================================================================= -->
+    <section class="section"
+      style="padding-top:4rem;padding-bottom:5rem;background:radial-gradient(circle at 85% 20%, rgba(182, 217, 87, 0.12) 0%, transparent 60%);">
+      <div class="container">
+        <div
+          style="display:grid;grid-template-columns:1fr;gap:3.5rem;align-items:center; @media(min-width:1024px){grid-template-columns:1.15fr 0.85fr;}">
+
+          <!-- Hero Text -->
+          <div class="reveal">
+            <span class="section-tag">
+              <i class="fa-solid fa-sparkles"></i> The Future of Urban Circularity
+            </span>
+            <h1 style="margin-bottom:1.25rem;">
+              Transforming Waste Into <span style="color:var(--color-emerald);">Verifiable High-Grade</span> Resources.
+            </h1>
+            <p class="section-desc" style="max-width:580px;margin-bottom:2rem;">
+              ReCycleHub unifies on-demand residential and commercial waste collection with AI optical sorting
+              facilities. Zero landfills. Real-time carbon offset accounting.
+            </p>
+
+            <div style="display:flex;align-items:center;flex-wrap:wrap;gap:1rem;margin-bottom:3rem;">
+              <a href="pickup-request.html" class="btn btn-lime btn-lg">
+                <i class="fa-solid fa-calendar-plus"></i> Schedule Free Pickup
+              </a>
+              <a href="#trackingSection" class="btn btn-outline btn-lg">
+                <i class="fa-solid fa-location-crosshairs"></i> Track Pickup
+              </a>
+            </div>
+
+            <!-- Trust Badges & Metrics -->
+            <div
+              style="display:grid;grid-template-columns:repeat(3, 1fr);gap:1.5rem;padding-top:2rem;border-top:1px solid var(--color-border);">
+              <div>
+                <div class="stat-counter" data-target="99.4"
+                  style="font-family:var(--font-heading);font-size:2rem;font-weight:800;color:var(--color-forest);">99.4
+                </div>
+                <div style="font-size:0.8rem;color:var(--text-muted);font-weight:600;">% Sort Purity</div>
+              </div>
+              <div>
+                <div class="stat-counter" data-target="18450"
+                  style="font-family:var(--font-heading);font-size:2rem;font-weight:800;color:var(--color-emerald);">
+                  18,450</div>
+                <div style="font-size:0.8rem;color:var(--text-muted);font-weight:600;">Tons Diverted</div>
+              </div>
+              <div>
+                <div class="stat-counter" data-target="100"
+                  style="font-family:var(--font-heading);font-size:2rem;font-weight:800;color:var(--color-forest);">100
+                </div>
+                <div style="font-size:0.8rem;color:var(--text-muted);font-weight:600;">% EV Logistics</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual Card -->
+          <div class="reveal reveal-delay-2" style="position:relative;">
+            <div
+              style="position:relative;border-radius:var(--radius-xl);overflow:hidden;box-shadow:var(--shadow-xl);border:1px solid var(--color-border);">
+              <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1200&q=80"
+                alt="Clean modern recycling and material recovery center"
+                style="width:100%;height:480px;object-fit:cover;">
+
+              <!-- Floating Card 1: Carbon Saved -->
+              <div
+                style="position:absolute;bottom:20px;left:20px;background:var(--bg-surface-glass);backdrop-filter:blur(16px);border:1px solid var(--color-border);padding:1rem 1.25rem;border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);display:flex;align-items:center;gap:0.85rem;">
+                <div
+                  style="width:44px;height:44px;border-radius:var(--radius-md);background:var(--color-mint);color:var(--color-emerald);display:flex;align-items:center;justify-content:center;font-size:1.3rem;">
+                  <i class="fa-solid fa-leaf"></i>
+                </div>
+                <div>
+                  <div style="font-size:0.75rem;color:var(--text-muted);text-transform:uppercase;font-weight:700;">Daily
+                    Metric</div>
+                  <div
+                    style="font-family:var(--font-heading);font-size:1.1rem;font-weight:800;color:var(--text-heading);">
+                    42.8 Tons CO₂ Offset</div>
+                </div>
+              </div>
+
+              <!-- Floating Card 2: Fleet Status -->
+              <div
+                style="position:absolute;top:20px;right:20px;background:var(--color-forest-dark);color:#fff;border:1px solid rgba(255,255,255,0.15);padding:0.6rem 1.15rem;border-radius:var(--radius-full);display:flex;align-items:center;gap:0.5rem;font-size:0.825rem;font-weight:700;">
+                <span class="status-dot completed"></span>
+                <span>Electric Fleet Live</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 2: QUICK PICKUP ESTIMATOR & ZONE CHECKER WIDGET
+         ========================================================================= -->
+    <section class="section section-alt" style="padding:4rem 0;">
+      <div class="container">
+        <div class="card card-luxury" style="padding:2.5rem;border-radius:var(--radius-xl);">
+          <div
+            style="display:grid;grid-template-columns:1fr;gap:2rem;align-items:center; @media(min-width:992px){grid-template-columns:1fr 1.3fr;}">
+
+            <div>
+              <span class="section-tag"><i class="fa-solid fa-bolt"></i> Instant Estimate</span>
+              <h3 style="margin-bottom:0.75rem;">Check Your Zone & Calculate Savings</h3>
+              <p style="color:var(--text-muted);font-size:0.95rem;margin-bottom:1.5rem;">
+                Enter your postal code to confirm instant electric vehicle dispatch availability and projected carbon
+                credits.
+              </p>
+
+              <!-- Postal Checker Form -->
+              <form class="postal-checker-form" style="display:flex;gap:0.5rem;margin-bottom:1rem;">
+                <div class="input-icon-group" style="flex:1;">
+                  <i class="fa-solid fa-map-pin input-icon"></i>
+                  <input type="text" class="form-control" placeholder="Enter Postal Code (e.g. 94107)" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Check Zone</button>
+              </form>
+              <div class="postal-result"
+                style="display:none;margin-top:0.75rem;padding:0.85rem;border-radius:var(--radius-md);background:var(--color-mint);font-size:0.85rem;">
+              </div>
+            </div>
+
+            <!-- Quick Calculator -->
+            <div
+              style="background:var(--bg-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:1.5rem;">
+              <h5
+                style="margin-bottom:1rem;color:var(--color-forest);display:flex;align-items:center;justify-content:space-between;">
+                <span><i class="fa-solid fa-calculator"></i> Quick Rate & Impact Calculator</span>
+                <span class="badge badge-lime">Zero Landfill Guarantee</span>
+              </h5>
+
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.25rem;">
+                <div>
+                  <label class="form-label" style="font-size:0.8rem;">Material Stream</label>
+                  <select class="form-control" id="quickStreamSelect" onchange="updateQuickCalc()">
+                    <option value="0.45|1.8">Plastics & Polymers ($0.45/kg)</option>
+                    <option value="0.30|1.2">Paper & Cardboard ($0.30/kg)</option>
+                    <option value="0.35|0.9">Glass & Silica ($0.35/kg)</option>
+                    <option value="0.85|3.5">Metals & Alloys ($0.85/kg)</option>
+                    <option value="1.50|4.8">E-Waste & Tech ($1.50/kg)</option>
+                    <option value="0.25|2.1">Organic & Food ($0.25/kg)</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="form-label" style="font-size:0.8rem;">Est. Weight (kg)</label>
+                  <input type="number" class="form-control" id="quickWeightInput" value="35" min="5" max="1000"
+                    oninput="updateQuickCalc()">
+                </div>
+              </div>
+
+              <div
+                style="display:flex;align-items:center;justify-content:space-between;padding:0.85rem 1rem;background:var(--bg-surface-alt);border-radius:var(--radius-md);">
+                <div>
+                  <span style="font-size:0.75rem;color:var(--text-muted);display:block;">ESTIMATED TOTAL DISPATCH</span>
+                  <strong style="font-size:1.35rem;color:var(--color-forest);" id="quickCostDisplay">$25.75</strong>
+                </div>
+                <div>
+                  <span style="font-size:0.75rem;color:var(--text-muted);display:block;">PROJECTED CO₂ OFFSET</span>
+                  <strong style="font-size:1.35rem;color:var(--color-emerald);" id="quickCo2Display">63.0 kg</strong>
+                </div>
+                <a href="pickup-request.html" class="btn btn-emerald btn-sm">Proceed to Book</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 3: 7 RECYCLING CATEGORIES SHOWCASE
+         ========================================================================= -->
+    <section class="section" id="categoriesSection">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag"><i class="fa-solid fa-layer-group"></i> 7 Primary Streams</span>
+          <h2>Precision Segregation Categories</h2>
+          <p class="section-desc">
+            Clean segregation prevents cross-contamination and guarantees high re-manufacturing yield. Explore our core
+            recycling streams.
+          </p>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:1.75rem;">
+
+          <!-- Category 1: Plastics -->
+          <div class="category-card reveal">
+            <div class="category-img-wrap">
+              <span class="badge badge-plastic category-badge-floating">Type 1, 2, 4, 5</span>
+              <img src="https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?auto=format&fit=crop&w=600&q=80"
+                alt="Recycled plastic polymers sorted">
+            </div>
+            <div class="category-body">
+              <div class="category-rate-tag">$0.45/kg credit • 1.8x CO₂ offset</div>
+              <h4>Plastics & Polymers</h4>
+              <p>PET beverage bottles, HDPE milk jugs, and clean PP containers converted into food-grade circular
+                flakes.</p>
+              <div class="category-footer">
+                <a href="categories.html" class="btn btn-ghost btn-sm" style="padding-left:0;">
+                  Sorting Guide <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="pickup-request.html" class="btn btn-outline btn-sm">Book Stream</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Paper -->
+          <div class="category-card reveal reveal-delay-1">
+            <div class="category-img-wrap">
+              <span class="badge badge-paper category-badge-floating">Fibers & Pulp</span>
+              <img src="https://images.unsplash.com/photo-1582408921715-18e7806365c1?auto=format&fit=crop&w=600&q=80"
+                alt="Cardboard paper bales">
+            </div>
+            <div class="category-body">
+              <div class="category-rate-tag">$0.30/kg credit • 1.2x CO₂ offset</div>
+              <h4>Paper & Cardboard</h4>
+              <p>Corrugated shipping boxes, office documents, and catalogs processed into 100% recycled structural
+                paperboard.</p>
+              <div class="category-footer">
+                <a href="categories.html" class="btn btn-ghost btn-sm" style="padding-left:0;">
+                  Sorting Guide <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="pickup-request.html" class="btn btn-outline btn-sm">Book Stream</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Glass -->
+          <div class="category-card reveal reveal-delay-2">
+            <div class="category-img-wrap">
+              <span class="badge badge-glass category-badge-floating">Infinitely Recyclable</span>
+              <img src="https://images.unsplash.com/photo-1595278069441-2cf29f8005a4?auto=format&fit=crop&w=600&q=80"
+                alt="Sorted glassware and bottles">
+            </div>
+            <div class="category-body">
+              <div class="category-rate-tag">$0.35/kg credit • 0.9x CO₂ offset</div>
+              <h4>Glass & Silica</h4>
+              <p>Clear, amber, and green cullet crushed and melted at lower temperatures, saving virgin silica resources
+                indefinitely.</p>
+              <div class="category-footer">
+                <a href="categories.html" class="btn btn-ghost btn-sm" style="padding-left:0;">
+                  Sorting Guide <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="pickup-request.html" class="btn btn-outline btn-sm">Book Stream</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Metals -->
+          <div class="category-card reveal reveal-delay-3">
+            <div class="category-img-wrap">
+              <span class="badge badge-metal category-badge-floating">Ferrous & Non-Ferrous</span>
+              <img src="https://images.unsplash.com/photo-1528323273322-d81458248d40?auto=format&fit=crop&w=600&q=80"
+                alt="Metal scrap recycling">
+            </div>
+            <div class="category-body">
+              <div class="category-rate-tag">$0.85/kg credit • 3.5x CO₂ offset</div>
+              <h4>Metals & Alloys</h4>
+              <p>Aluminum beverage cans, tin food cans, and clean brass scrap smelted into new structural sheets with
+                95% less energy.</p>
+              <div class="category-footer">
+                <a href="categories.html" class="btn btn-ghost btn-sm" style="padding-left:0;">
+                  Sorting Guide <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="pickup-request.html" class="btn btn-outline btn-sm">Book Stream</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 5: E-Waste -->
+          <div class="category-card reveal">
+            <div class="category-img-wrap">
+              <span class="badge badge-ewaste category-badge-floating">Rare Earth Recovery</span>
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80"
+                alt="E-waste electronics circuit boards">
+            </div>
+            <div class="category-body">
+              <div class="category-rate-tag">$1.50/kg credit • 4.8x CO₂ offset</div>
+              <h4>E-Waste & Tech</h4>
+              <p>Certified data destruction for computers, phones, and PCBs with mechanical precious metal reclamation.
+              </p>
+              <div class="category-footer">
+                <a href="categories.html" class="btn btn-ghost btn-sm" style="padding-left:0;">
+                  Sorting Guide <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="pickup-request.html" class="btn btn-outline btn-sm">Book Stream</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 6: Organic -->
+          <div class="category-card reveal reveal-delay-1">
+            <div class="category-img-wrap">
+              <span class="badge badge-organic category-badge-floating">Bio-Nutrients</span>
+              <img src="https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=600&q=80"
+                alt="Organic rich compost soil">
+            </div>
+            <div class="category-body">
+              <div class="category-rate-tag">$0.25/kg credit • 2.1x CO₂ offset</div>
+              <h4>Organic & Food Scraps</h4>
+              <p>Thermophilic aerobic composting producing organic farm compost and clean biomethane renewable energy.
+              </p>
+              <div class="category-footer">
+                <a href="categories.html" class="btn btn-ghost btn-sm" style="padding-left:0;">
+                  Sorting Guide <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="pickup-request.html" class="btn btn-outline btn-sm">Book Stream</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="text-align:center;margin-top:3rem;">
+          <a href="categories.html" class="btn btn-primary btn-lg">
+            View All 7 Categories & Comprehensive Sorting Guide <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 4: CIRCULAR ECONOMY 4-STEP LIFECYCLE
+         ========================================================================= -->
+    <section class="section section-forest">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag"><i class="fa-solid fa-arrows-spin"></i> Zero-Landfill Model</span>
+          <h2 style="color:#fff;">How Our Closed-Loop Lifecycle Works</h2>
+          <p class="section-desc" style="color:rgba(250,252,248,0.85);">
+            Every kilogram of waste collected through ReCycleHub is digitally audited, separated by optical sensors, and
+            channeled into closed-loop circular manufacturing.
+          </p>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:2rem;">
+
+          <div class="card card-forest reveal">
+            <div
+              style="width:56px;height:56px;border-radius:var(--radius-md);background:rgba(182, 217, 87, 0.2);color:var(--color-lime);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:1.5rem;">
+              <i class="fa-solid fa-truck-ramp-box"></i>
+            </div>
+            <span
+              style="font-family:var(--font-heading);font-size:0.8rem;color:var(--color-lime);font-weight:700;">STAGE
+              01</span>
+            <h4 style="margin:0.5rem 0 0.75rem;">Scheduled Zero-Emission Pickup</h4>
+            <p style="font-size:0.9rem;">
+              Customers book via our responsive platform. Electric collection vehicles arrive in verified time windows
+              with calibrated onboard scales.
+            </p>
+          </div>
+
+          <div class="card card-forest reveal reveal-delay-1">
+            <div
+              style="width:56px;height:56px;border-radius:var(--radius-md);background:rgba(182, 217, 87, 0.2);color:var(--color-lime);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:1.5rem;">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+            <span
+              style="font-family:var(--font-heading);font-size:0.8rem;color:var(--color-lime);font-weight:700;">STAGE
+              02</span>
+            <h4 style="margin:0.5rem 0 0.75rem;">AI Optical Sorting & NIR</h4>
+            <p style="font-size:0.9rem;">
+              Materials enter our Material Recovery Facility (MRF) where near-infrared hyperspectral sensors and robotic
+              arms achieve 99.4% sorting purity.
+            </p>
+          </div>
+
+          <div class="card card-forest reveal reveal-delay-2">
+            <div
+              style="width:56px;height:56px;border-radius:var(--radius-md);background:rgba(182, 217, 87, 0.2);color:var(--color-lime);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:1.5rem;">
+              <i class="fa-solid fa-cubes"></i>
+            </div>
+            <span
+              style="font-family:var(--font-heading);font-size:0.8rem;color:var(--color-lime);font-weight:700;">STAGE
+              03</span>
+            <h4 style="margin:0.5rem 0 0.75rem;">High-Density Densification</h4>
+            <p style="font-size:0.9rem;">
+              Purified materials are shredded, de-contaminated, washed, and compressed into standard post-consumer resin
+              (PCR) pellets and baled raw commodities.
+            </p>
+          </div>
+
+          <div class="card card-forest reveal reveal-delay-3">
+            <div
+              style="width:56px;height:56px;border-radius:var(--radius-md);background:rgba(182, 217, 87, 0.2);color:var(--color-lime);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:1.5rem;">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <span
+              style="font-family:var(--font-heading);font-size:0.8rem;color:var(--color-lime);font-weight:700;">STAGE
+              04</span>
+            <h4 style="margin:0.5rem 0 0.75rem;">Remanufacture & Manifest</h4>
+            <p style="font-size:0.9rem;">
+              Goods re-enter the circular supply chain as new packaging and products. Clients receive auditable ISO
+              14001 ESG certificates and eco-points.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 5: LIVE SERVICE STATUS TRACKING TOOL
+         ========================================================================= -->
+    <section class="section" id="trackingSection">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag"><i class="fa-solid fa-satellite-dish"></i> Live Telematics</span>
+          <h2>Real-Time Service Status Tracking</h2>
+          <p class="section-desc">
+            Monitor your pickup from initial depot lodgement to closed-loop recycling completion.
+          </p>
+        </div>
+
+        <div class="card card-luxury" style="max-width:880px;margin:0 auto;padding:2.5rem;">
+          <form id="serviceTrackForm" style="display:flex;gap:0.75rem;flex-wrap:wrap;">
+            <div class="input-icon-group" style="flex:1;min-width:260px;">
+              <i class="fa-solid fa-barcode input-icon"></i>
+              <input type="text" id="trackingIdInput" class="form-control"
+                placeholder="Enter Pickup Ref (e.g. RCH-89210-2026)" value="RCH-89210-2026" required>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <i class="fa-solid fa-magnifying-glass"></i> Track Live Status
+            </button>
+          </form>
+
+          <div
+            style="display:flex;align-items:center;gap:0.5rem;flex-wrap:wrap;margin-top:1rem;font-size:0.825rem;color:var(--text-muted);">
+            <span>Quick sample lookups:</span>
+            <button type="button" class="btn btn-outline btn-sm demo-track-btn" data-id="RCH-89210-2026">RCH-89210-2026
+              (Scheduled)</button>
+            <button type="button" class="btn btn-outline btn-sm demo-track-btn" data-id="RCH-89211-2026">RCH-89211-2026
+              (Assigned)</button>
+            <button type="button" class="btn btn-outline btn-sm demo-track-btn" data-id="RCH-89213-2026">RCH-89213-2026
+              (Completed)</button>
+          </div>
+
+          <!-- Live Output Container -->
+          <div id="trackResultContainer" style="display:none;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 6: VERIFIED TESTIMONIALS & ESG ALLIANCES
+         ========================================================================= -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag"><i class="fa-solid fa-star"></i> Trust & Reliability</span>
+          <h2>Loved by Homes & Enterprise Leaders</h2>
+          <p class="section-desc">
+            Discover why forward-thinking citizens and corporate sustainability managers rely on ReCycleHub for flawless
+            zero-waste operations.
+          </p>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));gap:2rem;">
+
+          <div class="testimonial-card reveal">
+            <div class="testimonial-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              “ReCycleHub eliminated the guessing game from our studio's recycling. The driver arrived precisely in the
+              9:00 AM window, weighed our paper rolls, and our ISO manifest was ready instantly.”
+            </p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&q=80"
+                alt="Sarah Jenkins" class="author-avatar">
+              <div>
+                <div class="author-name">Sarah Jenkins</div>
+                <div class="author-role">Director of Operations, Astra Studio</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal reveal-delay-1">
+            <div class="testimonial-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              “Our tech park de-commissioned 140 workstations. ReCycleHub provided secure e-waste chain of custody and
+              data sanitization certificates within 24 hours. Flawless execution.”
+            </p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=120&q=80"
+                alt="Julian Mercer" class="author-avatar">
+              <div>
+                <div class="author-name">Julian Mercer</div>
+                <div class="author-role">Head of ESG, Nexus BioLabs Inc.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal reveal-delay-2">
+            <div class="testimonial-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              “As a residential customer, the Eco-Reward points system is addictive. We turned our kitchen compost and
+              separated plastics into discounts at our local zero-waste market!”
+            </p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=120&q=80"
+                alt="Elena Rostova" class="author-avatar">
+              <div>
+                <div class="author-name">Elena Rostova</div>
+                <div class="author-role">Community Eco-Ambassador</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Corporate Partner Logos -->
+        <div style="margin-top:4rem;padding-top:2.5rem;border-top:1px solid var(--color-border);text-align:center;">
+          <span
+            style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);font-weight:700;display:block;margin-bottom:1.5rem;">
+            CERTIFIED & ACCREDITED BY GLOBAL CIRCULAR ALLIANCES
+          </span>
+          <div style="display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:3rem;opacity:0.75;">
+            <div style="font-family:var(--font-heading);font-weight:800;font-size:1.2rem;color:var(--text-heading);"><i
+                class="fa-solid fa-shield-virus"></i> ISO 14001</div>
+            <div style="font-family:var(--font-heading);font-weight:800;font-size:1.2rem;color:var(--text-heading);"><i
+                class="fa-solid fa-globe"></i> B-Corp Certified</div>
+            <div style="font-family:var(--font-heading);font-weight:800;font-size:1.2rem;color:var(--text-heading);"><i
+                class="fa-solid fa-circle-check"></i> Zero Waste Alliance</div>
+            <div style="font-family:var(--font-heading);font-weight:800;font-size:1.2rem;color:var(--text-heading);"><i
+                class="fa-solid fa-bolt"></i> EV100 Fleet</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       MAIN FOOTER
+       ========================================================================= -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Column 1: Company -->
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="ReCycleHub Homepage">
+            <div class="brand-icon"><i class="fa-solid fa-recycle"></i></div>
+            <span>ReCycle<span class="accent">Hub</span></span>
+          </a>
+          <p>ReCycleHub is an eco-tech platform pioneering high-purity material recovery, zero-emission collection logistics, and circular enterprise accountability.</p>
+          <div class="footer-socials">
+<a href="https://www.instagram.com" class="social-icon-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://www.facebook.com" class="social-icon-btn" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="https://x.com" class="social-icon-btn" aria-label="X / Twitter" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+<a href="https://www.youtube.com" class="social-icon-btn" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col footer-col-links">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home-2.html">Home 2</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Us -->
+        <div class="footer-col">
+          <h5>Contact Us</h5>
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <div>450 Circular Blvd, Sector 9</div>
+              <div>San Francisco, CA 94107</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:1800732925">1-800-RECYCLE (732-925)</a>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:support@recyclehub.org">support@recyclehub.org</a>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-clock"></i>
+            <div>Mon – Sun: 07:00 AM – 07:00 PM</div>
+          </div>
+        </div>
+
+        <!-- Column 4: Newsletter -->
+        <div class="footer-col">
+          <h5>Newsletter</h5>
+          <p class="newsletter-desc">Subscribe to receive the latest updates, news, offers, and circular economy insights.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Subscribed', 'Thank you for joining our circular community!', 'success'); this.reset();">
+            <input type="email" class="form-control" placeholder="Enter your email address" required aria-label="Email address">
+            <button type="submit" class="btn btn-lime">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copyright">&copy; 2026 ReCycleHub Platform Inc. All rights reserved.</div>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <span>|</span>
+          <a href="#">Terms & Conditions</a>
+          <span>|</span>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript Libraries -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/charts.js"></script>
+  <script src="assets/js/tracker.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    function updateQuickCalc() {
+      const streamVal = document.getElementById('quickStreamSelect').value;
+      const [rate, co2] = streamVal.split('|').map(Number);
+      const weight = parseFloat(document.getElementById('quickWeightInput').value) || 0;
+      const baseFee = 10.00;
+      const cost = (baseFee + weight * rate).toFixed(2);
+      const co2Total = (weight * co2).toFixed(1);
+
+      document.getElementById('quickCostDisplay').textContent = `$${cost}`;
+      document.getElementById('quickCo2Display').textContent = `${co2Total} kg`;
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin EcoOps Control Tower – ReCycleHub</title>
+  <meta name="description" content="Central administrative dashboard for managing municipal waste collection requests, fleet dispatch, driver assignment, and circular recycling analytics.">
+  
+  <!-- Favicon & Touch Icons -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body class="dashboard-page">
+
+  <!-- Top Announcement Bar -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-ticker">
+        <span class="topbar-badge">Live EcoOps</span>
+        <span>Electric fleet active across all metro sectors • 99.4% MRF optical sorting purity achieved today</span>
+      </div>
+      <div class="topbar-actions">
+        <a href="tel:1800732925" class="topbar-link">
+          <i class="fa-solid fa-phone"></i> <span>1-800-RECYCLE</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="ReCycleHub Homepage">
+        <div class="brand-icon">
+          <i class="fa-solid fa-recycle"></i>
+        </div>
+        <span>ReCycle<span class="accent">Hub</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="home-2.html" class="nav-link">Home 2</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="categories.html" class="nav-link">Categories</a></li>
+          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <button class="header-icon-btn theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="header-icon-btn header-text-btn rtl-toggle-btn" title="Toggle RTL/LTR"
+          aria-label="Toggle Layout Direction">
+          <span class="rtl-toggle-label">RTL</span>
+        </button>
+        <div class="nav-item profile-menu">
+          <button class="header-icon-btn profile-toggle-btn" aria-label="Open Profile Menu" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="fa-solid fa-user"></i>
+          </button>
+          <ul class="dropdown-menu profile-dropdown">
+            <li>
+              <a href="login.html" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-right-to-bracket"></i></div>
+                <span>Login/Signup</span>
+              </a>
+            </li>
+            <li>
+              <a href="user-dashboard.html" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-user"></i></div>
+                <span>Customer Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="admin-dashboard.html" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <span>Admin Dashboard</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="pickup-request.html" class="btn btn-lime btn-sm header-cta-btn">
+          <i class="fa-solid fa-truck-pickup"></i> <span class="cta-label">Book Pickup</span>
+        </a>
+        <button class="mobile-toggle" aria-label="Open Mobile Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon"><i class="fa-solid fa-recycle"></i></div>
+        <span>ReCycle<span class="accent">Hub</span></span>
+      </a>
+      <button class="drawer-close" aria-label="Close Mobile Menu">&times;</button>
+    </div>
+    <ul class="drawer-nav">
+      <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="home-2.html"><i class="fa-solid fa-city"></i> Home 2</a></li>
+      <li><a href="about.html"><i class="fa-solid fa-leaf"></i> About</a></li>
+      <li><a href="services.html"><i class="fa-solid fa-boxes-stacked"></i> Services</a></li>
+      <li><a href="categories.html"><i class="fa-solid fa-tags"></i> Categories</a></li>
+      <li><a href="pricing.html"><i class="fa-solid fa-tags"></i> Pricing</a></li>
+      <li><a href="blog.html"><i class="fa-solid fa-newspaper"></i> Blog</a></li>
+      <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      <li class="drawer-nav-divider" role="presentation"></li>
+      <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Login/Signup</a></li>
+      <li><a href="user-dashboard.html"><i class="fa-solid fa-user"></i> Customer Dashboard</a></li>
+      <li><a href="admin-dashboard.html"><i class="fa-solid fa-shield-halved"></i> Admin Dashboard</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <div style="display:flex;gap:0.5rem;">
+        <button class="btn btn-outline btn-sm btn-block theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="btn btn-outline btn-sm btn-block rtl-toggle-btn" aria-label="Toggle Layout Direction">
+          <span class="rtl-toggle-label">RTL</span>
+        </button>
+      </div>
+      <a href="pickup-request.html" class="btn btn-lime btn-block">Book Pickup</a>
+    </div>
+  </aside>
+
+  <div class="dashboard-wrapper">
+    
+    <!-- Admin Sidebar Navigation -->
+    <aside class="dashboard-sidebar" id="adminSidebar">
+      <div class="sidebar-header">
+        <a href="index.html" class="sidebar-brand">
+          <div class="brand-icon" style="width:36px;height:36px;font-size:1.1rem;"><i class="fa-solid fa-recycle"></i></div>
+          <span>Eco<span style="color:var(--color-lime);">Ops</span></span>
+        </a>
+        <span class="sidebar-brand-badge">Admin</span>
+      </div>
+
+      <ul class="sidebar-nav">
+        <li class="sidebar-heading">Dispatch Command</li>
+        <li class="sidebar-item active">
+          <a href="#overview"><i class="fa-solid fa-gauge-high"></i> Overview & Metrics</a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#requestsTableSection"><i class="fa-solid fa-clipboard-list"></i> Customer Requests</a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#calendarSection"><i class="fa-solid fa-calendar-days"></i> Route Calendar</a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#fleetSection"><i class="fa-solid fa-truck"></i> Fleet & Drivers</a>
+        </li>
+        
+        <li class="sidebar-heading">Analytics & Compliance</li>
+        <li class="sidebar-item">
+          <a href="#chartsSection"><i class="fa-solid fa-chart-pie"></i> Stream Analytics</a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#reportsSection"><i class="fa-solid fa-file-csv"></i> CSV Manifest Reports</a>
+        </li>
+        <li class="sidebar-item">
+          <a href="index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Website</a>
+        </li>
+      </ul>
+
+      <div class="sidebar-footer">
+        <div class="user-mini">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=120&q=80" alt="Admin Director">
+          <div class="user-mini-info">
+            <h6>Julian Mercer</h6>
+            <span>EcoOps Director</span>
+          </div>
+        </div>
+        <a href="login.html" title="Sign Out" style="color:rgba(255,255,255,0.6);"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <div class="dashboard-main">
+      
+      <!-- =========================================================================
+           SECTION 1: DASHBOARD TOPBAR & ECOOPS HEADER
+           ========================================================================= -->
+      <header class="dash-topbar">
+        <div class="dash-topbar-left">
+          <button class="dash-sidebar-toggle" id="btnSidebarToggle" aria-label="Toggle Sidebar Menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="dash-page-title">Dispatch Control Tower</div>
+        </div>
+
+        <div class="dash-topbar-right">
+          <div class="input-icon-group dash-search-input" style="display:none; @media(min-width:768px){display:block;}">
+            <i class="fa-solid fa-magnifying-glass input-icon"></i>
+            <input type="text" class="form-control" id="adminSearchInput" placeholder="Search ref, customer, address..." style="padding-top:0.5rem;padding-bottom:0.5rem;">
+          </div>
+
+          <button class="btn btn-outline btn-sm" id="btnExportCsv" title="Export Manifest Report">
+            <i class="fa-solid fa-download"></i> <span style="display:none; @media(min-width:640px){display:inline;}">Export CSV</span>
+          </button>
+        </div>
+      </header>
+
+      <div class="dashboard-body">
+        
+        <!-- =========================================================================
+             SECTION 2: 5 KEY METRIC OVERVIEW CARDS
+             ========================================================================= -->
+        <section id="adminOverviewMetrics" style="display:grid;grid-template-columns:repeat(auto-fit, minmax(210px, 1fr));gap:1.25rem;margin-bottom:2rem;">
+          
+          <div class="metric-card">
+            <div class="metric-header">
+              <span class="metric-label">TOTAL DISPATCH REQUESTS</span>
+              <div class="metric-icon-wrap" style="background:var(--color-mint);color:var(--color-forest);">
+                <i class="fa-solid fa-boxes-packing"></i>
+              </div>
+            </div>
+            <div class="metric-value" id="metricTotalRequests">6</div>
+            <div class="metric-footer">
+              <span class="metric-trend-up"><i class="fa-solid fa-arrow-trend-up"></i> +14%</span>
+              <span style="color:var(--text-muted);">vs. last week</span>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-header">
+              <span class="metric-label">PENDING APPROVAL</span>
+              <div class="metric-icon-wrap" style="background:#FEF3C7;color:#D97706;">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+            </div>
+            <div class="metric-value" id="metricPending" style="color:#D97706;">1</div>
+            <div class="metric-footer">
+              <span style="color:var(--text-muted);">Awaiting route slot allocation</span>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-header">
+              <span class="metric-label">SCHEDULED / ASSIGNED</span>
+              <div class="metric-icon-wrap" style="background:#DBEAFE;color:#2563EB;">
+                <i class="fa-solid fa-truck-fast"></i>
+              </div>
+            </div>
+            <div class="metric-value" id="metricScheduled" style="color:#2563EB;">2</div>
+            <div class="metric-footer">
+              <span style="color:var(--text-muted);">Electric fleet active on route</span>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-header">
+              <span class="metric-label">COMPLETED / RECOVERED</span>
+              <div class="metric-icon-wrap" style="background:#DCFCE7;color:#16A34A;">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+            <div class="metric-value" id="metricCompleted" style="color:#16A34A;">3</div>
+            <div class="metric-footer">
+              <span style="color:var(--text-muted);">Manifests authenticated</span>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-header">
+              <span class="metric-label">TOTAL DIVERTED (KG)</span>
+              <div class="metric-icon-wrap" style="background:var(--color-lime-soft);color:var(--color-forest-dark);">
+                <i class="fa-solid fa-weight-hanging"></i>
+              </div>
+            </div>
+            <div class="metric-value" id="metricTotalWeight" style="color:var(--color-forest);">575 kg</div>
+            <div class="metric-footer">
+              <span style="color:var(--color-emerald);font-weight:700;">1,035 kg CO₂ Offset</span>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- =========================================================================
+             SECTION 3: INTERACTIVE VISUAL ANALYTICS CHARTS
+             ========================================================================= -->
+        <section id="chartsSection" class="charts-grid">
+          
+          <div class="chart-card">
+            <div class="chart-header">
+              <div>
+                <h5 style="margin-bottom:0.25rem;">Weekly Collection Weight Volume (kg)</h5>
+                <div style="font-size:0.775rem;color:var(--text-muted);">Electric Fleet Daily Inbound Deliveries</div>
+              </div>
+              <span class="badge badge-emerald">Real-Time Sync</span>
+            </div>
+            <div class="chart-canvas-wrap">
+              <canvas id="adminWeeklyChart" style="width:100%;height:260px;"></canvas>
+            </div>
+          </div>
+
+          <div class="chart-card">
+            <div class="chart-header">
+              <div>
+                <h5 style="margin-bottom:0.25rem;">Volume by Stream</h5>
+                <div style="font-size:0.775rem;color:var(--text-muted);">Distribution across 7 Streams</div>
+              </div>
+            </div>
+            <div class="chart-canvas-wrap">
+              <canvas id="adminCategoryDonut" style="width:100%;height:260px;"></canvas>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- =========================================================================
+             SECTION 4: CUSTOMER PICKUP REQUEST MANAGEMENT DATA TABLE
+             ========================================================================= -->
+        <section id="requestsTableSection" class="table-card">
+          <div class="table-header-bar">
+            <div>
+              <h4 class="table-title">Customer Pickup Request Queue</h4>
+              <div style="font-size:0.8rem;color:var(--text-muted);" id="tableRowCount">Loading requests...</div>
+            </div>
+
+            <div class="table-actions">
+              <!-- Status Filter Pills -->
+              <div style="display:flex;gap:0.35rem;flex-wrap:wrap;">
+                <button class="filter-btn btn-sm admin-filter-status active" data-status="all">All</button>
+                <button class="filter-btn btn-sm admin-filter-status" data-status="pending">Pending</button>
+                <button class="filter-btn btn-sm admin-filter-status" data-status="scheduled">Scheduled</button>
+                <button class="filter-btn btn-sm admin-filter-status" data-status="assigned">Assigned</button>
+                <button class="filter-btn btn-sm admin-filter-status" data-status="completed">Completed</button>
+              </div>
+
+              <!-- Category Dropdown Filter -->
+              <select class="form-control" id="adminCategoryFilter" style="width:auto;padding:0.4rem 0.8rem;font-size:0.85rem;">
+                <option value="all">All Streams</option>
+                <option value="plastic">Plastics</option>
+                <option value="paper">Paper & Cardboard</option>
+                <option value="glass">Glass & Silica</option>
+                <option value="metal">Metals</option>
+                <option value="ewaste">E-Waste</option>
+                <option value="organic">Organic</option>
+                <option value="hazardous">Hazardous</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="table-responsive">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>REF ID / TIER</th>
+                  <th>CUSTOMER CONTACT</th>
+                  <th>MATERIAL STREAM</th>
+                  <th>PICKUP ADDRESS</th>
+                  <th>SLOT / DATE</th>
+                  <th>ASSIGNED ROUTE</th>
+                  <th>STATUS</th>
+                  <th>ACTIONS</th>
+                </tr>
+              </thead>
+              <tbody id="adminPickupsTableBody">
+                <!-- Dynamically populated via dashboard-admin.js -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- =========================================================================
+             SECTION 5: COLLECTION SCHEDULING CALENDAR & FLEET OVERVIEW
+             ========================================================================= -->
+        <section id="calendarSection" style="display:grid;grid-template-columns:1fr;gap:1.5rem;margin-bottom:2rem; @media(min-width:1024px){grid-template-columns:1.5fr 1fr;}">
+          
+          <div class="calendar-card">
+            <div class="calendar-header">
+              <h5 style="margin:0;"><i class="fa-solid fa-calendar-check" style="color:var(--color-emerald);margin-right:0.5rem;"></i> November 2026 Collection Calendar</h5>
+              <div style="font-size:0.8rem;color:var(--text-muted);">Live Logistics Schedule</div>
+            </div>
+
+            <div class="calendar-grid">
+              <div class="calendar-day-header">Sun</div>
+              <div class="calendar-day-header">Mon</div>
+              <div class="calendar-day-header">Tue</div>
+              <div class="calendar-day-header">Wed</div>
+              <div class="calendar-day-header">Thu</div>
+              <div class="calendar-day-header">Fri</div>
+              <div class="calendar-day-header">Sat</div>
+
+              <!-- Days -->
+              <div class="calendar-cell inactive">26</div>
+              <div class="calendar-cell inactive">27</div>
+              <div class="calendar-cell inactive">28</div>
+              <div class="calendar-cell inactive">29</div>
+              <div class="calendar-cell inactive">30</div>
+              <div class="calendar-cell">1</div>
+              <div class="calendar-cell">2</div>
+
+              <div class="calendar-cell">3</div>
+              <div class="calendar-cell">4</div>
+              <div class="calendar-cell">5</div>
+              <div class="calendar-cell">6</div>
+              <div class="calendar-cell">7</div>
+              <div class="calendar-cell">8</div>
+              <div class="calendar-cell">9</div>
+
+              <div class="calendar-cell has-pickups">10</div>
+              <div class="calendar-cell has-pickups">11</div>
+              <div class="calendar-cell has-pickups">12</div>
+              <div class="calendar-cell has-pickups">13</div>
+              <div class="calendar-cell today has-pickups" title="Today – 3 Active Collections">14</div>
+              <div class="calendar-cell has-pickups">15</div>
+              <div class="calendar-cell has-pickups">16</div>
+
+              <div class="calendar-cell">17</div>
+              <div class="calendar-cell has-pickups">18</div>
+              <div class="calendar-cell">19</div>
+              <div class="calendar-cell">20</div>
+              <div class="calendar-cell">21</div>
+              <div class="calendar-cell">22</div>
+              <div class="calendar-cell">23</div>
+            </div>
+          </div>
+
+          <!-- Fleet Active Drivers Card -->
+          <div class="card" id="fleetSection" style="padding:1.5rem;">
+            <h5 style="margin-bottom:1rem;"><i class="fa-solid fa-truck-fast" style="color:var(--color-emerald);margin-right:0.5rem;"></i> Active Fleet Drivers</h5>
+            <div style="display:flex;flex-direction:column;gap:0.85rem;font-size:0.85rem;">
+              
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:0.75rem;background:var(--bg-surface-alt);border-radius:var(--radius-md);">
+                <div>
+                  <strong>Marcus Vance</strong>
+                  <div style="font-size:0.75rem;color:var(--text-muted);">EV-Truck #04 (Sector 1 &amp; 2)</div>
+                </div>
+                <span class="badge badge-status scheduled">4 Active Stops</span>
+              </div>
+
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:0.75rem;background:var(--bg-surface-alt);border-radius:var(--radius-md);">
+                <div>
+                  <strong>Elena Rostova</strong>
+                  <div style="font-size:0.75rem;color:var(--text-muted);">Eco-Van #02 (E-Waste &amp; HazMat)</div>
+                </div>
+                <span class="badge badge-status assigned">2 Active Stops</span>
+              </div>
+
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:0.75rem;background:var(--bg-surface-alt);border-radius:var(--radius-md);">
+                <div>
+                  <strong>David Chen</strong>
+                  <div style="font-size:0.75rem;color:var(--text-muted);">Compactor E-07 (Commercial Organics)</div>
+                </div>
+                <span class="badge badge-status completed">5 Stops Done</span>
+              </div>
+
+            </div>
+          </div>
+
+        </section>
+
+        <!-- =========================================================================
+             SECTION 6: REPORTS & DEPOT CONTROLS
+             ========================================================================= -->
+        <section id="reportsSection" class="card" style="padding:2rem;">
+          <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem;">
+            <div>
+              <h4>Regulatory Compliance & Manifest Export</h4>
+              <p style="color:var(--text-muted);font-size:0.9rem;margin:0.25rem 0 0;">
+                Generate official CSV manifests with certified NTEP scales, client addresses, and carbon emission offsets for EPA filings.
+              </p>
+            </div>
+            <div style="display:flex;gap:0.75rem;">
+              <button class="btn btn-primary" onclick="document.getElementById('btnExportCsv').click()">
+                <i class="fa-solid fa-file-csv"></i> Download CSV Manifest
+              </button>
+              <a href="service-details.html" class="btn btn-outline" target="_blank">
+                <i class="fa-solid fa-shield-virus"></i> ISO 14001 Audit
+              </a>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Column 1: Company -->
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="ReCycleHub Homepage">
+            <div class="brand-icon"><i class="fa-solid fa-recycle"></i></div>
+            <span>ReCycle<span class="accent">Hub</span></span>
+          </a>
+          <p>ReCycleHub is an eco-tech platform pioneering high-purity material recovery, zero-emission collection logistics, and circular enterprise accountability.</p>
+          <div class="footer-socials">
+<a href="https://www.instagram.com" class="social-icon-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://www.facebook.com" class="social-icon-btn" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="https://x.com" class="social-icon-btn" aria-label="X / Twitter" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+<a href="https://www.youtube.com" class="social-icon-btn" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col footer-col-links">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home-2.html">Home 2</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Us -->
+        <div class="footer-col">
+          <h5>Contact Us</h5>
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <div>450 Circular Blvd, Sector 9</div>
+              <div>San Francisco, CA 94107</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:1800732925">1-800-RECYCLE (732-925)</a>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:support@recyclehub.org">support@recyclehub.org</a>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-clock"></i>
+            <div>Mon – Sun: 07:00 AM – 07:00 PM</div>
+          </div>
+        </div>
+
+        <!-- Column 4: Newsletter -->
+        <div class="footer-col">
+          <h5>Newsletter</h5>
+          <p class="newsletter-desc">Subscribe to receive the latest updates, news, offers, and circular economy insights.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Subscribed', 'Thank you for joining our circular community!', 'success'); this.reset();">
+            <input type="email" class="form-control" placeholder="Enter your email address" required aria-label="Email address">
+            <button type="submit" class="btn btn-lime">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copyright">&copy; 2026 ReCycleHub Platform Inc. All rights reserved.</div>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <span>|</span>
+          <a href="#">Terms & Conditions</a>
+          <span>|</span>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/charts.js"></script>
+  <script src="assets/js/dashboard-admin.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Sidebar toggle for mobile
+    const sidebarToggle = document.getElementById('btnSidebarToggle');
+    const adminSidebar = document.getElementById('adminSidebar');
+    if (sidebarToggle && adminSidebar) {
+      sidebarToggle.addEventListener('click', () => {
+        adminSidebar.classList.toggle('show');
+      });
+    }
+  </script>
+</body>
+</html>
+

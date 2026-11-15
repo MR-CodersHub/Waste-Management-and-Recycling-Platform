@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Cities & Enterprise Circular Logistics – ReCycleHub</title>
+  <meta name="description"
+    content="Enterprise waste logistics, IoT smart bin telematics, and industrial zero-landfill infrastructure for high-rises, campuses, and manufacturing facilities.">
+
+  <!-- Favicon & Touch Icons -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+
+<body>
+  <div class="scroll-progress-bar"></div>
+
+  <!-- Top Announcement Bar -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-ticker">
+        <span class="topbar-badge">Live EcoOps</span>
+        <span>Electric fleet active across all metro sectors • 99.4% MRF optical sorting purity achieved today</span>
+      </div>
+      <div class="topbar-actions">
+        <a href="tel:1800732925" class="topbar-link">
+          <i class="fa-solid fa-phone"></i> <span>1-800-RECYCLE</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="ReCycleHub Homepage">
+        <div class="brand-icon">
+          <i class="fa-solid fa-recycle"></i>
+        </div>
+        <span>ReCycle<span class="accent">Hub</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="home-2.html" class="nav-link">Home 2</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="categories.html" class="nav-link">Categories</a></li>
+          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <button class="header-icon-btn theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="header-icon-btn header-text-btn rtl-toggle-btn" title="Toggle RTL/LTR"
+          aria-label="Toggle Layout Direction">
+          <span class="rtl-toggle-label">RTL</span>
+        </button>
+        <div class="nav-item profile-menu">
+          <button class="header-icon-btn profile-toggle-btn" aria-label="Open Profile Menu" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="fa-solid fa-user"></i>
+          </button>
+          <ul class="dropdown-menu profile-dropdown">
+            <li>
+              <a href="login.html" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-right-to-bracket"></i></div>
+                <span>Login/Signup</span>
+              </a>
+            </li>
+            <li>
+              <a href="user-dashboard.html" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-user"></i></div>
+                <span>Customer Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="admin-dashboard.html" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <span>Admin Dashboard</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="pickup-request.html" class="btn btn-lime btn-sm header-cta-btn">
+          <i class="fa-solid fa-truck-pickup"></i> <span class="cta-label">Book Pickup</span>
+        </a>
+        <button class="mobile-toggle" aria-label="Open Mobile Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon"><i class="fa-solid fa-recycle"></i></div>
+        <span>ReCycle<span class="accent">Hub</span></span>
+      </a>
+      <button class="drawer-close" aria-label="Close Mobile Menu">&times;</button>
+    </div>
+    <ul class="drawer-nav">
+      <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="home-2.html"><i class="fa-solid fa-city"></i> Home 2</a></li>
+      <li><a href="about.html"><i class="fa-solid fa-leaf"></i> About</a></li>
+      <li><a href="services.html"><i class="fa-solid fa-boxes-stacked"></i> Services</a></li>
+      <li><a href="categories.html"><i class="fa-solid fa-tags"></i> Categories</a></li>
+      <li><a href="pricing.html"><i class="fa-solid fa-tags"></i> Pricing</a></li>
+      <li><a href="blog.html"><i class="fa-solid fa-newspaper"></i> Blog</a></li>
+      <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      <li class="drawer-nav-divider" role="presentation"></li>
+      <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Login/Signup</a></li>
+      <li><a href="user-dashboard.html"><i class="fa-solid fa-user"></i> Customer Dashboard</a></li>
+      <li><a href="admin-dashboard.html"><i class="fa-solid fa-shield-halved"></i> Admin Dashboard</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <div style="display:flex;gap:0.5rem;">
+        <button class="btn btn-outline btn-sm btn-block theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="btn btn-outline btn-sm btn-block rtl-toggle-btn" aria-label="Toggle Layout Direction">
+          <span class="rtl-toggle-label">RTL</span>
+        </button>
+      </div>
+      <a href="pickup-request.html" class="btn btn-lime btn-block">Book Pickup</a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- =========================================================================
+         SECTION 1: ENTERPRISE & SMART CITY HERO
+         ========================================================================= -->
+    <section class="section section-forest"
+      style="padding-top:4.5rem;padding-bottom:5.5rem;background:linear-gradient(135deg, #0F3628 0%, #174D3A 100%);position:relative;overflow:hidden;">
+      <div class="container">
+        <div
+          style="display:grid;grid-template-columns:1fr;gap:3.5rem;align-items:center; @media(min-width:1024px){grid-template-columns:1.2fr 0.8fr;}">
+
+          <div class="reveal">
+            <span class="section-tag" style="background:rgba(56, 189, 248, 0.2);color:#38BDF8;">
+              <i class="fa-solid fa-microchip"></i> Smart City Infrastructure
+            </span>
+            <h1 style="color:#fff;margin-bottom:1.25rem;">
+              Autonomous Zero-Waste Logistics For <span style="color:var(--color-lime);">Smart Metropolises</span>.
+            </h1>
+            <p style="color:rgba(250,252,248,0.85);font-size:1.15rem;margin-bottom:2.25rem;line-height:1.7;">
+              Powering high-density corporate towers, manufacturing parks, and municipal districts with ultrasonic IoT
+              smart bins, heavy electric compaction fleets, and automated ISO 14001 compliance reporting.
+            </p>
+
+            <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:2.5rem;">
+              <a href="#simulatorSection" class="btn btn-lime btn-lg">
+                <i class="fa-solid fa-chart-line"></i> Calculate Corporate ROI
+              </a>
+              <a href="service-details.html" class="btn btn-outline-white btn-lg">
+                <i class="fa-solid fa-file-contract"></i> Explore Enterprise SLA
+              </a>
+            </div>
+
+            <!-- Live IoT Fleet Sensor Simulation Ticker -->
+            <div
+              style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:var(--radius-lg);padding:1.25rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem;">
+              <div style="display:flex;align-items:center;gap:0.75rem;">
+                <span class="status-dot completed" style="box-shadow:0 0 10px #10B981;"></span>
+                <div>
+                  <div style="font-size:0.75rem;color:rgba(255,255,255,0.6);text-transform:uppercase;">Connected IoT
+                    Bins</div>
+                  <strong style="color:#fff;font-size:1.1rem;">12,480 Active Nodes</strong>
+                </div>
+              </div>
+              <div>
+                <div style="font-size:0.75rem;color:rgba(255,255,255,0.6);text-transform:uppercase;">Average Fill Level
+                </div>
+                <strong style="color:var(--color-lime);font-size:1.1rem;">64.2% Optimal</strong>
+              </div>
+              <div>
+                <div style="font-size:0.75rem;color:rgba(255,255,255,0.6);text-transform:uppercase;">Monthly Fleet Km
+                  Saved</div>
+                <strong style="color:#fff;font-size:1.1rem;">42,800 km</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Image & Smart Telematics Card -->
+          <div class="reveal reveal-delay-2" style="position:relative;">
+            <div
+              style="border-radius:var(--radius-xl);overflow:hidden;border:1px solid rgba(255,255,255,0.15);box-shadow:var(--shadow-xl);">
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80"
+                alt="Modern green commercial skyscrapers and smart city architecture"
+                style="width:100%;height:460px;object-fit:cover;">
+            </div>
+
+            <div
+              style="position:absolute;bottom:-20px;right:-20px;background:var(--bg-surface);border:1px solid var(--color-border);padding:1.25rem 1.5rem;border-radius:var(--radius-lg);box-shadow:var(--shadow-xl);max-width:320px;">
+              <div style="display:flex;align-items:center;gap:0.65rem;margin-bottom:0.5rem;">
+                <i class="fa-solid fa-tower-broadcast" style="color:var(--color-emerald);font-size:1.2rem;"></i>
+                <strong style="font-size:0.9rem;color:var(--text-heading);">Smart Chute Telemetry</strong>
+              </div>
+              <p style="font-size:0.775rem;color:var(--text-muted);margin:0;">
+                Sector 4 Compactor chute reached 85% capacity. Dispatch order #RCH-89215 generated autonomously.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 2: INDUSTRIAL & SMART CITY WASTE SOLUTIONS MATRIX
+         ========================================================================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag"><i class="fa-solid fa-industry"></i> Engineered Infrastructure</span>
+          <h2>Enterprise Solutions Architecture</h2>
+          <p class="section-desc">
+            Tailored hardware and zero-landfill routing systems designed for heavy waste generators and high-occupancy
+            corporate developments.
+          </p>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));gap:2rem;">
+
+          <div class="card card-hover reveal">
+            <div
+              style="width:52px;height:52px;border-radius:var(--radius-md);background:#E0F2FE;color:#0284C7;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:1.25rem;">
+              <i class="fa-solid fa-building-shield"></i>
+            </div>
+            <h4>Commercial High-Rise Programs</h4>
+            <p style="font-size:0.925rem;color:var(--text-muted);margin-bottom:1.25rem;">
+              Multi-tenant optical segregation with automated floor-by-floor compactor scales. Complete tenant billing
+              attribution and monthly green lease reporting.
+            </p>
+            <ul
+              style="list-style:none;font-size:0.85rem;color:var(--text-body);display:flex;flex-direction:column;gap:0.4rem;margin-bottom:1.5rem;">
+              <li><i class="fa-solid fa-circle-check" style="color:var(--color-emerald);margin-right:0.4rem;"></i>
+                Sub-metered tenant recycling audits</li>
+              <li><i class="fa-solid fa-circle-check" style="color:var(--color-emerald);margin-right:0.4rem;"></i>
+                Odor-sealed negative pressure compactors</li>
+              <li><i class="fa-solid fa-circle-check" style="color:var(--color-emerald);margin-right:0.4rem;"></i> LEED
+                & WELL certification documentation</li>
+            </ul>
+            <a href="service-details.html" class="btn btn-outline btn-sm">Explore High-Rise Specs</a>
+          </div>
+
+          <div class="card card-hover reveal reveal-delay-1">
+            <div
+              style="width:52px;height:52px;border-radius:var(--radius-md);background:#FEF3C7;color:#D97706;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:1.25rem;">
+              <i class="fa-solid fa-boxes-packing"></i>
+            </div>
+            <h4>Industrial Corrugated Baling</h4>
+            <p style="font-size:0.925rem;color:var(--text-muted);margin-bottom:1.25rem;">
+              High-tonnage vertical and horizontal balers deployed at warehouse loading docks. Direct mill transport
+              avoiding intermediate hauling fees.
+            </p>
+            <ul
+              style="list-style:none;font-size:0.85rem;color:var(--text-body);display:flex;flex-direction:column;gap:0.4rem;margin-bottom:1.5rem;">
+              <li><i class="fa-solid fa-circle-check" style="color:var(--color-emerald);margin-right:0.4rem;"></i>
+                Guaranteed minimum pulp commodity rebates</li>
+              <li><i class="fa-solid fa-circle-check" style="color:var(--color-emerald);margin-right:0.4rem;"></i> Heavy
+                flatbed transport logistics</li>
+              <li><i class="fa-solid fa-circle-check" style="color:var(--color-emerald);margin-right:0.4rem;"></i>
+                Zero-clutter dock safety protocols</li>
+            </ul>
+            <a href="service-details.html" class="btn btn-outline btn-sm">Explore Industrial Baling</a>
+          </div>
+
+          <div class="card card-hover reveal reveal-delay-2">
+            <div
+              style="width:52px;height:52px;border-radius:var(--radius-md);background:#EDE9FE;color:#7C3AED;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:1.25rem;">
+              <i class="fa-solid fa-shield-virus"></i>
+            </div>
+            <h4>Secure E-Waste & Data Sanitization</h4>
+            <p style="font-size:0.925rem;color:var(--text-muted);margin-bottom:1.25rem;">
+              NIST 800-88 compliant on-site drive degaussing and shredding with serial-level chain of custody
+              certificates for financial and medical institutions.
+            </p>
+            <ul
+              style="list-style:none;font-size:0.85rem;color:var(--text-body);display:flex;flex-direction:column;gap:0.4rem;margin-bottom:1.5rem;">
+              <li><i class="fa-solid fa-circle-check" style="color:var(--color-emerald);margin-right:0.4rem;"></i>
+                Tamper-proof GPS-tracked transport pods</li>
+              <li><i class="fa-solid fa-circle-check" style="color:var(--color-emerald);margin-right:0.4rem;"></i>
+                Certificate of destruction with video proof</li>
+              <li><i class="fa-solid fa-circle-check" style="color:var(--color-emerald);margin-right:0.4rem;"></i>
+                Rare-earth precious metal recovery</li>
+            </ul>
+            <a href="service-details.html" class="btn btn-outline btn-sm">Explore E-Waste Protocols</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 3: SCOPE 3 CARBON & ESG DOLLAR SAVINGS SIMULATOR
+         ========================================================================= -->
+    <section class="section section-alt" id="simulatorSection">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag"><i class="fa-solid fa-calculator"></i> ESG Financial Model</span>
+          <h2>Corporate Emissions & Cost Simulator</h2>
+          <p class="section-desc">
+            Adjust facility parameters to project how replacing linear landfill hauling with ReCycleHub circular streams
+            slashes costs and Scope 3 emissions.
+          </p>
+        </div>
+
+        <div class="card card-luxury" style="max-width:960px;margin:0 auto;padding:2.5rem;">
+          <div
+            style="display:grid;grid-template-columns:1fr;gap:2.5rem; @media(min-width:992px){grid-template-columns:1fr 1fr;}">
+
+            <!-- Controls -->
+            <div>
+              <h5 style="margin-bottom:1.5rem;color:var(--color-forest);">Facility Parameters</h5>
+
+              <div class="form-group">
+                <label class="form-label" style="display:flex;justify-content:space-between;">
+                  <span>Monthly Waste Output:</span>
+                  <strong id="simTonsVal">45 Tons</strong>
+                </label>
+                <input type="range" class="form-control" id="simTons" min="5" max="300" step="5" value="45"
+                  oninput="runEnterpriseSimulator()">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" style="display:flex;justify-content:space-between;">
+                  <span>Current Landfill Haul Rate:</span>
+                  <strong id="simRateVal">$180 / Ton</strong>
+                </label>
+                <input type="range" class="form-control" id="simRate" min="90" max="350" step="10" value="180"
+                  oninput="runEnterpriseSimulator()">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Facility Classification</label>
+                <select class="form-control" id="simFacilityType" onchange="runEnterpriseSimulator()">
+                  <option value="commercial">Commercial Headquarters / Tech Campus</option>
+                  <option value="industrial">Manufacturing & Distribution Center</option>
+                  <option value="residential">High-Rise Residential Multi-family</option>
+                  <option value="hospitality">Hotel & Culinary Resort</option>
+                </select>
+              </div>
+
+              <div
+                style="font-size:0.8rem;color:var(--text-muted);background:var(--color-mint);padding:0.75rem;border-radius:var(--radius-sm);">
+                <i class="fa-solid fa-circle-info" style="color:var(--color-emerald);"></i> Includes commodity scrap
+                buyback credits and municipal landfill diversion tax exemptions.
+              </div>
+            </div>
+
+            <!-- Calculated Outputs -->
+            <div
+              style="display:flex;flex-direction:column;justify-content:space-between;background:var(--bg-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:2rem;">
+              <div>
+                <span class="badge badge-emerald" style="margin-bottom:1rem;">PROJECTED ANNUAL SAVINGS</span>
+                <div
+                  style="font-family:var(--font-heading);font-size:2.75rem;font-weight:800;color:var(--color-forest);line-height:1;"
+                  id="simAnnualSavings">
+                  $34,020
+                </div>
+                <div style="font-size:0.85rem;color:var(--text-muted);margin-top:0.25rem;">
+                  Annual net reduction in hauling fees + rebate credits
+                </div>
+
+                <div
+                  style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--color-border);">
+                  <div>
+                    <span
+                      style="font-size:0.75rem;color:var(--text-muted);text-transform:uppercase;font-weight:700;">ANNUAL
+                      CO₂ SAVED</span>
+                    <div
+                      style="font-family:var(--font-heading);font-size:1.6rem;font-weight:800;color:var(--color-emerald);"
+                      id="simCo2Saved">
+                      97.2 Tons
+                    </div>
+                  </div>
+                  <div>
+                    <span
+                      style="font-size:0.75rem;color:var(--text-muted);text-transform:uppercase;font-weight:700;">DIVERSION
+                      RATE</span>
+                    <div
+                      style="font-family:var(--font-heading);font-size:1.6rem;font-weight:800;color:var(--color-forest);"
+                      id="simDiversion">
+                      88.4%
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div style="margin-top:2rem;">
+                <a href="contact.html?audit=enterprise" class="btn btn-lime btn-block">
+                  <i class="fa-solid fa-calendar-check"></i> Request Free On-Site Waste Audit
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 4: ADVANCED MRF RECOVERY FACILITY WALKTHROUGH
+         ========================================================================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag"><i class="fa-solid fa-robot"></i> Optical Robotics</span>
+          <h2>Inside Our Next-Gen Recovery Center</h2>
+          <p class="section-desc">
+            Tour the mechanical and artificial intelligence workflows powering 99.4% post-consumer purity.
+          </p>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:2rem;">
+
+          <div class="card reveal">
+            <div style="height:190px;border-radius:var(--radius-md);overflow:hidden;margin-bottom:1.25rem;">
+              <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=600&q=80"
+                alt="Robotic sorting lines" style="width:100%;height:100%;object-fit:cover;">
+            </div>
+            <span class="badge badge-forest" style="margin-bottom:0.5rem;">Tech Layer 01</span>
+            <h4>Near-Infrared (NIR) Hyperspectral</h4>
+            <p style="font-size:0.875rem;color:var(--text-muted);">
+              Scans 1,200 polymer items per second, differentiating identical-looking PET, HDPE, and PP plastics down to
+              polymer grade.
+            </p>
+          </div>
+
+          <div class="card reveal reveal-delay-1">
+            <div style="height:190px;border-radius:var(--radius-md);overflow:hidden;margin-bottom:1.25rem;">
+              <img src="https://images.unsplash.com/photo-1528323273322-d81458248d40?auto=format&fit=crop&w=600&q=80"
+                alt="Eddy current metal separators" style="width:100%;height:100%;object-fit:cover;">
+            </div>
+            <span class="badge badge-forest" style="margin-bottom:0.5rem;">Tech Layer 02</span>
+            <h4>Eddy Current Non-Ferrous Ejectors</h4>
+            <p style="font-size:0.875rem;color:var(--text-muted);">
+              High-intensity rare-earth magnetic rotors induce eddy currents in aluminum cans, physically launching them
+              into segregation bins.
+            </p>
+          </div>
+
+          <div class="card reveal reveal-delay-2">
+            <div style="height:190px;border-radius:var(--radius-md);overflow:hidden;margin-bottom:1.25rem;">
+              <img src="https://images.unsplash.com/photo-1582408921715-18e7806365c1?auto=format&fit=crop&w=600&q=80"
+                alt="Automated ballistic separator screens" style="width:100%;height:100%;object-fit:cover;">
+            </div>
+            <span class="badge badge-forest" style="margin-bottom:0.5rem;">Tech Layer 03</span>
+            <h4>Ballistic Fiber Separation</h4>
+            <p style="font-size:0.875rem;color:var(--text-muted);">
+              Rotary disc screens propel stiff cardboard forward while flexible paper climbs upward and rigid containers
+              roll downward.
+            </p>
+          </div>
+
+          <div class="card reveal reveal-delay-3">
+            <div style="height:190px;border-radius:var(--radius-md);overflow:hidden;margin-bottom:1.25rem;">
+              <img src="https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=600&q=80"
+                alt="Aerobic in-vessel compost digesters" style="width:100%;height:100%;object-fit:cover;">
+            </div>
+            <span class="badge badge-forest" style="margin-bottom:0.5rem;">Tech Layer 04</span>
+            <h4>In-Vessel Aerobic Digesters</h4>
+            <p style="font-size:0.875rem;color:var(--text-muted);">
+              Thermophilic automated organic chambers maintaining 55°C pasteurization, transforming food waste into
+              cured humus in 14 days.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 5: FLEET COMMAND & AUTONOMOUS AI DISPATCH
+         ========================================================================= -->
+    <section class="section section-surface"
+      style="border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border);">
+      <div class="container">
+        <div
+          style="display:grid;grid-template-columns:1fr;gap:3rem;align-items:center; @media(min-width:992px){grid-template-columns:1fr 1fr;}">
+
+          <div class="reveal">
+            <span class="section-tag"><i class="fa-solid fa-route"></i> Route Optimization</span>
+            <h2>Zero-Deadhead Electric Fleet Management</h2>
+            <p class="section-desc">
+              Our dispatch algorithms calculate real-time traffic, bin sensor fill percentages, and vehicle gross weight
+              to generate zero-deadhead collection routes.
+            </p>
+
+            <div style="display:flex;flex-direction:column;gap:1.25rem;margin-top:2rem;">
+              <div style="display:flex;gap:1rem;">
+                <div
+                  style="width:44px;height:44px;border-radius:var(--radius-md);background:var(--color-mint);color:var(--color-forest);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;">
+                  <i class="fa-solid fa-battery-three-quarters"></i>
+                </div>
+                <div>
+                  <h5 style="margin-bottom:0.25rem;">100% Zero Direct Emission Hauling</h5>
+                  <p style="font-size:0.875rem;color:var(--text-muted);margin:0;">
+                    Class-7 electric compactor trucks charged overnight by certified wind and rooftop solar
+                    installations.
+                  </p>
+                </div>
+              </div>
+
+              <div style="display:flex;gap:1rem;">
+                <div
+                  style="width:44px;height:44px;border-radius:var(--radius-md);background:var(--color-mint);color:var(--color-forest);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;">
+                  <i class="fa-solid fa-scale-balanced"></i>
+                </div>
+                <div>
+                  <h5 style="margin-bottom:0.25rem;">NTEP-Certified Onboard Dynamic Scales</h5>
+                  <p style="font-size:0.875rem;color:var(--text-muted);margin:0;">
+                    Every container is weighed in mid-air during lift. Real-time mass data writes directly into the
+                    customer portal ledger.
+                  </p>
+                </div>
+              </div>
+
+              <div style="display:flex;gap:1rem;">
+                <div
+                  style="width:44px;height:44px;border-radius:var(--radius-md);background:var(--color-mint);color:var(--color-forest);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;">
+                  <i class="fa-solid fa-bell"></i>
+                </div>
+                <div>
+                  <h5 style="margin-bottom:0.25rem;">Automated Contamination Photo Flagging</h5>
+                  <p style="font-size:0.875rem;color:var(--text-muted);margin:0;">
+                    Hopper cameras detect non-conforming items during tipping and notify facility coordinators before
+                    processing.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal reveal-delay-2">
+            <div style="position:relative;border-radius:var(--radius-xl);overflow:hidden;box-shadow:var(--shadow-xl);">
+              <img src="https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=1000&q=80"
+                alt="Electric commercial collection truck fleet" style="width:100%;height:440px;object-fit:cover;">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 6: ENTERPRISE AUDIT REQUEST & CASE STUDIES
+         ========================================================================= -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="card card-forest" style="padding:3.5rem 2.5rem;border-radius:var(--radius-xl);text-align:center;">
+          <div style="max-width:760px;margin:0 auto;" class="reveal">
+            <span class="section-tag" style="background:rgba(182, 217, 87, 0.2);color:var(--color-lime);">
+              <i class="fa-solid fa-handshake"></i> Corporate Partnership
+            </span>
+            <h2 style="color:#fff;margin-bottom:1rem;">Ready to Audit Your Enterprise Waste Stream?</h2>
+            <p style="color:rgba(250,252,248,0.85);font-size:1.1rem;margin-bottom:2.25rem;">
+              Our senior environmental scientists will conduct an on-site physical waste audit of your facility, measure
+              cross-contamination rates, and deliver an auditable Net-Zero transition roadmap.
+            </p>
+
+            <div style="display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap;">
+              <a href="contact.html?audit=commercial" class="btn btn-lime btn-lg">
+                <i class="fa-solid fa-clipboard-check"></i> Book On-Site Waste Audit
+              </a>
+              <a href="pricing.html" class="btn btn-outline-white btn-lg">
+                <i class="fa-solid fa-tags"></i> View Commercial Tiers
+              </a>
+            </div>
+
+            <div
+              style="display:flex;align-items:center;justify-content:center;gap:2rem;margin-top:2.5rem;font-size:0.85rem;color:rgba(255,255,255,0.7);flex-wrap:wrap;">
+              <span><i class="fa-solid fa-check" style="color:var(--color-lime);margin-right:0.35rem;"></i> Zero Upfront
+                Hardware Cost</span>
+              <span><i class="fa-solid fa-check" style="color:var(--color-lime);margin-right:0.35rem;"></i> 30-Day
+                Guaranteed Trial</span>
+              <span><i class="fa-solid fa-check" style="color:var(--color-lime);margin-right:0.35rem;"></i> Real-Time
+                API Data Stream</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Column 1: Company -->
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="ReCycleHub Homepage">
+            <div class="brand-icon"><i class="fa-solid fa-recycle"></i></div>
+            <span>ReCycle<span class="accent">Hub</span></span>
+          </a>
+          <p>ReCycleHub is an eco-tech platform pioneering high-purity material recovery, zero-emission collection logistics, and circular enterprise accountability.</p>
+          <div class="footer-socials">
+<a href="https://www.instagram.com" class="social-icon-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://www.facebook.com" class="social-icon-btn" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="https://x.com" class="social-icon-btn" aria-label="X / Twitter" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+<a href="https://www.youtube.com" class="social-icon-btn" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col footer-col-links">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home-2.html">Home 2</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Us -->
+        <div class="footer-col">
+          <h5>Contact Us</h5>
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <div>450 Circular Blvd, Sector 9</div>
+              <div>San Francisco, CA 94107</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:1800732925">1-800-RECYCLE (732-925)</a>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:support@recyclehub.org">support@recyclehub.org</a>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-clock"></i>
+            <div>Mon – Sun: 07:00 AM – 07:00 PM</div>
+          </div>
+        </div>
+
+        <!-- Column 4: Newsletter -->
+        <div class="footer-col">
+          <h5>Newsletter</h5>
+          <p class="newsletter-desc">Subscribe to receive the latest updates, news, offers, and circular economy insights.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Subscribed', 'Thank you for joining our circular community!', 'success'); this.reset();">
+            <input type="email" class="form-control" placeholder="Enter your email address" required aria-label="Email address">
+            <button type="submit" class="btn btn-lime">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copyright">&copy; 2026 ReCycleHub Platform Inc. All rights reserved.</div>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <span>|</span>
+          <a href="#">Terms & Conditions</a>
+          <span>|</span>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    function runEnterpriseSimulator() {
+      const tons = parseFloat(document.getElementById('simTons').value);
+      const rate = parseFloat(document.getElementById('simRate').value);
+
+      document.getElementById('simTonsVal').textContent = `${tons} Tons`;
+      document.getElementById('simRateVal').textContent = `$${rate} / Ton`;
+
+      // Diversion calculation: ReCycleHub cuts 42% cost + returns $35/ton commodity rebate
+      const baselineCost = tons * rate * 12;
+      const recycleCost = tons * (rate * 0.58 - 35) * 12;
+      const netSavings = Math.max(0, Math.round(baselineCost - recycleCost));
+      const co2Saved = (tons * 1.8 * 12).toFixed(1);
+
+      document.getElementById('simAnnualSavings').textContent = `$${netSavings.toLocaleString()}`;
+      document.getElementById('simCo2Saved').textContent = `${co2Saved} Tons`;
+    }
+  </script>
+</body>
+
+</html>

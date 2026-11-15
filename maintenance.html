@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scheduled Green System Upgrade – ReCycleHub</title>
+  <meta name="description" content="ReCycleHub platform is undergoing scheduled maintenance to deploy AI Optical Dispatch v4.2. Physical truck pickups continue on schedule.">
+  
+  <!-- Favicon & Touch Icons -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body style="min-height:100vh;display:flex;flex-direction:column;justify-content:space-between;">
+  
+  <!-- Top Announcement Bar -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-ticker">
+        <span class="topbar-badge">Live EcoOps</span>
+        <span>Electric fleet active across all metro sectors • 99.4% MRF optical sorting purity achieved today</span>
+      </div>
+      <div class="topbar-actions">
+        <a href="tel:1800732925" class="topbar-link">
+          <i class="fa-solid fa-phone"></i> <span>1-800-RECYCLE</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="ReCycleHub Homepage">
+        <div class="brand-icon">
+          <i class="fa-solid fa-recycle"></i>
+        </div>
+        <span>ReCycle<span class="accent">Hub</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="home-2.html" class="nav-link">Home 2</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="categories.html" class="nav-link">Categories</a></li>
+          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <button class="header-icon-btn theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="header-icon-btn header-text-btn rtl-toggle-btn" title="Toggle RTL/LTR"
+          aria-label="Toggle Layout Direction">
+          <span class="rtl-toggle-label">RTL</span>
+        </button>
+        <div class="nav-item profile-menu">
+          <button class="header-icon-btn profile-toggle-btn" aria-label="Open Profile Menu" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="fa-solid fa-user"></i>
+          </button>
+          <ul class="dropdown-menu profile-dropdown">
+            <li>
+              <a href="login.html" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-right-to-bracket"></i></div>
+                <span>Login/Signup</span>
+              </a>
+            </li>
+            <li>
+              <a href="user-dashboard.html" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-user"></i></div>
+                <span>Customer Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="admin-dashboard.html" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <span>Admin Dashboard</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="pickup-request.html" class="btn btn-lime btn-sm header-cta-btn">
+          <i class="fa-solid fa-truck-pickup"></i> <span class="cta-label">Book Pickup</span>
+        </a>
+        <button class="mobile-toggle" aria-label="Open Mobile Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon"><i class="fa-solid fa-recycle"></i></div>
+        <span>ReCycle<span class="accent">Hub</span></span>
+      </a>
+      <button class="drawer-close" aria-label="Close Mobile Menu">&times;</button>
+    </div>
+    <ul class="drawer-nav">
+      <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="home-2.html"><i class="fa-solid fa-city"></i> Home 2</a></li>
+      <li><a href="about.html"><i class="fa-solid fa-leaf"></i> About</a></li>
+      <li><a href="services.html"><i class="fa-solid fa-boxes-stacked"></i> Services</a></li>
+      <li><a href="categories.html"><i class="fa-solid fa-tags"></i> Categories</a></li>
+      <li><a href="pricing.html"><i class="fa-solid fa-tags"></i> Pricing</a></li>
+      <li><a href="blog.html"><i class="fa-solid fa-newspaper"></i> Blog</a></li>
+      <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      <li class="drawer-nav-divider" role="presentation"></li>
+      <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Login/Signup</a></li>
+      <li><a href="user-dashboard.html"><i class="fa-solid fa-user"></i> Customer Dashboard</a></li>
+      <li><a href="admin-dashboard.html"><i class="fa-solid fa-shield-halved"></i> Admin Dashboard</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <div style="display:flex;gap:0.5rem;">
+        <button class="btn btn-outline btn-sm btn-block theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="btn btn-outline btn-sm btn-block rtl-toggle-btn" aria-label="Toggle Layout Direction">
+          <span class="rtl-toggle-label">RTL</span>
+        </button>
+      </div>
+      <a href="pickup-request.html" class="btn btn-lime btn-block">Book Pickup</a>
+    </div>
+  </aside>
+
+  <main id="main-content" style="flex:1;">
+    
+    <!-- =========================================================================
+         SECTION 1: STATUS HERO WITH LIVE COUNTDOWN TIMER
+         ========================================================================= -->
+    <section class="section text-center" style="padding-top:4rem;padding-bottom:2.5rem;">
+      <div class="container">
+        <span class="section-tag" style="background:#DBEAFE;color:#1D4ED8;">
+          <i class="fa-solid fa-gears"></i> Upgrading Core Platform
+        </span>
+        <h1 style="margin:1rem 0;">Upgrading to AI Optical Telematics v4.2</h1>
+        <p class="section-desc" style="max-width:640px;margin:0 auto 2.5rem;">
+          We are deploying our next-generation neural classification network. Web booking is paused for regular database indexing, but our electric trucks are operating normally.
+        </p>
+
+        <!-- Live Countdown Timer -->
+        <div style="display:flex;align-items:center;justify-content:center;gap:1.5rem;flex-wrap:wrap;">
+          <div class="card" style="padding:1.5rem 2rem;min-width:110px;">
+            <div style="font-family:var(--font-heading);font-size:2.5rem;font-weight:800;color:var(--color-forest);" id="timerHours">01</div>
+            <div style="font-size:0.75rem;color:var(--text-muted);text-transform:uppercase;font-weight:700;">Hours</div>
+          </div>
+          <div class="card" style="padding:1.5rem 2rem;min-width:110px;">
+            <div style="font-family:var(--font-heading);font-size:2.5rem;font-weight:800;color:var(--color-emerald);" id="timerMinutes">42</div>
+            <div style="font-size:0.75rem;color:var(--text-muted);text-transform:uppercase;font-weight:700;">Minutes</div>
+          </div>
+          <div class="card" style="padding:1.5rem 2rem;min-width:110px;">
+            <div style="font-family:var(--font-heading);font-size:2.5rem;font-weight:800;color:var(--color-forest);" id="timerSeconds">38</div>
+            <div style="font-size:0.75rem;color:var(--text-muted);text-transform:uppercase;font-weight:700;">Seconds</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 2: UPGRADE PROGRESS & SYSTEM CHANGELOG
+         ========================================================================= -->
+    <section class="section section-alt" style="padding:3rem 0;">
+      <div class="container" style="max-width:760px;">
+        <div class="card card-luxury" style="padding:2rem;">
+          <h4 style="margin-bottom:1rem;display:flex;align-items:center;justify-content:space-between;">
+            <span>Upgrade Pipeline Status</span>
+            <span class="badge badge-emerald">82% Complete</span>
+          </h4>
+
+          <div style="height:8px;background:var(--color-border);border-radius:var(--radius-full);overflow:hidden;margin-bottom:1.5rem;">
+            <div style="width:82%;height:100%;background:linear-gradient(90deg, var(--color-emerald) 0%, var(--color-lime) 100%);"></div>
+          </div>
+
+          <div style="display:flex;flex-direction:column;gap:0.75rem;font-size:0.875rem;">
+            <div style="display:flex;align-items:center;gap:0.65rem;color:var(--color-forest);">
+              <i class="fa-solid fa-circle-check" style="color:var(--color-emerald);"></i>
+              <span>MRF Optical Sorter Firmware v4.2 Flashed (Hub 04)</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:0.65rem;color:var(--color-forest);">
+              <i class="fa-solid fa-circle-check" style="color:var(--color-emerald);"></i>
+              <span>Scope 3 Automated Carbon Ledger Synced</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:0.65rem;color:var(--text-heading);font-weight:700;">
+              <i class="fa-solid fa-spinner fa-spin" style="color:#3B82F6;"></i>
+              <span>Re-indexing Customer Eco-Reward Points Database...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 3: PHYSICAL FLEET & DEPOT RUNNING STATUS TABLE
+         ========================================================================= -->
+    <section class="section" style="padding:3rem 0;">
+      <div class="container" style="max-width:880px;">
+        <div class="section-header text-center reveal">
+          <span class="section-tag"><i class="fa-solid fa-truck"></i> Live Operations</span>
+          <h2>Physical Fleet & Depots Are 100% Operational</h2>
+          <p class="section-desc">Scheduled collections continue uninterrupted today.</p>
+        </div>
+
+        <div class="table-responsive card" style="padding:0;overflow:hidden;">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Facility / Fleet Service</th>
+                <th>Physical Operational Status</th>
+                <th>Today's Schedule</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Electric Collection Trucks (EV Fleet)</strong></td>
+                <td><span class="badge badge-status completed"><span class="status-dot completed"></span> Active on Route</span></td>
+                <td>Normal 08:00 AM – 08:00 PM Sweeps</td>
+              </tr>
+              <tr>
+                <td><strong>Hub 04 Central Material Recovery Center</strong></td>
+                <td><span class="badge badge-status completed"><span class="status-dot completed"></span> Processing Live</span></td>
+                <td>Open for Commercial Offloading</td>
+              </tr>
+              <tr>
+                <td><strong>Customer Phone Dispatch Desk</strong></td>
+                <td><span class="badge badge-status completed"><span class="status-dot completed"></span> Lines Open</span></td>
+                <td>Toll-Free 1-800-RECYCLE Available</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 4: EMERGENCY DISPATCH HOTLINE & SMS SERVICE
+         ========================================================================= -->
+    <section class="section section-forest text-center" style="padding:3.5rem 0;">
+      <div class="container" style="max-width:700px;">
+        <span class="section-tag" style="background:rgba(182, 217, 87, 0.2);color:var(--color-lime);">Immediate Service</span>
+        <h2 style="color:#fff;margin-bottom:1rem;">Need an Urgent Same-Day Dispatch?</h2>
+        <p style="color:rgba(250,252,248,0.85);font-size:1.05rem;margin-bottom:2rem;">
+          Our manual dispatchers are handling bookings by phone while the web database completes its sync.
+        </p>
+        <div style="display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap;">
+          <a href="tel:1800732925" class="btn btn-lime btn-lg">
+            <i class="fa-solid fa-phone"></i> Call 1-800-RECYCLE
+          </a>
+          <button class="btn btn-outline-white btn-lg" onclick="showToast('SMS Dispatch', 'Text your postal code and material type to (555) 732-9250.', 'info')">
+            <i class="fa-solid fa-comment-sms"></i> SMS Fast Dispatch
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 5: NOTIFY ME SUBSCRIPTION BOX
+         ========================================================================= -->
+    <section class="section section-alt" style="padding:3rem 0;">
+      <div class="container" style="max-width:600px;text-align:center;">
+        <h4 style="margin-bottom:0.75rem;">Get Notified the Second We're Live</h4>
+        <p style="font-size:0.875rem;color:var(--text-muted);margin-bottom:1.5rem;">
+          Enter your email and we'll ping you the instant web booking is restored.
+        </p>
+        <form onsubmit="event.preventDefault(); showToast('Subscribed', 'We will email you once system maintenance completes.', 'success'); this.reset();" style="display:flex;gap:0.5rem;">
+          <input type="email" class="form-control" placeholder="name@email.com" required>
+          <button type="submit" class="btn btn-primary">Notify Me</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 6: REAL-TIME INCIDENT STATUS LOG
+         ========================================================================= -->
+    <section class="section" style="padding:2.5rem 0;">
+      <div class="container" style="max-width:760px;text-align:center;">
+        <div style="font-size:0.8rem;color:var(--text-muted);">
+          System Health: <strong>Operational (Scheduled Maintenance Window #420)</strong> • Last Heartbeat: Just now
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Column 1: Company -->
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="ReCycleHub Homepage">
+            <div class="brand-icon"><i class="fa-solid fa-recycle"></i></div>
+            <span>ReCycle<span class="accent">Hub</span></span>
+          </a>
+          <p>ReCycleHub is an eco-tech platform pioneering high-purity material recovery, zero-emission collection logistics, and circular enterprise accountability.</p>
+          <div class="footer-socials">
+<a href="https://www.instagram.com" class="social-icon-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://www.facebook.com" class="social-icon-btn" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="https://x.com" class="social-icon-btn" aria-label="X / Twitter" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+<a href="https://www.youtube.com" class="social-icon-btn" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col footer-col-links">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home-2.html">Home 2</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Us -->
+        <div class="footer-col">
+          <h5>Contact Us</h5>
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <div>450 Circular Blvd, Sector 9</div>
+              <div>San Francisco, CA 94107</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:1800732925">1-800-RECYCLE (732-925)</a>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:support@recyclehub.org">support@recyclehub.org</a>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-clock"></i>
+            <div>Mon – Sun: 07:00 AM – 07:00 PM</div>
+          </div>
+        </div>
+
+        <!-- Column 4: Newsletter -->
+        <div class="footer-col">
+          <h5>Newsletter</h5>
+          <p class="newsletter-desc">Subscribe to receive the latest updates, news, offers, and circular economy insights.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Subscribed', 'Thank you for joining our circular community!', 'success'); this.reset();">
+            <input type="email" class="form-control" placeholder="Enter your email address" required aria-label="Email address">
+            <button type="submit" class="btn btn-lime">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copyright">&copy; 2026 ReCycleHub Platform Inc. All rights reserved.</div>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <span>|</span>
+          <a href="#">Terms & Conditions</a>
+          <span>|</span>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Live countdown timer ticker
+    let secondsLeft = 6158;
+    setInterval(() => {
+      if (secondsLeft > 0) {
+        secondsLeft--;
+        const h = Math.floor(secondsLeft / 3600);
+        const m = Math.floor((secondsLeft % 3600) / 60);
+        const s = secondsLeft % 60;
+
+        document.getElementById('timerHours').textContent = String(h).padStart(2, '0');
+        document.getElementById('timerMinutes').textContent = String(m).padStart(2, '0');
+        document.getElementById('timerSeconds').textContent = String(s).padStart(2, '0');
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule Zero-Waste Pickup Request – ReCycleHub</title>
+  <meta name="description"
+    content="Book an on-demand residential or commercial waste collection with instant reference ID, certified weighing, and verified carbon offset accounting.">
+
+  <!-- Favicon & Touch Icons -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+
+<body>
+  <div class="scroll-progress-bar"></div>
+
+  <!-- Top Announcement Bar -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-ticker">
+        <span class="topbar-badge">Live EcoOps</span>
+        <span>Electric fleet active across all metro sectors • 99.4% MRF optical sorting purity achieved today</span>
+      </div>
+      <div class="topbar-actions">
+        <a href="tel:1800732925" class="topbar-link">
+          <i class="fa-solid fa-phone"></i> <span>1-800-RECYCLE</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="ReCycleHub Homepage">
+        <div class="brand-icon">
+          <i class="fa-solid fa-recycle"></i>
+        </div>
+        <span>ReCycle<span class="accent">Hub</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="home-2.html" class="nav-link">Home 2</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="categories.html" class="nav-link">Categories</a></li>
+          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <button class="header-icon-btn theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="header-icon-btn header-text-btn rtl-toggle-btn" title="Toggle RTL/LTR"
+          aria-label="Toggle Layout Direction">
+          <span class="rtl-toggle-label">RTL</span>
+        </button>
+        <div class="nav-item profile-menu">
+          <button class="header-icon-btn profile-toggle-btn" aria-label="Open Profile Menu" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="fa-solid fa-user"></i>
+          </button>
+          <ul class="dropdown-menu profile-dropdown">
+            <li>
+              <a href="login.html" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-right-to-bracket"></i></div>
+                <span>Login/Signup</span>
+              </a>
+            </li>
+            <li>
+              <a href="user-dashboard.html" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-user"></i></div>
+                <span>Customer Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="admin-dashboard.html" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <span>Admin Dashboard</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="pickup-request.html" class="btn btn-lime btn-sm header-cta-btn">
+          <i class="fa-solid fa-truck-pickup"></i> <span class="cta-label">Book Pickup</span>
+        </a>
+        <button class="mobile-toggle" aria-label="Open Mobile Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon"><i class="fa-solid fa-recycle"></i></div>
+        <span>ReCycle<span class="accent">Hub</span></span>
+      </a>
+      <button class="drawer-close" aria-label="Close Mobile Menu">&times;</button>
+    </div>
+    <ul class="drawer-nav">
+      <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="home-2.html"><i class="fa-solid fa-city"></i> Home 2</a></li>
+      <li><a href="about.html"><i class="fa-solid fa-leaf"></i> About</a></li>
+      <li><a href="services.html"><i class="fa-solid fa-boxes-stacked"></i> Services</a></li>
+      <li><a href="categories.html"><i class="fa-solid fa-tags"></i> Categories</a></li>
+      <li><a href="pricing.html"><i class="fa-solid fa-tags"></i> Pricing</a></li>
+      <li><a href="blog.html"><i class="fa-solid fa-newspaper"></i> Blog</a></li>
+      <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      <li class="drawer-nav-divider" role="presentation"></li>
+      <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Login/Signup</a></li>
+      <li><a href="user-dashboard.html"><i class="fa-solid fa-user"></i> Customer Dashboard</a></li>
+      <li><a href="admin-dashboard.html"><i class="fa-solid fa-shield-halved"></i> Admin Dashboard</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <div style="display:flex;gap:0.5rem;">
+        <button class="btn btn-outline btn-sm btn-block theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="btn btn-outline btn-sm btn-block rtl-toggle-btn" aria-label="Toggle Layout Direction">
+          <span class="rtl-toggle-label">RTL</span>
+        </button>
+      </div>
+      <a href="pickup-request.html" class="btn btn-lime btn-block">Book Pickup</a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- =========================================================================
+         SECTION 1: BOOKING WIZARD HEADER & STEPPER
+         ========================================================================= -->
+    <section class="section" style="padding-top:4rem;padding-bottom:1.5rem;">
+      <div class="container text-center reveal">
+        <span class="section-tag"><i class="fa-solid fa-truck-ramp-box"></i> Direct Depot Logistics</span>
+        <h1>Schedule Your <span style="color:var(--color-emerald);">Zero-Waste Pickup</span></h1>
+        <p class="section-desc" style="max-width:640px;margin:0 auto 2.5rem;">
+          Complete our 4-step dispatch form to reserve an electric vehicle collection slot and receive your verified
+          reference tracking ID.
+        </p>
+
+        <!-- Stepper Component -->
+        <div class="stepper-header" style="max-width:760px;margin:0 auto;">
+          <div class="step-item active">
+            <div class="step-bubble">1</div>
+            <div class="step-title">Stream & Tier</div>
+          </div>
+          <div class="step-item">
+            <div class="step-bubble">2</div>
+            <div class="step-title">Weight & Photo</div>
+          </div>
+          <div class="step-item">
+            <div class="step-bubble">3</div>
+            <div class="step-title">Slot & Address</div>
+          </div>
+          <div class="step-item">
+            <div class="step-bubble">4</div>
+            <div class="step-title">Review & Confirm</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 2: MAIN 4-STEP BOOKING ENGINE & FLOATING LIVE ESTIMATOR
+         ========================================================================= -->
+    <section class="section" style="padding-top:1.5rem;padding-bottom:5rem;">
+      <div class="container">
+        <div
+          style="display:grid;grid-template-columns:1fr;gap:2.5rem;align-items:flex-start; @media(min-width:1024px){grid-template-columns:2.2fr 1.2fr;}">
+
+          <!-- Wizard Form Container -->
+          <div class="card card-luxury" style="padding:2.5rem;">
+            <form id="pickupWizardForm">
+
+              <!-- STEP 1: Stream & Service Selection -->
+              <div class="wizard-step-pane" id="wizardStep1">
+                <h4 style="margin-bottom:1.25rem;color:var(--color-forest);">
+                  Step 1: Select Service Tier & Recycling Stream
+                </h4>
+
+                <!-- Service Tier Radio -->
+                <div class="form-group" style="margin-bottom:1.75rem;">
+                  <label class="form-label">Collection Classification <span class="required">*</span></label>
+                  <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(160px, 1fr));gap:0.75rem;">
+                    <label class="selection-tile">
+                      <input type="radio" name="serviceType" value="Residential" checked>
+                      <div class="selection-card">
+                        <div class="selection-card-icon"><i class="fa-solid fa-house"></i></div>
+                        <div class="selection-card-title">Residential</div>
+                        <div class="selection-card-rate">$10.00 Base Dispatch</div>
+                      </div>
+                    </label>
+                    <label class="selection-tile">
+                      <input type="radio" name="serviceType" value="Commercial">
+                      <div class="selection-card">
+                        <div class="selection-card-icon"><i class="fa-solid fa-building"></i></div>
+                        <div class="selection-card-title">Commercial</div>
+                        <div class="selection-card-rate">$25.00 Base Dispatch</div>
+                      </div>
+                    </label>
+                    <label class="selection-tile">
+                      <input type="radio" name="serviceType" value="Industrial">
+                      <div class="selection-card">
+                        <div class="selection-card-icon"><i class="fa-solid fa-industry"></i></div>
+                        <div class="selection-card-title">Industrial / Bulk</div>
+                        <div class="selection-card-rate">$50.00 Base Dispatch</div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Waste Categories Tiles -->
+                <div class="form-group">
+                  <label class="form-label">Primary Waste Stream Category <span class="required">*</span></label>
+                  <div class="selection-grid">
+                    <label class="selection-tile">
+                      <input type="radio" name="wasteCategory" value="plastic" checked>
+                      <div class="selection-card">
+                        <div class="selection-card-icon" style="color:#0284C7;"><i class="fa-solid fa-recycle"></i>
+                        </div>
+                        <div class="selection-card-title">Plastics (1-7)</div>
+                        <div class="selection-card-rate">$0.45 / kg</div>
+                      </div>
+                    </label>
+                    <label class="selection-tile">
+                      <input type="radio" name="wasteCategory" value="paper">
+                      <div class="selection-card">
+                        <div class="selection-card-icon" style="color:#D97706;"><i class="fa-solid fa-newspaper"></i>
+                        </div>
+                        <div class="selection-card-title">Paper & Bales</div>
+                        <div class="selection-card-rate">$0.30 / kg</div>
+                      </div>
+                    </label>
+                    <label class="selection-tile">
+                      <input type="radio" name="wasteCategory" value="glass">
+                      <div class="selection-card">
+                        <div class="selection-card-icon" style="color:#0D9488;"><i class="fa-solid fa-wine-bottle"></i>
+                        </div>
+                        <div class="selection-card-title">Glass & Silica</div>
+                        <div class="selection-card-rate">$0.35 / kg</div>
+                      </div>
+                    </label>
+                    <label class="selection-tile">
+                      <input type="radio" name="wasteCategory" value="metal">
+                      <div class="selection-card">
+                        <div class="selection-card-icon" style="color:#475569;"><i class="fa-solid fa-cube"></i></div>
+                        <div class="selection-card-title">Metals & Cans</div>
+                        <div class="selection-card-rate">$0.85 / kg</div>
+                      </div>
+                    </label>
+                    <label class="selection-tile">
+                      <input type="radio" name="wasteCategory" value="ewaste">
+                      <div class="selection-card">
+                        <div class="selection-card-icon" style="color:#7C3AED;"><i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <div class="selection-card-title">E-Waste & Tech</div>
+                        <div class="selection-card-rate">$1.50 / kg</div>
+                      </div>
+                    </label>
+                    <label class="selection-tile">
+                      <input type="radio" name="wasteCategory" value="organic">
+                      <div class="selection-card">
+                        <div class="selection-card-icon" style="color:#16A34A;"><i class="fa-solid fa-seedling"></i>
+                        </div>
+                        <div class="selection-card-title">Food Compost</div>
+                        <div class="selection-card-rate">$0.25 / kg</div>
+                      </div>
+                    </label>
+                    <label class="selection-tile">
+                      <input type="radio" name="wasteCategory" value="hazardous">
+                      <div class="selection-card">
+                        <div class="selection-card-icon" style="color:#E11D48;"><i
+                            class="fa-solid fa-triangle-exclamation"></i></div>
+                        <div class="selection-card-title">Hazardous / Batts</div>
+                        <div class="selection-card-rate">$2.20 / kg</div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+
+                <div style="display:flex;justify-content:flex-end;margin-top:2rem;">
+                  <button type="button" class="btn btn-primary wizard-next-btn">
+                    Continue to Quantity & Photo <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- STEP 2: Quantity & Photo Upload -->
+              <div class="wizard-step-pane" id="wizardStep2" style="display:none;">
+                <h4 style="margin-bottom:1.25rem;color:var(--color-forest);">
+                  Step 2: Quantity Estimation & Photo Assessment
+                </h4>
+
+                <div class="form-group">
+                  <label class="form-label" style="display:flex;justify-content:space-between;">
+                    <span>Estimated Material Weight (kg) <span class="required">*</span></span>
+                    <strong style="color:var(--color-emerald);font-size:1.1rem;" id="weightDisplay">20 kg</strong>
+                  </label>
+                  <input type="range" class="form-control" id="wasteWeight" min="5" max="300" step="5" value="20">
+                  <div
+                    style="display:flex;justify-content:space-between;font-size:0.75rem;color:var(--text-muted);margin-top:0.35rem;">
+                    <span>Light (5 kg)</span>
+                    <span>Standard Carts (50 kg)</span>
+                    <span>Heavy Commercial (300 kg)</span>
+                  </div>
+                </div>
+
+                <!-- Photo Upload Simulation Dropzone -->
+                <div class="form-group" style="margin-top:1.75rem;">
+                  <label class="form-label">Material Photo (Optional but recommended for rapid route clearance)</label>
+                  <div id="photoDropzone"
+                    style="border:2px dashed var(--color-border);border-radius:var(--radius-lg);padding:2rem;text-align:center;cursor:pointer;background:var(--bg-surface-alt);transition:border-color 0.2s;">
+                    <i class="fa-solid fa-cloud-arrow-up"
+                      style="font-size:2rem;color:var(--color-emerald);margin-bottom:0.75rem;"></i>
+                    <div style="font-weight:700;font-size:0.95rem;margin-bottom:0.25rem;">Click or drag photo of sorted
+                      batch</div>
+                    <div style="font-size:0.8rem;color:var(--text-muted);">Supports JPG, PNG, WEBP up to 10MB</div>
+                    <input type="file" id="wastePhotoInput" style="display:none;" accept="image/*">
+                  </div>
+                  <div id="photoPreview" style="margin-top:0.75rem;"></div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Special Access Notes / Gate Codes</label>
+                  <textarea class="form-control" id="pickupNotes"
+                    placeholder="e.g. Leave containers by north side alley gate #4412. Please ring intercom on arrival."></textarea>
+                </div>
+
+                <div style="display:flex;justify-content:space-between;margin-top:2rem;">
+                  <button type="button" class="btn btn-outline wizard-prev-btn">
+                    <i class="fa-solid fa-arrow-left"></i> Back
+                  </button>
+                  <button type="button" class="btn btn-primary wizard-next-btn">
+                    Continue to Slot & Address <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- STEP 3: Slot & Location -->
+              <div class="wizard-step-pane" id="wizardStep3" style="display:none;">
+                <h4 style="margin-bottom:1.25rem;color:var(--color-forest);">
+                  Step 3: Preferred Date, Time Slot & Service Location
+                </h4>
+
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+                  <div class="form-group">
+                    <label class="form-label">Preferred Date <span class="required">*</span></label>
+                    <input type="date" class="form-control" id="pickupDate" required>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Time Window <span class="required">*</span></label>
+                    <select class="form-control" id="timeSlotSelect">
+                      <option value="09:00 AM - 12:00 PM">Morning (09:00 AM - 12:00 PM)</option>
+                      <option value="01:00 PM - 04:00 PM">Afternoon (01:00 PM - 04:00 PM)</option>
+                      <option value="05:00 PM - 08:00 PM">Evening (05:00 PM - 08:00 PM)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Street Address & Suite / Unit <span class="required">*</span></label>
+                  <input type="text" class="form-control" id="customerAddress"
+                    placeholder="e.g. 742 Evergreen Terrace, Suite 4B" required>
+                </div>
+
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+                  <div class="form-group">
+                    <label class="form-label">City</label>
+                    <input type="text" class="form-control" value="San Francisco, CA" readonly>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Postal Code <span class="required">*</span></label>
+                    <input type="text" class="form-control" id="customerPostal" value="94107" required>
+                  </div>
+                </div>
+
+                <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:1rem;">
+                  <div class="form-group">
+                    <label class="form-label">Contact Person Name <span class="required">*</span></label>
+                    <input type="text" class="form-control" id="customerName" placeholder="Full Name" required>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Contact Email <span class="required">*</span></label>
+                    <input type="email" class="form-control" id="customerEmail" placeholder="name@email.com" required>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Phone Number <span class="required">*</span></label>
+                    <input type="tel" class="form-control" id="customerPhone" placeholder="+1 (555) 000-0000" required>
+                  </div>
+                </div>
+
+                <div style="display:flex;justify-content:space-between;margin-top:2rem;">
+                  <button type="button" class="btn btn-outline wizard-prev-btn">
+                    <i class="fa-solid fa-arrow-left"></i> Back
+                  </button>
+                  <button type="button" class="btn btn-primary wizard-next-btn">
+                    Review Order Manifest <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- STEP 4: Review & Final Confirmation -->
+              <div class="wizard-step-pane" id="wizardStep4" style="display:none;">
+                <h4 style="margin-bottom:1.25rem;color:var(--color-forest);">
+                  Step 4: Verify Order Details & Authorize Dispatch
+                </h4>
+
+                <div id="reviewStepContent">
+                  <!-- Populated dynamically via booking.js -->
+                </div>
+
+                <div class="form-group" style="margin-top:1.5rem;">
+                  <label style="display:flex;align-items:flex-start;gap:0.65rem;cursor:pointer;font-size:0.875rem;">
+                    <input type="checkbox" id="agreeTerms" checked style="margin-top:0.25rem;">
+                    <span>I confirm that all materials in this batch are rinsed, sorted according to ReCycleHub
+                      zero-contamination guidelines, and stored in an accessible location for our driver.</span>
+                  </label>
+                </div>
+
+                <div style="display:flex;justify-content:space-between;margin-top:2rem;">
+                  <button type="button" class="btn btn-outline wizard-prev-btn">
+                    <i class="fa-solid fa-arrow-left"></i> Edit Details
+                  </button>
+                  <button type="submit" class="btn btn-lime btn-lg" id="btnSubmitOrder">
+                    <i class="fa-solid fa-check"></i> Confirm & Generate Reference ID
+                  </button>
+                </div>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- Live Floating Summary Card -->
+          <div style="position:sticky;top:100px;">
+            <div class="card card-luxury" style="padding:2rem;border:1px solid var(--color-border);">
+              <h5
+                style="margin-bottom:1.25rem;color:var(--color-forest);display:flex;align-items:center;justify-content:space-between;">
+                <span>Live Dispatch Quote</span>
+                <span class="badge badge-emerald">EV Fleet Active</span>
+              </h5>
+
+              <div style="display:flex;flex-direction:column;gap:0.75rem;font-size:0.9rem;margin-bottom:1.5rem;">
+                <div style="display:flex;justify-content:space-between;">
+                  <span style="color:var(--text-muted);">Service Classification:</span>
+                  <strong id="sumService">Residential</strong>
+                </div>
+                <div style="display:flex;justify-content:space-between;">
+                  <span style="color:var(--text-muted);">Waste Category:</span>
+                  <strong id="sumCategory">Plastics & Polymers</strong>
+                </div>
+                <div style="display:flex;justify-content:space-between;">
+                  <span style="color:var(--text-muted);">Estimated Quantity:</span>
+                  <strong id="sumWeight">20 kg</strong>
+                </div>
+                <div
+                  style="display:flex;justify-content:space-between;padding-top:0.75rem;border-top:1px dashed var(--color-border);">
+                  <span style="color:var(--color-emerald);font-weight:700;">Projected Carbon Offset:</span>
+                  <strong style="color:var(--color-emerald);" id="sumCo2">36.0 kg</strong>
+                </div>
+                <div style="display:flex;justify-content:space-between;">
+                  <span style="color:#D97706;font-weight:700;">Eco-Points Earned:</span>
+                  <strong style="color:#D97706;" id="sumPoints">+100 Pts</strong>
+                </div>
+              </div>
+
+              <div
+                style="padding:1.25rem;background:var(--bg-surface-alt);border-radius:var(--radius-md);margin-bottom:1.5rem;">
+                <div style="font-size:0.75rem;color:var(--text-muted);text-transform:uppercase;font-weight:700;">TOTAL
+                  ESTIMATED DISPATCH</div>
+                <div
+                  style="font-family:var(--font-heading);font-size:2.25rem;font-weight:800;color:var(--color-forest);"
+                  id="sumPrice">
+                  $19.00
+                </div>
+                <div style="font-size:0.75rem;color:var(--text-muted);margin-top:0.25rem;">
+                  Onboard scale verifies exact weight at collection.
+                </div>
+              </div>
+
+              <div style="font-size:0.8rem;color:var(--text-muted);line-height:1.5;">
+                <i class="fa-solid fa-shield-check" style="color:var(--color-emerald);"></i> 100% money-back
+                satisfaction guarantee. Free cancellation up to 2 hours before scheduled slot.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 3: SERVICED ZONES & SAME-DAY DISPATCH CHECKER
+         ========================================================================= -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag"><i class="fa-solid fa-map-location-dot"></i> Fleet Radius</span>
+          <h2>Serviced Municipal & Metro Zones</h2>
+          <p class="section-desc">Our electric collection trucks operate daily across all primary districts.</p>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:1.5rem;">
+          <div class="card reveal">
+            <span class="badge badge-emerald" style="margin-bottom:0.5rem;">Sector 1 – North</span>
+            <h5>Marina, Pacific Heights, Presidio</h5>
+            <div style="font-size:0.8rem;color:var(--text-muted);">Postal Codes: 94115, 94123, 94129</div>
+            <div style="font-size:0.8rem;color:var(--color-emerald);font-weight:700;margin-top:0.5rem;">Daily 09:00 AM -
+              08:00 PM</div>
+          </div>
+
+          <div class="card reveal reveal-delay-1">
+            <span class="badge badge-emerald" style="margin-bottom:0.5rem;">Sector 2 – Downtown</span>
+            <h5>Financial District, SoMa, Mission Bay</h5>
+            <div style="font-size:0.8rem;color:var(--text-muted);">Postal Codes: 94104, 94105, 94107, 94158</div>
+            <div style="font-size:0.8rem;color:var(--color-emerald);font-weight:700;margin-top:0.5rem;">Daily Continuous
+              Smart Chute Sweep</div>
+          </div>
+
+          <div class="card reveal reveal-delay-2">
+            <span class="badge badge-emerald" style="margin-bottom:0.5rem;">Sector 3 – West</span>
+            <h5>Richmond, Sunset, Haight-Ashbury</h5>
+            <div style="font-size:0.8rem;color:var(--text-muted);">Postal Codes: 94117, 94118, 94121, 94122</div>
+            <div style="font-size:0.8rem;color:var(--color-emerald);font-weight:700;margin-top:0.5rem;">Mon, Wed, Fri,
+              Sat Routes</div>
+          </div>
+
+          <div class="card reveal reveal-delay-3">
+            <span class="badge badge-emerald" style="margin-bottom:0.5rem;">Sector 4 – South Industrial</span>
+            <h5>Dogpatch, Bayview, Mission</h5>
+            <div style="font-size:0.8rem;color:var(--text-muted);">Postal Codes: 94102, 94103, 94110, 94124</div>
+            <div style="font-size:0.8rem;color:var(--color-emerald);font-weight:700;margin-top:0.5rem;">Heavy Industrial
+              Baler Logistics Active</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 4: PREPARATION GUIDELINES & SAFE BIN PLACEMENT
+         ========================================================================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag"><i class="fa-solid fa-list-check"></i> Pickup Prep</span>
+          <h2>3 Steps to Prepare Your Material for Collection</h2>
+          <p class="section-desc">Follow these quick steps to ensure smooth handling and safety for our drivers.</p>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:2rem;">
+          <div class="card reveal">
+            <div
+              style="width:48px;height:48px;border-radius:var(--radius-full);background:var(--color-mint);color:var(--color-emerald);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.25rem;margin-bottom:1rem;">
+              1
+            </div>
+            <h4>Empty & Clean Rinse</h4>
+            <p style="font-size:0.9rem;color:var(--text-muted);">
+              Give jars, beverage bottles, and plastic tubs a quick rinse to remove food residue. You do not need to
+              scrape off paper labels.
+            </p>
+          </div>
+
+          <div class="card reveal reveal-delay-1">
+            <div
+              style="width:48px;height:48px;border-radius:var(--radius-full);background:var(--color-mint);color:var(--color-emerald);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.25rem;margin-bottom:1rem;">
+              2
+            </div>
+            <h4>Flatten Boxes & Bundle</h4>
+            <p style="font-size:0.9rem;color:var(--text-muted);">
+              Break down corrugated shipping cardboard flat to optimize vehicle bed capacity. Bundle neatly or place in
+              a reusable bin.
+            </p>
+          </div>
+
+          <div class="card reveal reveal-delay-2">
+            <div
+              style="width:48px;height:48px;border-radius:var(--radius-full);background:var(--color-mint);color:var(--color-emerald);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.25rem;margin-bottom:1rem;">
+              3
+            </div>
+            <h4>Place at Curbside or Porch</h4>
+            <p style="font-size:0.9rem;color:var(--text-muted);">
+              Set containers out by 8:30 AM for morning slots or 12:30 PM for afternoon slots. Our driver will scan the
+              tag and weigh on site.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 5: DISPATCH GUARANTEE & SLA COMMITMENTS
+         ========================================================================= -->
+    <section class="section section-forest">
+      <div class="container">
+        <div
+          style="display:grid;grid-template-columns:1fr;gap:2.5rem;align-items:center; @media(min-width:992px){grid-template-columns:1fr 1fr;}">
+          <div class="reveal">
+            <span class="section-tag" style="background:rgba(182, 217, 87, 0.2);color:var(--color-lime);">Our
+              Guarantee</span>
+            <h2 style="color:#fff;margin-bottom:1rem;">The ReCycleHub Zero-Landfill Promise</h2>
+            <p style="color:rgba(250,252,248,0.85);font-size:1.05rem;line-height:1.7;">
+              We guarantee 100% transparent audit trails. If our drivers are delayed by more than 30 minutes outside
+              your chosen window, your pickup fee is fully credited and you receive 500 complimentary Eco-Reward points.
+            </p>
+          </div>
+          <div class="reveal reveal-delay-2" style="display:flex;gap:1.5rem;flex-wrap:wrap;">
+            <div
+              style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);padding:1.5rem;border-radius:var(--radius-lg);flex:1;min-width:200px;">
+              <i class="fa-solid fa-clock-rotate-left"
+                style="color:var(--color-lime);font-size:2rem;margin-bottom:0.75rem;"></i>
+              <h5 style="color:#fff;">On-Time SLA</h5>
+              <div style="font-size:0.85rem;color:rgba(255,255,255,0.7);">98.8% on-time window arrival rate across
+                24,000+ dispatches.</div>
+            </div>
+            <div
+              style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);padding:1.5rem;border-radius:var(--radius-lg);flex:1;min-width:200px;">
+              <i class="fa-solid fa-certificate"
+                style="color:var(--color-lime);font-size:2rem;margin-bottom:0.75rem;"></i>
+              <h5 style="color:#fff;">Audited Manifest</h5>
+              <div style="font-size:0.85rem;color:rgba(255,255,255,0.7);">Certified weight receipts written immediately
+                to your customer portal.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 6: DISPATCH HELP & LIVE SUPPORT
+         ========================================================================= -->
+    <section class="section section-alt">
+      <div class="container text-center reveal">
+        <span class="section-tag"><i class="fa-solid fa-headset"></i> Need Urgent Dispatch?</span>
+        <h2>Have Oversized, Bulk or Chemical Waste?</h2>
+        <p class="section-desc" style="max-width:620px;margin:0 auto 2rem;">
+          Our logistics coordinators are standing by 24 hours a day to configure custom flatbed trucks or industrial
+          compactor bins.
+        </p>
+        <div style="display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap;">
+          <a href="tel:1800732925" class="btn btn-primary btn-lg">
+            <i class="fa-solid fa-phone"></i> Call 1-800-RECYCLE
+          </a>
+          <a href="contact.html" class="btn btn-outline btn-lg">
+            <i class="fa-solid fa-envelope"></i> Message Support Desk
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Column 1: Company -->
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="ReCycleHub Homepage">
+            <div class="brand-icon"><i class="fa-solid fa-recycle"></i></div>
+            <span>ReCycle<span class="accent">Hub</span></span>
+          </a>
+          <p>ReCycleHub is an eco-tech platform pioneering high-purity material recovery, zero-emission collection logistics, and circular enterprise accountability.</p>
+          <div class="footer-socials">
+<a href="https://www.instagram.com" class="social-icon-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://www.facebook.com" class="social-icon-btn" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="https://x.com" class="social-icon-btn" aria-label="X / Twitter" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+<a href="https://www.youtube.com" class="social-icon-btn" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col footer-col-links">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home-2.html">Home 2</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Us -->
+        <div class="footer-col">
+          <h5>Contact Us</h5>
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <div>450 Circular Blvd, Sector 9</div>
+              <div>San Francisco, CA 94107</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:1800732925">1-800-RECYCLE (732-925)</a>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:support@recyclehub.org">support@recyclehub.org</a>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-clock"></i>
+            <div>Mon – Sun: 07:00 AM – 07:00 PM</div>
+          </div>
+        </div>
+
+        <!-- Column 4: Newsletter -->
+        <div class="footer-col">
+          <h5>Newsletter</h5>
+          <p class="newsletter-desc">Subscribe to receive the latest updates, news, offers, and circular economy insights.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Subscribed', 'Thank you for joining our circular community!', 'success'); this.reset();">
+            <input type="email" class="form-control" placeholder="Enter your email address" required aria-label="Email address">
+            <button type="submit" class="btn btn-lime">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copyright">&copy; 2026 ReCycleHub Platform Inc. All rights reserved.</div>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <span>|</span>
+          <a href="#">Terms & Conditions</a>
+          <span>|</span>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/booking.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

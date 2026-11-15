@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In – ReCycleHub Member & Fleet Portal</title>
+  <meta name="description" content="Sign in to your ReCycleHub customer sustainability dashboard, enterprise ESG console, or fleet operations dispatch control.">
+  
+  <!-- Favicon & Touch Icons -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body style="min-height:100vh;display:flex;flex-direction:column;justify-content:space-between;">
+  
+  <!-- Top Announcement Bar -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-ticker">
+        <span class="topbar-badge">Live EcoOps</span>
+        <span>Electric fleet active across all metro sectors • 99.4% MRF optical sorting purity achieved today</span>
+      </div>
+      <div class="topbar-actions">
+        <a href="tel:1800732925" class="topbar-link">
+          <i class="fa-solid fa-phone"></i> <span>1-800-RECYCLE</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="ReCycleHub Homepage">
+        <div class="brand-icon">
+          <i class="fa-solid fa-recycle"></i>
+        </div>
+        <span>ReCycle<span class="accent">Hub</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="home-2.html" class="nav-link">Home 2</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="categories.html" class="nav-link">Categories</a></li>
+          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <button class="header-icon-btn theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="header-icon-btn header-text-btn rtl-toggle-btn" title="Toggle RTL/LTR"
+          aria-label="Toggle Layout Direction">
+          <span class="rtl-toggle-label">RTL</span>
+        </button>
+        <div class="nav-item profile-menu">
+          <button class="header-icon-btn profile-toggle-btn" aria-label="Open Profile Menu" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="fa-solid fa-user"></i>
+          </button>
+          <ul class="dropdown-menu profile-dropdown">
+            <li>
+              <a href="login.html" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-right-to-bracket"></i></div>
+                <span>Login/Signup</span>
+              </a>
+            </li>
+            <li>
+              <a href="user-dashboard.html" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-user"></i></div>
+                <span>Customer Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="admin-dashboard.html" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <span>Admin Dashboard</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="pickup-request.html" class="btn btn-lime btn-sm header-cta-btn">
+          <i class="fa-solid fa-truck-pickup"></i> <span class="cta-label">Book Pickup</span>
+        </a>
+        <button class="mobile-toggle" aria-label="Open Mobile Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon"><i class="fa-solid fa-recycle"></i></div>
+        <span>ReCycle<span class="accent">Hub</span></span>
+      </a>
+      <button class="drawer-close" aria-label="Close Mobile Menu">&times;</button>
+    </div>
+    <ul class="drawer-nav">
+      <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="home-2.html"><i class="fa-solid fa-city"></i> Home 2</a></li>
+      <li><a href="about.html"><i class="fa-solid fa-leaf"></i> About</a></li>
+      <li><a href="services.html"><i class="fa-solid fa-boxes-stacked"></i> Services</a></li>
+      <li><a href="categories.html"><i class="fa-solid fa-tags"></i> Categories</a></li>
+      <li><a href="pricing.html"><i class="fa-solid fa-tags"></i> Pricing</a></li>
+      <li><a href="blog.html"><i class="fa-solid fa-newspaper"></i> Blog</a></li>
+      <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      <li class="drawer-nav-divider" role="presentation"></li>
+      <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Login/Signup</a></li>
+      <li><a href="user-dashboard.html"><i class="fa-solid fa-user"></i> Customer Dashboard</a></li>
+      <li><a href="admin-dashboard.html"><i class="fa-solid fa-shield-halved"></i> Admin Dashboard</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <div style="display:flex;gap:0.5rem;">
+        <button class="btn btn-outline btn-sm btn-block theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="btn btn-outline btn-sm btn-block rtl-toggle-btn" aria-label="Toggle Layout Direction">
+          <span class="rtl-toggle-label">RTL</span>
+        </button>
+      </div>
+      <a href="pickup-request.html" class="btn btn-lime btn-block">Book Pickup</a>
+    </div>
+  </aside>
+
+  <main style="flex:1;display:flex;align-items:center;justify-content:center;padding:3rem 1.5rem;">
+    <div style="width:100%;max-width:1080px;display:grid;grid-template-columns:1fr;box-shadow:var(--shadow-xl);border-radius:var(--radius-xl);overflow:hidden;border:1px solid var(--color-border); @media(min-width:992px){grid-template-columns:1fr 1.15fr;}">
+      
+      <!-- =========================================================================
+           SECTION 1: SPLIT-SCREEN BRAND SHOWCASE & LIVE DIVERSION COUNTER
+           ========================================================================= -->
+      <div style="background:linear-gradient(135deg, var(--color-forest-dark) 0%, var(--color-forest) 100%);color:#fff;padding:3.5rem 3rem;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;">
+        <div>
+          <span class="badge badge-lime" style="margin-bottom:1.5rem;">SECURE PORTAL ACCESS</span>
+          <h2 style="color:#fff;margin-bottom:1rem;font-size:2.2rem;">Welcome Back to Your Circular Network.</h2>
+          <p style="color:rgba(250,252,248,0.85);font-size:1rem;line-height:1.7;">
+            Log in to monitor live pickup trucks, inspect certified chain-of-custody manifests, or redeem your accumulated Eco-Points.
+          </p>
+
+          <div style="margin-top:2.5rem;padding:1.5rem;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:var(--radius-lg);">
+            <div style="font-size:0.75rem;color:rgba(255,255,255,0.6);text-transform:uppercase;font-weight:700;">COMMUNITY IMPACT TODAY</div>
+            <div style="font-family:var(--font-heading);font-size:2rem;font-weight:800;color:var(--color-lime);margin-top:0.25rem;">
+              18,450.8 kg
+            </div>
+            <div style="font-size:0.8rem;color:rgba(255,255,255,0.8);margin-top:0.25rem;">
+              Diverted across 42 active electric vehicle routes.
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex;align-items:center;gap:1.5rem;margin-top:3rem;font-size:0.8rem;color:rgba(255,255,255,0.7);flex-wrap:wrap;">
+          <span><i class="fa-solid fa-shield-halved" style="color:var(--color-lime);margin-right:0.35rem;"></i> 256-Bit SSL Encrypted</span>
+          <span><i class="fa-solid fa-fingerprint" style="color:var(--color-lime);margin-right:0.35rem;"></i> Biometric Ready</span>
+        </div>
+      </div>
+
+      <!-- =========================================================================
+           SECTION 2, 3, 4, 5, 6: LOGIN FORM, ROLE SWITCHER, DEMO FILL, 2FA
+           ========================================================================= -->
+      <div style="background:var(--bg-surface);padding:3.5rem 3rem;display:flex;flex-direction:column;justify-content:center;">
+        
+        <!-- SECTION 2: Role Switcher -->
+        <div style="margin-bottom:1.75rem;">
+          <label class="form-label" style="font-size:0.8rem;text-transform:uppercase;letter-spacing:0.05em;color:var(--text-muted);">
+            Sign in as:
+          </label>
+          <div style="display:flex;gap:0.5rem;background:var(--bg-surface-alt);padding:0.3rem;border-radius:var(--radius-md);border:1px solid var(--color-border);">
+            <button type="button" class="btn btn-sm btn-block filter-btn active" id="roleCustomer" onclick="switchLoginRole('customer')">Customer</button>
+            <button type="button" class="btn btn-sm btn-block filter-btn" id="roleAdmin" onclick="switchLoginRole('admin')">Admin / EcoOps</button>
+            <button type="button" class="btn btn-sm btn-block filter-btn" id="roleDriver" onclick="switchLoginRole('driver')">Fleet Driver</button>
+          </div>
+        </div>
+
+        <!-- SECTION 3: Main Form with Demo Autofill -->
+        <form onsubmit="handleLoginSubmit(event)">
+          <div class="form-group">
+            <label class="form-label">Email or Account ID</label>
+            <div class="input-icon-group">
+              <i class="fa-solid fa-envelope input-icon"></i>
+              <input type="text" id="loginEmail" class="form-control" placeholder="name@email.com" value="s.jenkins@ecotech.org" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.4rem;">
+              <label class="form-label" style="margin:0;">Password</label>
+              <a href="#" onclick="alert('Demo Mode: Enter any password or click Quick Demo Fill buttons below.'); return false;" style="font-size:0.8rem;color:var(--color-emerald);">Forgot Password?</a>
+            </div>
+            <div class="input-icon-group">
+              <i class="fa-solid fa-lock input-icon"></i>
+              <input type="password" id="loginPass" class="form-control" value="••••••••••••" required>
+            </div>
+          </div>
+
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem;font-size:0.85rem;">
+            <label style="display:flex;align-items:center;gap:0.5rem;cursor:pointer;">
+              <input type="checkbox" checked> Remember this device for 30 days
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block btn-lg" id="btnLoginSubmit">
+            <i class="fa-solid fa-right-to-bracket"></i> Sign In to Dashboard
+          </button>
+        </form>
+
+        <!-- Quick 1-Click Demo Fill Section -->
+        <div style="margin-top:1.5rem;padding:0.85rem;background:var(--bg-surface-alt);border-radius:var(--radius-md);border:1px dashed var(--color-emerald);font-size:0.8rem;">
+          <div style="font-weight:700;color:var(--text-heading);margin-bottom:0.4rem;">
+            <i class="fa-solid fa-wand-magic-sparkles" style="color:var(--color-emerald);"></i> Quick Demo Profiles:
+          </div>
+          <div style="display:flex;gap:0.4rem;flex-wrap:wrap;">
+            <button type="button" class="btn btn-outline btn-sm" onclick="fillDemo('customer')">Sarah (Customer)</button>
+            <button type="button" class="btn btn-outline btn-sm" onclick="fillDemo('admin')">EcoOps (Admin)</button>
+            <button type="button" class="btn btn-outline btn-sm" onclick="fillDemo('driver')">Marcus (Driver)</button>
+          </div>
+        </div>
+
+        <!-- SECTION 4: Single Sign-On (SSO) Simulation -->
+        <div style="margin-top:2rem;text-align:center;">
+          <div style="position:relative;margin-bottom:1.5rem;">
+            <div style="position:absolute;top:50%;left:0;right:0;height:1px;background:var(--color-border);"></div>
+            <span style="position:relative;background:var(--bg-surface);padding:0 1rem;font-size:0.8rem;color:var(--text-muted);font-weight:600;">
+              OR CONTINUE WITH SSO
+            </span>
+          </div>
+
+          <div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:0.75rem;">
+            <button class="btn btn-outline btn-sm" onclick="simulateSso('Google Workspace')">
+              <i class="fa-brands fa-google"></i> Google
+            </button>
+            <button class="btn btn-outline btn-sm" onclick="simulateSso('Microsoft Entra')">
+              <i class="fa-brands fa-microsoft"></i> Microsoft
+            </button>
+            <button class="btn btn-outline btn-sm" onclick="simulateSso('Apple ID')">
+              <i class="fa-brands fa-apple"></i> Apple
+            </button>
+          </div>
+        </div>
+
+        <!-- SECTION 5: 2FA & Passkey Notice -->
+        <div style="margin-top:1.75rem;text-align:center;font-size:0.775rem;color:var(--text-muted);">
+          Protected by Google Cloud reCAPTCHA v3 &amp; WebAuthn Biometric Passkeys.
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Column 1: Company -->
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="ReCycleHub Homepage">
+            <div class="brand-icon"><i class="fa-solid fa-recycle"></i></div>
+            <span>ReCycle<span class="accent">Hub</span></span>
+          </a>
+          <p>ReCycleHub is an eco-tech platform pioneering high-purity material recovery, zero-emission collection logistics, and circular enterprise accountability.</p>
+          <div class="footer-socials">
+<a href="https://www.instagram.com" class="social-icon-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://www.facebook.com" class="social-icon-btn" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="https://x.com" class="social-icon-btn" aria-label="X / Twitter" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+<a href="https://www.youtube.com" class="social-icon-btn" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col footer-col-links">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home-2.html">Home 2</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Us -->
+        <div class="footer-col">
+          <h5>Contact Us</h5>
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <div>450 Circular Blvd, Sector 9</div>
+              <div>San Francisco, CA 94107</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:1800732925">1-800-RECYCLE (732-925)</a>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:support@recyclehub.org">support@recyclehub.org</a>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-clock"></i>
+            <div>Mon – Sun: 07:00 AM – 07:00 PM</div>
+          </div>
+        </div>
+
+        <!-- Column 4: Newsletter -->
+        <div class="footer-col">
+          <h5>Newsletter</h5>
+          <p class="newsletter-desc">Subscribe to receive the latest updates, news, offers, and circular economy insights.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Subscribed', 'Thank you for joining our circular community!', 'success'); this.reset();">
+            <input type="email" class="form-control" placeholder="Enter your email address" required aria-label="Email address">
+            <button type="submit" class="btn btn-lime">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copyright">&copy; 2026 ReCycleHub Platform Inc. All rights reserved.</div>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <span>|</span>
+          <a href="#">Terms & Conditions</a>
+          <span>|</span>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    let currentRole = 'customer';
+
+    function switchLoginRole(role) {
+      currentRole = role;
+      document.getElementById('roleCustomer').classList.toggle('active', role === 'customer');
+      document.getElementById('roleAdmin').classList.toggle('active', role === 'admin');
+      document.getElementById('roleDriver').classList.toggle('active', role === 'driver');
+      fillDemo(role);
+    }
+
+    function fillDemo(role) {
+      if (role === 'customer') {
+        document.getElementById('loginEmail').value = 's.jenkins@ecotech.org';
+        document.getElementById('btnLoginSubmit').innerHTML = '<i class="fa-solid fa-right-to-bracket"></i> Sign In to User Dashboard';
+      } else if (role === 'admin') {
+        document.getElementById('loginEmail').value = 'admin@recyclehub.org';
+        document.getElementById('btnLoginSubmit').innerHTML = '<i class="fa-solid fa-shield-halved"></i> Access Admin EcoOps Tower';
+      } else if (role === 'driver') {
+        document.getElementById('loginEmail').value = 'marcus.vance@recyclehub.fleet';
+        document.getElementById('btnLoginSubmit').innerHTML = '<i class="fa-solid fa-truck"></i> Enter Route Driver Console';
+      }
+    }
+
+    function handleLoginSubmit(e) {
+      e.preventDefault();
+      showToast('Authenticating', 'Verifying security credentials...', 'info');
+
+      setTimeout(() => {
+        if (currentRole === 'admin') {
+          showToast('Welcome, Administrator', 'Redirecting to Admin Control Tower...', 'success');
+          setTimeout(() => window.location.href = 'admin-dashboard.html', 800);
+        } else {
+          showToast('Welcome Back, Sarah', 'Redirecting to User Dashboard...', 'success');
+          setTimeout(() => window.location.href = 'user-dashboard.html', 800);
+        }
+      }, 700);
+    }
+
+    function simulateSso(provider) {
+      showToast('SSO Handshake', `Authenticating securely via ${provider}...`, 'info');
+      setTimeout(() => {
+        showToast('SSO Success', 'Authorized via enterprise single sign-on.', 'success');
+        setTimeout(() => window.location.href = 'user-dashboard.html', 800);
+      }, 900);
+    }
+  </script>
+</body>
+</html>
+
