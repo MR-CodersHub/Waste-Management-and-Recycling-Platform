@@ -299,6 +299,58 @@
   color: rgba(255, 255, 255, 0.85);
 }
 
+/* --- Split Layouts & Enterprise Grids --- */
+.split-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .split-layout {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.enterprise-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.enterprise-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.enterprise-card h4 {
+  min-height: 2.5em;
+}
+
+.enterprise-card p {
+  flex: 1;
+}
+
+.enterprise-card .btn {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+@media (max-width: 1099px) {
+  .enterprise-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .enterprise-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 /* Metric / Stat Card */
 .metric-card {
   background: var(--bg-surface);
@@ -368,6 +420,25 @@
 }
 
 /* --- Category Card Grid --- */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.75rem;
+  align-items: stretch;
+}
+
+@media (max-width: 1099px) {
+  .category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .category-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 .category-card {
   background: var(--bg-surface);
   border: 1px solid var(--color-border);
@@ -375,6 +446,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  height: 100%;
   transition: all var(--transition-normal);
 }
 
@@ -424,8 +496,10 @@
   font-family: var(--font-heading);
   font-weight: 700;
   font-size: 0.85rem;
+  line-height: 1.35;
   color: var(--color-emerald);
   margin-bottom: 0.5rem;
+  min-height: 2.7em;
 }
 
 .category-body h4 {
@@ -443,8 +517,21 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 0.75rem;
   padding-top: 1rem;
   border-top: 1px solid var(--color-border);
+}
+
+.category-footer .btn {
+  flex-shrink: 0;
+}
+
+.category-footer .btn-sm {
+  padding: 0.55rem 1.3rem;
+}
+
+.category-footer .btn-ghost {
+  padding-inline-start: 0;
 }
 
 /* --- Form Controls --- */

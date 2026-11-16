@@ -243,9 +243,9 @@
           </p>
         </div>
 
-        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));gap:2rem;">
+        <div class="enterprise-grid">
 
-          <div class="card card-hover reveal">
+          <div class="card card-hover reveal enterprise-card">
             <div
               style="width:52px;height:52px;border-radius:var(--radius-md);background:#E0F2FE;color:#0284C7;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:1.25rem;">
               <i class="fa-solid fa-building-shield"></i>
@@ -267,7 +267,7 @@
             <a href="service-details.html" class="btn btn-outline btn-sm">Explore High-Rise Specs</a>
           </div>
 
-          <div class="card card-hover reveal reveal-delay-1">
+          <div class="card card-hover reveal reveal-delay-1 enterprise-card">
             <div
               style="width:52px;height:52px;border-radius:var(--radius-md);background:#FEF3C7;color:#D97706;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:1.25rem;">
               <i class="fa-solid fa-boxes-packing"></i>
@@ -289,7 +289,7 @@
             <a href="service-details.html" class="btn btn-outline btn-sm">Explore Industrial Baling</a>
           </div>
 
-          <div class="card card-hover reveal reveal-delay-2">
+          <div class="card card-hover reveal reveal-delay-2 enterprise-card">
             <div
               style="width:52px;height:52px;border-radius:var(--radius-md);background:#EDE9FE;color:#7C3AED;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:1.25rem;">
               <i class="fa-solid fa-shield-virus"></i>
@@ -500,8 +500,7 @@
     <section class="section section-surface"
       style="border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border);">
       <div class="container">
-        <div
-          style="display:grid;grid-template-columns:1fr;gap:3rem;align-items:center; @media(min-width:992px){grid-template-columns:1fr 1fr;}">
+        <div class="split-layout">
 
           <div class="reveal">
             <span class="section-tag"><i class="fa-solid fa-route"></i> Route Optimization</span>
