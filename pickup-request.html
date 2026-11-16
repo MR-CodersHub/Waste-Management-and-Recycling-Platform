@@ -198,11 +198,10 @@
             <div class="step-title">Review &amp; Confirm</div>
           </div>
         </div>
-        <div
-          style="display:grid;grid-template-columns:1fr;gap:2.5rem;align-items:flex-start; @media(min-width:1024px){grid-template-columns:2.2fr 1.2fr;}">
+        <div class="pickup-booking-grid">
 
           <!-- Wizard Form Container -->
-          <div class="card card-luxury" style="padding:2.5rem;">
+          <div class="card card-luxury pickup-wizard-card">
             <form id="pickupWizardForm">
 
               <!-- STEP 1: Stream & Service Selection -->
@@ -249,7 +248,7 @@
                     <label class="selection-tile">
                       <input type="radio" name="wasteCategory" value="plastic" checked>
                       <div class="selection-card">
-                        <div class="selection-card-icon" style="color:#0284C7;"><i class="fa-solid fa-recycle"></i>
+                        <div class="selection-card-icon selection-icon-plastic"><i class="fa-solid fa-recycle"></i>
                         </div>
                         <div class="selection-card-title">Plastics (1-7)</div>
                         <div class="selection-card-rate">$0.45 / kg</div>
@@ -258,7 +257,7 @@
                     <label class="selection-tile">
                       <input type="radio" name="wasteCategory" value="paper">
                       <div class="selection-card">
-                        <div class="selection-card-icon" style="color:#D97706;"><i class="fa-solid fa-newspaper"></i>
+                        <div class="selection-card-icon selection-icon-paper"><i class="fa-solid fa-newspaper"></i>
                         </div>
                         <div class="selection-card-title">Paper & Bales</div>
                         <div class="selection-card-rate">$0.30 / kg</div>
@@ -267,7 +266,7 @@
                     <label class="selection-tile">
                       <input type="radio" name="wasteCategory" value="glass">
                       <div class="selection-card">
-                        <div class="selection-card-icon" style="color:#0D9488;"><i class="fa-solid fa-wine-bottle"></i>
+                        <div class="selection-card-icon selection-icon-glass"><i class="fa-solid fa-wine-bottle"></i>
                         </div>
                         <div class="selection-card-title">Glass & Silica</div>
                         <div class="selection-card-rate">$0.35 / kg</div>
@@ -276,7 +275,7 @@
                     <label class="selection-tile">
                       <input type="radio" name="wasteCategory" value="metal">
                       <div class="selection-card">
-                        <div class="selection-card-icon" style="color:#475569;"><i class="fa-solid fa-cube"></i></div>
+                        <div class="selection-card-icon selection-icon-metal"><i class="fa-solid fa-cube"></i></div>
                         <div class="selection-card-title">Metals & Cans</div>
                         <div class="selection-card-rate">$0.85 / kg</div>
                       </div>
@@ -284,7 +283,7 @@
                     <label class="selection-tile">
                       <input type="radio" name="wasteCategory" value="ewaste">
                       <div class="selection-card">
-                        <div class="selection-card-icon" style="color:#7C3AED;"><i class="fa-solid fa-microchip"></i>
+                        <div class="selection-card-icon selection-icon-ewaste"><i class="fa-solid fa-microchip"></i>
                         </div>
                         <div class="selection-card-title">E-Waste & Tech</div>
                         <div class="selection-card-rate">$1.50 / kg</div>
@@ -293,7 +292,7 @@
                     <label class="selection-tile">
                       <input type="radio" name="wasteCategory" value="organic">
                       <div class="selection-card">
-                        <div class="selection-card-icon" style="color:#16A34A;"><i class="fa-solid fa-seedling"></i>
+                        <div class="selection-card-icon selection-icon-organic"><i class="fa-solid fa-seedling"></i>
                         </div>
                         <div class="selection-card-title">Food Compost</div>
                         <div class="selection-card-rate">$0.25 / kg</div>
@@ -302,7 +301,7 @@
                     <label class="selection-tile">
                       <input type="radio" name="wasteCategory" value="hazardous">
                       <div class="selection-card">
-                        <div class="selection-card-icon" style="color:#E11D48;"><i
+                        <div class="selection-card-icon selection-icon-hazardous"><i
                             class="fa-solid fa-triangle-exclamation"></i></div>
                         <div class="selection-card-title">Hazardous / Batts</div>
                         <div class="selection-card-rate">$2.20 / kg</div>
@@ -464,10 +463,9 @@
           </div>
 
           <!-- Live Floating Summary Card -->
-          <div style="position:sticky;top:100px;">
-            <div class="card card-luxury" style="padding:2rem;border:1px solid var(--color-border);">
-              <h5
-                style="margin-bottom:1.25rem;color:var(--color-forest);display:flex;align-items:center;justify-content:space-between;">
+          <div class="pickup-quote-column">
+            <div class="card card-luxury pickup-quote-card">
+              <h5 class="pickup-quote-title">
                 <span>Live Dispatch Quote</span>
                 <span class="badge badge-emerald">EV Fleet Active</span>
               </h5>
@@ -500,11 +498,7 @@
                 style="padding:1.25rem;background:var(--bg-surface-alt);border-radius:var(--radius-md);margin-bottom:1.5rem;">
                 <div style="font-size:0.75rem;color:var(--text-muted);text-transform:uppercase;font-weight:700;">TOTAL
                   ESTIMATED DISPATCH</div>
-                <div
-                  style="font-family:var(--font-heading);font-size:2.25rem;font-weight:800;color:var(--color-forest);"
-                  id="sumPrice">
-                  $19.00
-                </div>
+                <div class="pickup-quote-total" id="sumPrice">$19.00</div>
                 <div style="font-size:0.75rem;color:var(--text-muted);margin-top:0.25rem;">
                   Onboard scale verifies exact weight at collection.
                 </div>
@@ -532,38 +526,115 @@
           <p class="section-desc">Our electric collection trucks operate daily across all primary districts.</p>
         </div>
 
-        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:1.5rem;">
-          <div class="card reveal">
-            <span class="badge badge-emerald" style="margin-bottom:0.5rem;">Sector 1 – North</span>
-            <h5>Marina, Pacific Heights, Presidio</h5>
-            <div style="font-size:0.8rem;color:var(--text-muted);">Postal Codes: 94115, 94123, 94129</div>
-            <div style="font-size:0.8rem;color:var(--color-emerald);font-weight:700;margin-top:0.5rem;">Daily 09:00 AM -
-              08:00 PM</div>
-          </div>
+        <div class="fleet-zone-grid">
 
-          <div class="card reveal reveal-delay-1">
-            <span class="badge badge-emerald" style="margin-bottom:0.5rem;">Sector 2 – Downtown</span>
-            <h5>Financial District, SoMa, Mission Bay</h5>
-            <div style="font-size:0.8rem;color:var(--text-muted);">Postal Codes: 94104, 94105, 94107, 94158</div>
-            <div style="font-size:0.8rem;color:var(--color-emerald);font-weight:700;margin-top:0.5rem;">Daily Continuous
-              Smart Chute Sweep</div>
-          </div>
+          <article class="card card-hover fleet-zone-card reveal">
+            <span class="fleet-zone-watermark" aria-hidden="true"><i class="fa-solid fa-compass"></i></span>
+            <div class="fleet-zone-top">
+              <span class="fleet-zone-icon fleet-zone-icon-north">
+                <i class="fa-solid fa-compass" aria-hidden="true"></i>
+              </span>
+              <span class="badge badge-emerald">Sector 1 &middot; North</span>
+            </div>
+            <h4>Marina, Pacific Heights, Presidio</h4>
+            <div class="fleet-zone-postals">
+              <span class="fleet-zone-label">Covered Postal Codes</span>
+              <div class="fleet-zone-chips">
+                <span>94115</span>
+                <span>94123</span>
+                <span>94129</span>
+              </div>
+            </div>
+            <div class="fleet-zone-footer">
+              <span class="fleet-zone-schedule-icon"><i class="fa-regular fa-clock" aria-hidden="true"></i></span>
+              <div>
+                <span class="fleet-zone-schedule-label">Route Cadence</span>
+                <strong>Daily &middot; 09:00 AM - 08:00 PM</strong>
+              </div>
+            </div>
+          </article>
 
-          <div class="card reveal reveal-delay-2">
-            <span class="badge badge-emerald" style="margin-bottom:0.5rem;">Sector 3 – West</span>
-            <h5>Richmond, Sunset, Haight-Ashbury</h5>
-            <div style="font-size:0.8rem;color:var(--text-muted);">Postal Codes: 94117, 94118, 94121, 94122</div>
-            <div style="font-size:0.8rem;color:var(--color-emerald);font-weight:700;margin-top:0.5rem;">Mon, Wed, Fri,
-              Sat Routes</div>
-          </div>
+          <article class="card card-hover fleet-zone-card reveal reveal-delay-1">
+            <span class="fleet-zone-watermark" aria-hidden="true"><i class="fa-solid fa-building"></i></span>
+            <div class="fleet-zone-top">
+              <span class="fleet-zone-icon fleet-zone-icon-downtown">
+                <i class="fa-solid fa-building" aria-hidden="true"></i>
+              </span>
+              <span class="badge badge-emerald">Sector 2 &middot; Downtown</span>
+            </div>
+            <h4>Financial District, SoMa, Mission Bay</h4>
+            <div class="fleet-zone-postals">
+              <span class="fleet-zone-label">Covered Postal Codes</span>
+              <div class="fleet-zone-chips">
+                <span>94104</span>
+                <span>94105</span>
+                <span>94107</span>
+                <span>94158</span>
+              </div>
+            </div>
+            <div class="fleet-zone-footer">
+              <span class="fleet-zone-schedule-icon"><i class="fa-solid fa-bolt" aria-hidden="true"></i></span>
+              <div>
+                <span class="fleet-zone-schedule-label">Smart Chute Sweep</span>
+                <strong>Daily &middot; Continuous Cycle</strong>
+              </div>
+            </div>
+          </article>
 
-          <div class="card reveal reveal-delay-3">
-            <span class="badge badge-emerald" style="margin-bottom:0.5rem;">Sector 4 – South Industrial</span>
-            <h5>Dogpatch, Bayview, Mission</h5>
-            <div style="font-size:0.8rem;color:var(--text-muted);">Postal Codes: 94102, 94103, 94110, 94124</div>
-            <div style="font-size:0.8rem;color:var(--color-emerald);font-weight:700;margin-top:0.5rem;">Heavy Industrial
-              Baler Logistics Active</div>
-          </div>
+          <article class="card card-hover fleet-zone-card reveal reveal-delay-2">
+            <span class="fleet-zone-watermark" aria-hidden="true"><i class="fa-solid fa-tree"></i></span>
+            <div class="fleet-zone-top">
+              <span class="fleet-zone-icon fleet-zone-icon-west">
+                <i class="fa-solid fa-tree" aria-hidden="true"></i>
+              </span>
+              <span class="badge badge-emerald">Sector 3 &middot; West</span>
+            </div>
+            <h4>Richmond, Sunset, Haight-Ashbury</h4>
+            <div class="fleet-zone-postals">
+              <span class="fleet-zone-label">Covered Postal Codes</span>
+              <div class="fleet-zone-chips">
+                <span>94117</span>
+                <span>94118</span>
+                <span>94121</span>
+                <span>94122</span>
+              </div>
+            </div>
+            <div class="fleet-zone-footer">
+              <span class="fleet-zone-schedule-icon"><i class="fa-regular fa-calendar-days" aria-hidden="true"></i></span>
+              <div>
+                <span class="fleet-zone-schedule-label">Scheduled Routes</span>
+                <strong>Mon, Wed, Fri &amp; Sat</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-hover fleet-zone-card reveal reveal-delay-3">
+            <span class="fleet-zone-watermark" aria-hidden="true"><i class="fa-solid fa-industry"></i></span>
+            <div class="fleet-zone-top">
+              <span class="fleet-zone-icon fleet-zone-icon-south">
+                <i class="fa-solid fa-industry" aria-hidden="true"></i>
+              </span>
+              <span class="badge badge-emerald">Sector 4 &middot; South Industrial</span>
+            </div>
+            <h4>Dogpatch, Bayview, Mission</h4>
+            <div class="fleet-zone-postals">
+              <span class="fleet-zone-label">Covered Postal Codes</span>
+              <div class="fleet-zone-chips">
+                <span>94102</span>
+                <span>94103</span>
+                <span>94110</span>
+                <span>94124</span>
+              </div>
+            </div>
+            <div class="fleet-zone-footer">
+              <span class="fleet-zone-schedule-icon"><i class="fa-solid fa-truck-ramp-box" aria-hidden="true"></i></span>
+              <div>
+                <span class="fleet-zone-schedule-label">Baler Logistics</span>
+                <strong>Heavy Industrial Routes Active</strong>
+              </div>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
@@ -579,42 +650,39 @@
           <p class="section-desc">Follow these quick steps to ensure smooth handling and safety for our drivers.</p>
         </div>
 
-        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:2rem;">
-          <div class="card reveal">
-            <div
-              style="width:48px;height:48px;border-radius:var(--radius-full);background:var(--color-mint);color:var(--color-emerald);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.25rem;margin-bottom:1rem;">
-              1
-            </div>
-            <h4>Empty & Clean Rinse</h4>
-            <p style="font-size:0.9rem;color:var(--text-muted);">
+        <div class="prep-grid">
+          <article class="card card-hover prep-card reveal">
+            <span class="prep-step-pill">Step 01</span>
+            <span class="prep-icon prep-icon-rinse"><i class="fa-solid fa-droplets" aria-hidden="true"></i></span>
+            <h4>Empty &amp; Clean Rinse</h4>
+            <p>
               Give jars, beverage bottles, and plastic tubs a quick rinse to remove food residue. You do not need to
               scrape off paper labels.
             </p>
-          </div>
+            <span class="prep-note"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Labels can stay on</span>
+          </article>
 
-          <div class="card reveal reveal-delay-1">
-            <div
-              style="width:48px;height:48px;border-radius:var(--radius-full);background:var(--color-mint);color:var(--color-emerald);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.25rem;margin-bottom:1rem;">
-              2
-            </div>
-            <h4>Flatten Boxes & Bundle</h4>
-            <p style="font-size:0.9rem;color:var(--text-muted);">
+          <article class="card card-hover prep-card reveal reveal-delay-1">
+            <span class="prep-step-pill">Step 02</span>
+            <span class="prep-icon prep-icon-flatten"><i class="fa-solid fa-box-open" aria-hidden="true"></i></span>
+            <h4>Flatten Boxes &amp; Bundle</h4>
+            <p>
               Break down corrugated shipping cardboard flat to optimize vehicle bed capacity. Bundle neatly or place in
               a reusable bin.
             </p>
-          </div>
+            <span class="prep-note"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Keep bundles compact</span>
+          </article>
 
-          <div class="card reveal reveal-delay-2">
-            <div
-              style="width:48px;height:48px;border-radius:var(--radius-full);background:var(--color-mint);color:var(--color-emerald);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.25rem;margin-bottom:1rem;">
-              3
-            </div>
+          <article class="card card-hover prep-card reveal reveal-delay-2">
+            <span class="prep-step-pill">Step 03</span>
+            <span class="prep-icon prep-icon-curbside"><i class="fa-solid fa-truck-pickup" aria-hidden="true"></i></span>
             <h4>Place at Curbside or Porch</h4>
-            <p style="font-size:0.9rem;color:var(--text-muted);">
+            <p>
               Set containers out by 8:30 AM for morning slots or 12:30 PM for afternoon slots. Our driver will scan the
               tag and weigh on site.
             </p>
-          </div>
+            <span class="prep-note"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Driver weighs on site</span>
+          </article>
         </div>
       </div>
     </section>
@@ -622,37 +690,27 @@
     <!-- =========================================================================
          SECTION 5: DISPATCH GUARANTEE & SLA COMMITMENTS
          ========================================================================= -->
-    <section class="section section-forest">
-      <div class="container">
-        <div
-          style="display:grid;grid-template-columns:1fr;gap:2.5rem;align-items:center; @media(min-width:992px){grid-template-columns:1fr 1fr;}">
-          <div class="reveal">
-            <span class="section-tag" style="background:rgba(182, 217, 87, 0.2);color:var(--color-lime);">Our
-              Guarantee</span>
-            <h2 style="color:#fff;margin-bottom:1rem;">The ReCycleHub Zero-Landfill Promise</h2>
-            <p style="color:rgba(250,252,248,0.85);font-size:1.05rem;line-height:1.7;">
-              We guarantee 100% transparent audit trails. If our drivers are delayed by more than 30 minutes outside
-              your chosen window, your pickup fee is fully credited and you receive 500 complimentary Eco-Reward points.
-            </p>
-          </div>
-          <div class="reveal reveal-delay-2" style="display:flex;gap:1.5rem;flex-wrap:wrap;">
-            <div
-              style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);padding:1.5rem;border-radius:var(--radius-lg);flex:1;min-width:200px;">
-              <i class="fa-solid fa-clock-rotate-left"
-                style="color:var(--color-lime);font-size:2rem;margin-bottom:0.75rem;"></i>
-              <h5 style="color:#fff;">On-Time SLA</h5>
-              <div style="font-size:0.85rem;color:rgba(255,255,255,0.7);">98.8% on-time window arrival rate across
-                24,000+ dispatches.</div>
-            </div>
-            <div
-              style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);padding:1.5rem;border-radius:var(--radius-lg);flex:1;min-width:200px;">
-              <i class="fa-solid fa-certificate"
-                style="color:var(--color-lime);font-size:2rem;margin-bottom:0.75rem;"></i>
-              <h5 style="color:#fff;">Audited Manifest</h5>
-              <div style="font-size:0.85rem;color:rgba(255,255,255,0.7);">Certified weight receipts written immediately
-                to your customer portal.</div>
-            </div>
-          </div>
+    <section class="section section-forest guarantee-section">
+      <div class="container text-center">
+        <span class="section-tag guarantee-tag"><i class="fa-solid fa-award" aria-hidden="true"></i> Our Guarantee</span>
+        <h2 class="guarantee-title">The ReCycleHub Zero-Landfill Promise</h2>
+        <p class="guarantee-desc">
+          We guarantee 100% transparent audit trails. If our drivers are delayed by more than 30 minutes outside your
+          chosen window, your pickup fee is fully credited and you receive 500 complimentary Eco-Reward points.
+        </p>
+
+        <div class="guarantee-grid">
+          <article class="guarantee-card reveal">
+            <span class="guarantee-icon"><i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i></span>
+            <h5>On-Time SLA</h5>
+            <p>98.8% on-time window arrival rate across 24,000+ dispatches.</p>
+          </article>
+
+          <article class="guarantee-card reveal reveal-delay-1">
+            <span class="guarantee-icon"><i class="fa-solid fa-certificate" aria-hidden="true"></i></span>
+            <h5>Audited Manifest</h5>
+            <p>Certified weight receipts written immediately to your customer portal.</p>
+          </article>
         </div>
       </div>
     </section>

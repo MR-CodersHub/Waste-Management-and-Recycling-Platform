@@ -171,132 +171,257 @@
     <!-- =========================================================================
          SECTION 2: FEATURED EDITORIAL SPOTLIGHT
          ========================================================================= -->
-    <section class="section" style="padding-top:4rem;padding-bottom:3rem;">
+    <section class="section blog-featured-section" id="featured-story">
       <div class="container">
-        <!-- Featured Big Card -->
-        <div class="card card-luxury reveal" style="padding:0;overflow:hidden;border-radius:var(--radius-xl);">
-          <div style="display:grid;grid-template-columns:1fr; @media(min-width:992px){grid-template-columns:1.2fr 1fr;}">
-            <div style="position:relative;min-height:360px;">
-              <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1200&q=80" alt="Robotic optical recycling conveyor" style="width:100%;height:100%;object-fit:cover;">
-              <span class="badge badge-emerald" style="position:absolute;top:20px;left:20px;">FEATURED ARTICLE</span>
+        <article class="card card-luxury blog-featured-card reveal">
+          <div class="blog-featured-layout">
+            <div class="blog-featured-media">
+              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80" alt="Engineer configuring automated sorting equipment in a technology lab">
+              <span class="blog-featured-badge">
+                <i class="fa-solid fa-star"></i> Featured Article
+              </span>
             </div>
-            <div style="padding:3rem 2.5rem;display:flex;flex-direction:column;justify-content:center;">
-              <div style="font-size:0.8rem;color:var(--text-muted);margin-bottom:0.5rem;">
-                <span>Technology & AI</span> • <span>November 10, 2026</span> • <span>6 min read</span>
+            <div class="blog-featured-content">
+              <div class="blog-featured-meta">
+                <span class="blog-category-pill">Technology &amp; AI</span>
+                <span><i class="fa-regular fa-calendar"></i> November 10, 2026</span>
+                <span><i class="fa-regular fa-clock"></i> 6 min read</span>
               </div>
-              <h2 style="font-size:1.85rem;margin-bottom:1rem;">
-                <a href="blog-details.html" style="color:var(--text-heading);">The Next Generation of AI-Driven Optical Material Sorting in Modern MRFs</a>
+              <h2 class="blog-featured-title">
+                <a href="blog-details.html?post=ai-optical-sorting-mrf">The Next Generation of AI-Driven Optical Material Sorting in Modern MRFs</a>
               </h2>
-              <p style="color:var(--text-muted);font-size:0.95rem;line-height:1.7;margin-bottom:1.5rem;">
+              <p class="blog-featured-excerpt">
                 How hyperspectral imaging combined with high-speed pneumatic ejectors achieves 99.4% sorting purity across complex composite post-consumer packaging.
               </p>
-              <div style="display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:1.5rem;border-top:1px solid var(--color-border);">
-                <div style="display:flex;align-items:center;gap:0.75rem;">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Dr. Evelyn Sterling" style="width:40px;height:40px;border-radius:50%;object-fit:cover;">
+              <div class="blog-featured-footer">
+                <div class="blog-featured-author">
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Dr. Evelyn Sterling" class="blog-author-avatar">
                   <div>
-                    <div style="font-weight:700;font-size:0.85rem;">Dr. Evelyn Sterling</div>
-                    <div style="font-size:0.75rem;color:var(--text-muted);">Head of Robotics</div>
+                    <div class="blog-author-name">Dr. Evelyn Sterling</div>
+                    <div class="blog-author-role">Head of Robotics</div>
                   </div>
                 </div>
-                <a href="blog-details.html" class="btn btn-primary btn-sm">Read Article</a>
+                <a href="blog-details.html?post=ai-optical-sorting-mrf" class="btn btn-primary btn-sm">Read Article <i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
-        </div>
-
+        </article>
       </div>
     </section>
 
     <!-- =========================================================================
-         SECTION 2: INTERACTIVE TOPIC FILTER TABS
+         SECTION 3: INSIGHTS LIBRARY (FILTERS + ARTICLE GRID)
          ========================================================================= -->
-    <section class="section section-alt" style="padding:2rem 0;">
+    <section class="section section-alt blog-library" aria-labelledby="blog-library-title">
       <div class="container">
-        <div class="filter-tabs" style="justify-content:center;margin-bottom:0;">
-          <button class="filter-btn active" onclick="filterBlogArticles('all')">All Articles (6)</button>
-          <button class="filter-btn" onclick="filterBlogArticles('Technology & AI')">AI & Tech</button>
-          <button class="filter-btn" onclick="filterBlogArticles('Circular Economy')">Circular Economy</button>
-          <button class="filter-btn" onclick="filterBlogArticles('E-Waste & Energy')">E-Waste & Batteries</button>
-          <button class="filter-btn" onclick="filterBlogArticles('Urban Organics')">Urban Composting</button>
+        <div class="section-header text-center reveal">
+          <span class="section-tag"><i class="fa-solid fa-layer-group"></i> Insights Library</span>
+          <h2 id="blog-library-title">Fresh Perspectives on Circular Progress</h2>
+          <p class="section-desc">Practical research, policy analysis, and field-tested playbooks from the people building circular systems.</p>
+        </div>
+
+        <div class="blog-filter-wrap reveal reveal-delay-1">
+          <div class="filter-tabs blog-filter-tabs" role="group" aria-label="Filter articles by topic">
+            <button class="filter-btn active" type="button" onclick="filterBlogArticles('all', this)" aria-pressed="true">All Articles (9)</button>
+            <button class="filter-btn" type="button" onclick="filterBlogArticles('Technology & AI', this)" aria-pressed="false">AI &amp; Tech (2)</button>
+            <button class="filter-btn" type="button" onclick="filterBlogArticles('Circular Economy', this)" aria-pressed="false">Circular Economy (3)</button>
+            <button class="filter-btn" type="button" onclick="filterBlogArticles('E-Waste & Batteries', this)" aria-pressed="false">E-Waste &amp; Batteries (2)</button>
+            <button class="filter-btn" type="button" onclick="filterBlogArticles('Urban Composting', this)" aria-pressed="false">Urban Composting (2)</button>
+          </div>
+        </div>
+
+        <div id="blogArticlesGrid" class="blog-grid">
+          <article class="card card-hover blog-card reveal" data-category="Technology & AI">
+            <div class="blog-card-media">
+              <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Engineer working beside a robotic arm in a technology lab" loading="lazy">
+            </div>
+            <div class="blog-card-meta">
+              <span class="blog-category-pill">Technology &amp; AI</span>
+              <span class="blog-card-date">Nov 14, 2026 &bull; 6 min read</span>
+            </div>
+            <h4 class="blog-card-title"><a href="blog-details.html?post=machine-vision-mrf-economics">Machine Vision Is Rewriting the Economics of MRF Sorting</a></h4>
+            <p class="blog-card-excerpt">Inside the low-latency vision models that spot composite contamination and divert it to the right bale, at speed.</p>
+            <div class="blog-card-footer">
+              <span class="blog-card-author"><i class="fa-regular fa-user"></i> Dr. Evelyn Sterling</span>
+              <a href="blog-details.html?post=machine-vision-mrf-economics" class="blog-card-link" aria-label="Read Machine Vision Is Rewriting the Economics of MRF Sorting">Read Story <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="card card-hover blog-card reveal reveal-delay-1" data-category="Circular Economy">
+            <div class="blog-card-media">
+              <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=600&q=80" alt="Seedling growing in dark soil" loading="lazy">
+            </div>
+            <div class="blog-card-meta">
+              <span class="blog-category-pill">Circular Economy</span>
+              <span class="blog-card-date">Nov 05, 2026 &bull; 8 min read</span>
+            </div>
+            <h4 class="blog-card-title"><a href="blog-details.html?post=net-zero-circular-supply-chains">Closing the Loop: Achieving Net-Zero Supply Chains</a></h4>
+            <p class="blog-card-excerpt">A practical blueprint for moving enterprise supply chains from linear disposal to verifiable zero-waste models.</p>
+            <div class="blog-card-footer">
+              <span class="blog-card-author"><i class="fa-regular fa-user"></i> Julian Mercer</span>
+              <a href="blog-details.html?post=net-zero-circular-supply-chains" class="blog-card-link" aria-label="Read Closing the Loop: Achieving Net-Zero Supply Chains">Read Story <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="card card-hover blog-card reveal reveal-delay-2" data-category="Technology & AI">
+            <div class="blog-card-media">
+              <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=600&q=80" alt="Modern city architecture viewed from below" loading="lazy">
+            </div>
+            <div class="blog-card-meta">
+              <span class="blog-category-pill">Technology &amp; AI</span>
+              <span class="blog-card-date">Nov 02, 2026 &bull; 7 min read</span>
+            </div>
+            <h4 class="blog-card-title"><a href="blog-details.html?post=digital-twins-recycling-flow">Digital Twins: Simulating a City&rsquo;s Entire Recycling Flow</a></h4>
+            <p class="blog-card-excerpt">How planners model real-time material flows to site depots, predict contamination spikes, and cut collection miles.</p>
+            <div class="blog-card-footer">
+              <span class="blog-card-author"><i class="fa-regular fa-user"></i> Priya Raman</span>
+              <a href="blog-details.html?post=digital-twins-recycling-flow" class="blog-card-link" aria-label="Read Digital Twins: Simulating a City's Entire Recycling Flow">Read Story <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="card card-hover blog-card reveal reveal-delay-3" data-category="E-Waste & Batteries">
+            <div class="blog-card-media">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80" alt="E-waste electronics circuit boards" loading="lazy">
+            </div>
+            <div class="blog-card-meta">
+              <span class="blog-category-pill">E-Waste &amp; Batteries</span>
+              <span class="blog-card-date">Oct 28, 2026 &bull; 5 min read</span>
+            </div>
+            <h4 class="blog-card-title"><a href="blog-details.html?post=lithium-battery-hydrometallurgy">Hydrometallurgical Breakthroughs in Lithium Battery Recovery</a></h4>
+            <p class="blog-card-excerpt">Recovering battery-grade nickel, cobalt, and lithium from mobility cells with 80% less energy than virgin mining.</p>
+            <div class="blog-card-footer">
+              <span class="blog-card-author"><i class="fa-regular fa-user"></i> Mateo Alvarez</span>
+              <a href="blog-details.html?post=lithium-battery-hydrometallurgy" class="blog-card-link" aria-label="Read Hydrometallurgical Breakthroughs in Lithium Battery Recovery">Read Story <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="card card-hover blog-card reveal reveal-delay-4" data-category="Circular Economy">
+            <div class="blog-card-media">
+              <img src="https://images.unsplash.com/photo-1604187351574-c75ca79f5807?auto=format&fit=crop&w=600&q=80" alt="Blue recycling bin with a white recycling symbol" loading="lazy">
+            </div>
+            <div class="blog-card-meta">
+              <span class="blog-category-pill">Circular Economy</span>
+              <span class="blog-card-date">Oct 24, 2026 &bull; 6 min read</span>
+            </div>
+            <h4 class="blog-card-title"><a href="blog-details.html?post=reuse-packaging-blue-bin">Beyond the Blue Bin: Designing Reuse Into Packaging</a></h4>
+            <p class="blog-card-excerpt">From deposit-return pilots to reverse logistics, here is how brands make reusable packaging work at national scale.</p>
+            <div class="blog-card-footer">
+              <span class="blog-card-author"><i class="fa-regular fa-user"></i> Nadia Rahman</span>
+              <a href="blog-details.html?post=reuse-packaging-blue-bin" class="blog-card-link" aria-label="Read Beyond the Blue Bin: Designing Reuse Into Packaging">Read Story <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="card card-hover blog-card reveal" data-category="Urban Composting">
+            <div class="blog-card-media">
+              <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=600&q=80" alt="Dark compost, a scoop, and young seedlings in a garden" loading="lazy">
+            </div>
+            <div class="blog-card-meta">
+              <span class="blog-category-pill">Urban Composting</span>
+              <span class="blog-card-date">Oct 19, 2026 &bull; 7 min read</span>
+            </div>
+            <h4 class="blog-card-title"><a href="blog-details.html?post=micro-composting-high-density">Decentralized Micro-Composting in High-Density Cities</a></h4>
+            <p class="blog-card-excerpt">How localized commercial vermicomposting cuts landfill methane while supplying nutrients to rooftop farms.</p>
+            <div class="blog-card-footer">
+              <span class="blog-card-author"><i class="fa-regular fa-user"></i> Clara Sorensen</span>
+              <a href="blog-details.html?post=micro-composting-high-density" class="blog-card-link" aria-label="Read Decentralized Micro-Composting in High-Density Cities">Read Story <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="card card-hover blog-card reveal reveal-delay-1" data-category="Circular Economy">
+            <div class="blog-card-media">
+              <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=600&q=80" alt="Procurement team collaborating in a modern office" loading="lazy">
+            </div>
+            <div class="blog-card-meta">
+              <span class="blog-category-pill">Circular Economy</span>
+              <span class="blog-card-date">Oct 15, 2026 &bull; 5 min read</span>
+            </div>
+            <h4 class="blog-card-title"><a href="blog-details.html?post=recycled-content-procurement">Why Recycled Content Procurement Is Becoming a Board-Level Metric</a></h4>
+            <p class="blog-card-excerpt">Procurement teams are tying PCR resin contracts to Scope 3 reporting, supplier resilience, and product footprints.</p>
+            <div class="blog-card-footer">
+              <span class="blog-card-author"><i class="fa-regular fa-user"></i> Marcus Chen</span>
+              <a href="blog-details.html?post=recycled-content-procurement" class="blog-card-link" aria-label="Read Why Recycled Content Procurement Is Becoming a Board-Level Metric">Read Story <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="card card-hover blog-card reveal reveal-delay-2" data-category="E-Waste & Batteries">
+            <div class="blog-card-media">
+              <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=600&q=80" alt="Electric vehicle charging connector" loading="lazy">
+            </div>
+            <div class="blog-card-meta">
+              <span class="blog-category-pill">E-Waste &amp; Batteries</span>
+              <span class="blog-card-date">Oct 09, 2026 &bull; 7 min read</span>
+            </div>
+            <h4 class="blog-card-title"><a href="blog-details.html?post=second-life-ev-batteries">Second-Life EV Batteries Are Powering the Circular Grid</a></h4>
+            <p class="blog-card-excerpt">Retired mobility packs are graded, rebuilt, and redeployed as commercial storage&mdash;value without new mining.</p>
+            <div class="blog-card-footer">
+              <span class="blog-card-author"><i class="fa-regular fa-user"></i> Aisha Bello</span>
+              <a href="blog-details.html?post=second-life-ev-batteries" class="blog-card-link" aria-label="Read Second-Life EV Batteries Are Powering the Circular Grid">Read Story <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="card card-hover blog-card reveal reveal-delay-3" data-category="Urban Composting">
+            <div class="blog-card-media">
+              <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80" alt="Fresh produce displayed in a grocery market" loading="lazy">
+            </div>
+            <div class="blog-card-meta">
+              <span class="blog-category-pill">Urban Composting</span>
+              <span class="blog-card-date">Oct 03, 2026 &bull; 6 min read</span>
+            </div>
+            <h4 class="blog-card-title"><a href="blog-details.html?post=restaurant-food-waste-biogas">Turning Restaurant Food Waste into Biogas and Liquid Fertiliser</a></h4>
+            <p class="blog-card-excerpt">A practical look at anaerobic digestion systems that turn kitchen waste into biogas, power, and liquid fertiliser.</p>
+            <div class="blog-card-footer">
+              <span class="blog-card-author"><i class="fa-regular fa-user"></i> Daniel Okafor</span>
+              <a href="blog-details.html?post=restaurant-food-waste-biogas" class="blog-card-link" aria-label="Read Turning Restaurant Food Waste into Biogas and Liquid Fertiliser">Read Story <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- =========================================================================
-         SECTION 3: CURATED ARTICLES GRID
+         SECTION 4: CIRCULAR VOICES VIDEO PODCAST
          ========================================================================= -->
-    <section class="section">
+    <section class="section section-forest video-podcast-section" aria-labelledby="video-podcast-title">
       <div class="container">
-        <div id="blogArticlesGrid" style="display:grid;grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));gap:2rem;">
-          
-          <div class="card card-hover reveal" data-category="Circular Economy">
-            <div style="height:220px;border-radius:var(--radius-md);overflow:hidden;margin-bottom:1.25rem;">
-              <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=600&q=80" alt="Circular economy seedling" style="width:100%;height:100%;object-fit:cover;">
-            </div>
-            <div style="font-size:0.775rem;color:var(--text-muted);margin-bottom:0.5rem;">Circular Economy • Nov 05, 2026 • 8 min read</div>
-            <h4><a href="blog-details.html" style="color:var(--text-heading);">Closing the Loop: Achieving Net-Zero Supply Chains</a></h4>
-            <p style="font-size:0.875rem;color:var(--text-muted);margin-bottom:1.25rem;">A comprehensive blueprint for enterprise organizations transitioning from linear disposal to verifiable zero-waste models.</p>
-            <div style="display:flex;align-items:center;justify-content:space-between;padding-top:1rem;border-top:1px solid var(--color-border);">
-              <span style="font-size:0.8rem;font-weight:600;">Julian Mercer</span>
-              <a href="blog-details.html" class="btn btn-ghost btn-sm">Read Story <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="card card-hover reveal reveal-delay-1" data-category="E-Waste & Energy">
-            <div style="height:220px;border-radius:var(--radius-md);overflow:hidden;margin-bottom:1.25rem;">
-              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80" alt="E-waste electronics circuit boards" style="width:100%;height:100%;object-fit:cover;">
-            </div>
-            <div style="font-size:0.775rem;color:var(--text-muted);margin-bottom:0.5rem;">E-Waste & Energy • Oct 28, 2026 • 5 min read</div>
-            <h4><a href="blog-details.html" style="color:var(--text-heading);">Hydrometallurgical Breakthroughs in Lithium Battery Recovery</a></h4>
-            <p style="font-size:0.875rem;color:var(--text-muted);margin-bottom:1.25rem;">Extracting battery-grade nickel, cobalt, and lithium carbonate from electric mobility cells with 80% less energy than mining.</p>
-            <div style="display:flex;align-items:center;justify-content:space-between;padding-top:1rem;border-top:1px solid var(--color-border);">
-              <span style="font-size:0.8rem;font-weight:600;">Mateo Alvarez</span>
-              <a href="blog-details.html" class="btn btn-ghost btn-sm">Read Story <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="card card-hover reveal reveal-delay-2" data-category="Urban Organics">
-            <div style="height:220px;border-radius:var(--radius-md);overflow:hidden;margin-bottom:1.25rem;">
-              <img src="https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=600&q=80" alt="Compost and rich dark earth" style="width:100%;height:100%;object-fit:cover;">
-            </div>
-            <div style="font-size:0.775rem;color:var(--text-muted);margin-bottom:0.5rem;">Urban Organics • Oct 19, 2026 • 7 min read</div>
-            <h4><a href="blog-details.html" style="color:var(--text-heading);">Decentralized Micro-Composting in High-Density Cities</a></h4>
-            <p style="font-size:0.875rem;color:var(--text-muted);margin-bottom:1.25rem;">How localized commercial vermicomposting eliminates methane emissions from landfills while revitalizing local rooftop farms.</p>
-            <div style="display:flex;align-items:center;justify-content:space-between;padding-top:1rem;border-top:1px solid var(--color-border);">
-              <span style="font-size:0.8rem;font-weight:600;">Clara Sorensen</span>
-              <a href="blog-details.html" class="btn btn-ghost btn-sm">Read Story <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         SECTION 4: THOUGHT LEADERSHIP PODCAST SPOTLIGHT
-         ========================================================================= -->
-    <section class="section section-forest">
-      <div class="container">
-        <div style="display:grid;grid-template-columns:1fr;gap:3rem;align-items:center; @media(min-width:992px){grid-template-columns:1fr 1fr;}">
-          <div class="reveal">
-            <span class="section-tag" style="background:rgba(182, 217, 87, 0.2);color:var(--color-lime);">
-              <i class="fa-solid fa-podcast"></i> Circular Voices Podcast
+        <div class="video-podcast-grid">
+          <div class="video-podcast-content reveal">
+            <span class="section-tag">
+              <i class="fa-solid fa-video"></i> Video Podcast
             </span>
-            <h2 style="color:#fff;margin-bottom:1rem;">Episode #42: The True Economics of PCR Resin</h2>
-            <p style="color:rgba(250,252,248,0.85);font-size:1.05rem;line-height:1.7;margin-bottom:2rem;">
-              Join Dr. Evelyn Sterling and global consumer goods packaging directors as they unpack the regulatory mandates driving 50% minimum recycled plastic content laws across the EU and California.
+            <h2 id="video-podcast-title">Episode #42: Why Waste Segregation Is the First Step to Zero Waste</h2>
+            <p>
+              Watch this episode of Circular Voices as we trace what happens after waste leaves your bin&mdash;and why clean separation at source is the highest-leverage habit in the circular economy.
             </p>
-            <div style="display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;">
-              <button class="btn btn-lime btn-lg" onclick="showToast('Audio Playing', 'Streaming Circular Voices Episode #42...', 'info')">
-                <i class="fa-solid fa-play"></i> Listen to Episode (34 mins)
-              </button>
-              <span style="font-size:0.85rem;color:rgba(255,255,255,0.7);">Available on Spotify & Apple Podcasts</span>
+            <div class="video-podcast-topics">
+              <span><i class="fa-solid fa-check"></i> Source separation</span>
+              <span><i class="fa-solid fa-check"></i> Lower contamination</span>
+              <span><i class="fa-solid fa-check"></i> Higher recovery value</span>
+            </div>
+            <div class="video-podcast-actions">
+              <a href="https://youtu.be/0ZiD_Lb3Tm0?si=OXZY03kTAny36Cku" target="_blank" rel="noopener noreferrer" class="btn btn-lime btn-lg">
+                <i class="fa-brands fa-youtube"></i> Watch on YouTube
+              </a>
+              <span class="video-podcast-note">New video episodes every month</span>
             </div>
           </div>
 
           <div class="reveal reveal-delay-2">
-            <div style="position:relative;border-radius:var(--radius-xl);overflow:hidden;box-shadow:var(--shadow-xl);border:1px solid rgba(255,255,255,0.15);">
-              <img src="https://images.unsplash.com/photo-1582408921715-18e7806365c1?auto=format&fit=crop&w=1000&q=80" alt="Recycled cardboard bales ready for processing" style="width:100%;height:380px;object-fit:cover;">
+            <div class="video-podcast-card">
+              <div class="video-podcast-media">
+                <img src="https://i.ytimg.com/vi/0ZiD_Lb3Tm0/maxresdefault.jpg" alt="Video thumbnail for Why Waste Segregation Is Important" class="video-podcast-thumb">
+                <span class="video-podcast-label"><i class="fa-solid fa-video"></i> Video Podcast</span>
+                <button class="video-podcast-play" type="button" onclick="playPodcastVideo(this)" aria-label="Play the Circular Voices video podcast">
+                  <span class="video-play-icon"><i class="fa-solid fa-play"></i></span>
+                </button>
+                <span class="video-podcast-source"><i class="fa-brands fa-youtube"></i> YouTube</span>
+              </div>
+              <div class="video-podcast-meta">
+                <div>
+                  <span class="video-podcast-eyebrow">Now Streaming</span>
+                  <strong>Why Waste Segregation Is Important</strong>
+                </div>
+                <span class="video-podcast-badge"><i class="fa-solid fa-circle-play"></i> Full Video</span>
+              </div>
             </div>
           </div>
         </div>
@@ -306,55 +431,23 @@
     <!-- =========================================================================
          SECTION 5: WEEKLY ZERO-WASTE NEWSLETTER DIGEST
          ========================================================================= -->
-    <section class="section section-alt">
+    <section class="section section-alt" id="stay-ahead">
       <div class="container">
-        <div class="card card-luxury" style="padding:3rem 2.5rem;border-radius:var(--radius-xl);text-align:center;">
-          <div style="max-width:640px;margin:0 auto;" class="reveal">
+        <div class="card card-forest stay-ahead-card">
+          <div class="stay-ahead-inner reveal">
             <span class="section-tag"><i class="fa-solid fa-envelope-open-text"></i> Stay Ahead</span>
             <h2>Subscribe to The Zero-Waste Intelligence Digest</h2>
-            <p class="section-desc" style="margin-bottom:2rem;">
+            <p class="section-desc">
               Every Tuesday morning, we deliver actionable commodity scrap indices, circular design case studies, and municipal policy updates directly to your inbox.
             </p>
 
-            <form onsubmit="event.preventDefault(); showToast('Subscribed Successfully', 'You are now enrolled in the weekly Zero-Waste Digest.', 'success'); this.reset();" style="display:flex;gap:0.75rem;flex-wrap:wrap;justify-content:center;">
-              <input type="email" class="form-control" placeholder="Enter your work or personal email..." required style="max-width:380px;">
-              <button type="submit" class="btn btn-primary">Join 18,000+ Readers</button>
+            <form class="stay-ahead-form" onsubmit="event.preventDefault(); showToast('Subscribed Successfully', 'You are now enrolled in the weekly Zero-Waste Digest.', 'success'); this.reset();">
+              <input type="email" class="form-control" placeholder="Enter your work or personal email..." required aria-label="Email address">
+              <button type="submit" class="btn btn-lime">Join 18,000+ Readers</button>
             </form>
-            <div style="font-size:0.775rem;color:var(--text-muted);margin-top:0.75rem;">
+            <div class="stay-ahead-note">
               Strict zero-spam policy. Unsubscribe at any time with one click.
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         SECTION 6: ENVIRONMENTAL REGULATION GLOSSARY
-         ========================================================================= -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header text-center reveal">
-          <span class="section-tag"><i class="fa-solid fa-book"></i> Reference Index</span>
-          <h2>Key Sustainability Terminology</h2>
-          <p class="section-desc">Quick guide to the compliance standards referenced across our publications.</p>
-        </div>
-
-        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:1.5rem;">
-          <div class="card reveal">
-            <h5>PCR (Post-Consumer Resin)</h5>
-            <p style="font-size:0.85rem;color:var(--text-muted);margin:0;">Plastic material recovered from consumer waste packaging that has been cleaned, sorted, and remelted into new pellets.</p>
-          </div>
-          <div class="card reveal">
-            <h5>MRF (Material Recovery Facility)</h5>
-            <p style="font-size:0.85rem;color:var(--text-muted);margin:0;">A specialized high-throughput plant that sorts commingled recyclables into individual pure commodity bales for end mills.</p>
-          </div>
-          <div class="card reveal">
-            <h5>Scope 3 GHG Emissions</h5>
-            <p style="font-size:0.85rem;color:var(--text-muted);margin:0;">Indirect greenhouse gas emissions occurring across a company's upstream and downstream value chain, including waste disposal.</p>
-          </div>
-          <div class="card reveal">
-            <h5>Cullet</h5>
-            <p style="font-size:0.85rem;color:var(--text-muted);margin:0;">Crushed recycled glass ready to be remelted in furnace kilns, requiring 30% less energy than raw silica mineral batch.</p>
           </div>
         </div>
       </div>
@@ -448,18 +541,25 @@
   <script src="assets/js/data.js"></script>
   <script src="assets/js/main.js"></script>
   <script>
-    function filterBlogArticles(category) {
-      document.querySelectorAll('.filter-tabs .filter-btn').forEach(b => b.classList.remove('active'));
-      event.target.classList.add('active');
-
-      const cards = document.querySelectorAll('#blogArticlesGrid .card');
-      cards.forEach(card => {
-        if (category === 'all' || card.getAttribute('data-category') === category) {
-          card.style.display = 'flex';
-        } else {
-          card.style.display = 'none';
-        }
+    function filterBlogArticles(category, button) {
+      document.querySelectorAll('.blog-filter-tabs .filter-btn').forEach(btn => {
+        const isActive = btn === button;
+        btn.classList.toggle('active', isActive);
+        btn.setAttribute('aria-pressed', String(isActive));
       });
+
+      document.querySelectorAll('#blogArticlesGrid .blog-card').forEach(card => {
+        const isVisible = category === 'all' || card.getAttribute('data-category') === category;
+        card.style.display = isVisible ? 'flex' : 'none';
+      });
+    }
+
+    function playPodcastVideo(button) {
+      const media = button.closest('.video-podcast-media');
+      if (!media || media.querySelector('iframe')) return;
+
+      media.classList.add('is-playing');
+      media.innerHTML = '<iframe src="https://www.youtube.com/embed/0ZiD_Lb3Tm0?si=OXZY03kTAny36Cku&autoplay=1" title="Why Waste Segregation Is Important — Circular Voices Video Podcast" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
     }
   </script>
 </body>

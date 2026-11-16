@@ -145,214 +145,173 @@
 
   <main id="main-content">
     <!-- =========================================================================
-         SECTION 1: ARTICLE HERO (Cinematic Page Hero Banner)
+         SECTION 1: ARTICLE HERO (Dynamic Per Article)
          ========================================================================= -->
     <section class="page-hero" aria-label="Article Details">
       <img
         src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1920&q=85"
         alt="Automated optical sorting robotics in a materials recovery plant"
-        class="page-hero-bg">
+        class="page-hero-bg" id="articleHeroImage">
       <div class="page-hero-overlay"></div>
       <div class="page-hero-content reveal">
         <div class="page-hero-badge">
-          <i class="fa-solid fa-microchip"></i>
-          <span>Technology &amp; Robotics • 6 Min Read</span>
+          <i class="fa-solid fa-microchip" id="articleHeroIcon"></i>
+          <span id="articleHeroBadge">Technology &amp; AI • 6 Min Read</span>
         </div>
-        <h1 class="page-hero-title">
-          The Next Generation of AI-Driven <br>
-          <span class="page-hero-accent">Optical Sorters in Modern MRFs</span>
+        <h1 class="page-hero-title" id="articleHeroTitle">
+          The Next Generation of AI-Driven<br>
+          <span class="page-hero-accent">Optical Sorting in Modern MRFs</span>
         </h1>
-        <p class="page-hero-desc">
-          How hyperspectral imaging combined with high-speed pneumatic ejectors achieves 99.4% sorting purity across complex post-consumer packaging.
+        <p class="page-hero-desc" id="articleHeroDesc">
+          How hyperspectral imaging combined with high-speed pneumatic ejectors achieves 99.4% sorting purity across complex composite post-consumer packaging.
         </p>
       </div>
     </section>
 
-    <!-- =========================================================================
-         SECTION 2: EXECUTIVE SUMMARY & KEY TAKEAWAYS BOX
-         ========================================================================= -->
-    <section class="section" style="padding-top:0;padding-bottom:2rem;">
-      <div class="container" style="max-width:920px;">
-        <div style="background:var(--bg-surface-alt);border:1px solid var(--color-border);border-left:4px solid var(--color-emerald);border-radius:var(--radius-lg);padding:2rem;">
-          <h4 style="color:var(--color-forest);margin-bottom:1rem;display:flex;align-items:center;gap:0.5rem;">
-            <i class="fa-solid fa-bookmark"></i> Executive Summary & Key Findings
-          </h4>
-          <ul style="list-style:none;display:flex;flex-direction:column;gap:0.75rem;font-size:0.95rem;color:var(--text-body);">
-            <li><i class="fa-solid fa-check" style="color:var(--color-emerald);margin-right:0.5rem;"></i> <strong>Hyperspectral Leap:</strong> Modern optical sorters using 900–1700nm wavelengths differentiate high-density polyethylene (HDPE) from polypropylene (PP) at 4.2 meters per second conveyor speeds.</li>
-            <li><i class="fa-solid fa-check" style="color:var(--color-emerald);margin-right:0.5rem;"></i> <strong>Pneumatic Micro-Ejectors:</strong> 128 air nozzles operate with 4-millisecond trigger responses, segregating target polymers with 99.4% post-consumer purity.</li>
-            <li><i class="fa-solid fa-check" style="color:var(--color-emerald);margin-right:0.5rem;"></i> <strong>Economic Yield:</strong> Purity above 99% unlocks food-grade bottle-to-bottle pellet certification, doubling virgin resin replacement value.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    <div class="blog-detail-shell">
+      <div class="container">
+        <!-- Breadcrumb -->
+        <nav class="blog-detail-breadcrumb reveal" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          <a href="blog.html">Blog</a>
+          <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          <a href="blog.html" id="breadcrumbCategory">Technology &amp; AI</a>
+          <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          <span class="blog-detail-breadcrumb-current" id="breadcrumbTitle">The Next Generation of AI-Driven Optical Material Sorting in Modern MRFs</span>
+        </nav>
 
-    <!-- =========================================================================
-         SECTION 3: LONGFORM ARTICLE BODY & TECHNICAL INFOGRAPHIC
-         ========================================================================= -->
-    <section class="section" style="padding-top:1rem;padding-bottom:4rem;">
-      <div class="container" style="max-width:920px;">
-        <article style="font-size:1.1rem;line-height:1.8;color:var(--text-body);">
-          
-          <div style="border-radius:var(--radius-xl);overflow:hidden;margin-bottom:2.5rem;box-shadow:var(--shadow-lg);">
-            <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1200&q=80" alt="MRF Conveyor Optical Sorter" style="width:100%;height:440px;object-fit:cover;">
-          </div>
+        <!-- Article + Sidebar -->
+        <div class="blog-detail-grid">
+          <article class="blog-detail-main">
+            <figure class="blog-detail-figure">
+              <img id="articleCoverImage"
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1400&q=80"
+                alt="Automated optical sorting robotics in a materials recovery plant">
+              <figcaption id="articleCoverCaption">Automated optical sorting robotics in a materials recovery plant</figcaption>
+            </figure>
 
-          <p>
-            For decades, municipal recycling programs suffered from an endemic bottleneck: <em>the manual sorting line</em>. While human sorters possess remarkable situational intuition, human physical reaction times are fundamentally incompatible with municipal waste streams generated at 30 to 50 metric tons per hour.
-          </p>
+            <div class="blog-detail-byline">
+              <div class="blog-detail-byline-author">
+                <img id="articleBylineAvatar"
+                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=240&q=80"
+                  alt="Dr. Evelyn Sterling">
+                <div class="blog-detail-byline-copy">
+                  <span class="blog-detail-byline-name" id="articleBylineName">Dr. Evelyn Sterling</span>
+                  <span class="blog-detail-byline-role" id="articleBylineRole">Chief Technology Officer &amp; Head of Robotics</span>
+                </div>
+              </div>
 
-          <p>
-            The emergence of high-speed near-infrared (NIR) spectrometry paired with deep convolutional neural networks (CNNs) has transformed Material Recovery Facilities from dirty, labor-intensive scrap yards into robotic precision factories.
-          </p>
+              <div class="blog-detail-facts">
+                <span><i class="fa-regular fa-calendar" aria-hidden="true"></i> <span id="articleBylineDate">November 10, 2026</span></span>
+                <span><i class="fa-regular fa-clock" aria-hidden="true"></i> <span id="articleBylineRead">6 min read</span></span>
+                <span><i class="fa-solid fa-tag" aria-hidden="true"></i> <span id="articleBylineCategory">Technology &amp; AI</span></span>
+              </div>
 
-          <h3 style="margin:2.5rem 0 1rem;color:var(--text-heading);">The Physics of Hyperspectral Polymer Classification</h3>
-          <p>
-            Every common polymer possesses a distinct molecular absorption spectrum under near-infrared illumination. When a halogen or infrared LED array flashes over an unwashed PET bottle or HDPE detergent container, the light reflected to the InGaAs line-scan camera registers distinct carbon-hydrogen harmonic vibration dips.
-          </p>
+              <div class="blog-detail-share" aria-label="Share this article">
+                <span class="blog-detail-share-label">Share</span>
+                <a class="blog-detail-share-btn" id="shareTwitter" href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Share on X">
+                  <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                </a>
+                <a class="blog-detail-share-btn" id="shareLinkedIn" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">
+                  <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+                <a class="blog-detail-share-btn" id="shareFacebook" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook">
+                  <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                </a>
+                <button class="blog-detail-share-btn" id="shareCopyBtn" type="button" aria-label="Copy article link">
+                  <i class="fa-solid fa-link" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
 
-          <!-- Technical Table Comparison -->
-          <div class="table-responsive" style="margin:2rem 0;border:1px solid var(--color-border);border-radius:var(--radius-md);overflow:hidden;">
-            <table class="data-table">
-              <thead>
-                <tr>
-                  <th>Polymer Type</th>
-                  <th>Characteristic Absorption Band</th>
-                  <th>Optical Accuracy</th>
-                  <th>End-Use Circular Stream</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>PET (Type 1)</strong></td>
-                  <td>1,660 nm (Ester carbonyl overtone)</td>
-                  <td><span class="badge badge-emerald">99.7%</span></td>
-                  <td>Bottle-to-bottle food grade flake</td>
-                </tr>
-                <tr>
-                  <td><strong>HDPE (Type 2)</strong></td>
-                  <td>1,215 nm &amp; 1,730 nm (Methylene stretch)</td>
-                  <td><span class="badge badge-emerald">99.2%</span></td>
-                  <td>Corrugated drainage pipes & bottles</td>
-                </tr>
-                <tr>
-                  <td><strong>PP (Type 5)</strong></td>
-                  <td>1,195 nm (Methyl asymmetric peak)</td>
-                  <td><span class="badge badge-emerald">98.9%</span></td>
-                  <td>Automotive battery casings & totes</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <blockquote style="border-left:4px solid var(--color-lime);background:var(--bg-surface-alt);padding:1.5rem 2rem;border-radius:var(--radius-md);margin:2.5rem 0;font-style:italic;color:var(--text-heading);font-weight:600;">
-            "High-grade sorting is no longer a waste management issue; it is the raw material procurement tier for modern green manufacturing."
-          </blockquote>
-
-          <h3 style="margin:2.5rem 0 1rem;color:var(--text-heading);">Overcoming the 'Black Plastic' Conundrum</h3>
-          <p>
-            Historically, carbon black colorants absorbed the entire visible and infrared light spectrum, rendering black meat trays and take-out lids invisible to optical sensors. ReCycleHub has deployed Mid-Wave Infrared (MWIR) Raman scatter cameras that analyze molecular surface lattice vibrations, successfully identifying and segregating black polypropylene for the first time in municipal operations.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         SECTION 4: SCIENTIFIC AUTHOR PROFILE
-         ========================================================================= -->
-    <section class="section section-alt">
-      <div class="container" style="max-width:920px;">
-        <div class="card" style="padding:2.5rem;display:flex;flex-direction:row;gap:2rem;align-items:center;flex-wrap:wrap;">
-          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=240&q=80" alt="Dr. Evelyn Sterling" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid var(--color-emerald);">
-          <div style="flex:1;min-width:260px;">
-            <span class="badge badge-forest" style="margin-bottom:0.5rem;">Principal Author</span>
-            <h4 style="margin-bottom:0.25rem;">Dr. Evelyn Sterling</h4>
-            <div style="font-size:0.85rem;color:var(--color-emerald);font-weight:700;margin-bottom:0.75rem;">Chief Technology Officer & Head of Robotics, ReCycleHub</div>
-            <p style="font-size:0.9rem;color:var(--text-muted);margin:0;">
-              Dr. Sterling holds a Ph.D. in Mechanical Engineering from Stanford University. She has published over 30 peer-reviewed papers on industrial autonomous perception and computer vision for circular material lifecycles.
+            <p class="blog-detail-lead" id="articleLead">
+              How hyperspectral imaging combined with high-speed pneumatic ejectors achieves 99.4% sorting purity across complex composite post-consumer packaging.
             </p>
-          </div>
+
+            <div class="blog-detail-takeaways">
+              <h2><i class="fa-solid fa-bookmark" aria-hidden="true"></i> Executive Summary &amp; Key Findings</h2>
+              <ul id="articleTakeawaysList">
+                <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i><span><strong>Hyperspectral Leap:</strong> Modern optical sorters using 900–1700nm wavelengths differentiate HDPE from PP at 4.2 metres per second.</span></li>
+                <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i><span><strong>Pneumatic Micro-Ejectors:</strong> 128 air nozzles operate with 4-millisecond trigger responses for 99.4% purity.</span></li>
+                <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i><span><strong>Economic Yield:</strong> Purity above 99% unlocks food-grade bottle-to-bottle certification.</span></li>
+              </ul>
+            </div>
+
+            <div class="blog-detail-body" id="articleBody"></div>
+
+            <div class="blog-detail-tags" id="articleTags" aria-label="Article topics"></div>
+
+            <div class="blog-detail-author-card" id="articleAuthorCard"></div>
+          </article>
+
+          <aside class="blog-detail-sidebar reveal reveal-delay-1" aria-label="Article sidebar">
+            <div class="blog-detail-widget">
+              <h3><i class="fa-solid fa-list-ol" aria-hidden="true"></i> In This Article</h3>
+              <ol class="blog-detail-toc" id="articleToc"></ol>
+            </div>
+
+            <div class="blog-detail-widget blog-detail-cta">
+              <span class="section-tag"><i class="fa-solid fa-envelope-open-text" aria-hidden="true"></i> The Digest</span>
+              <h3>Zero-Waste Intelligence, Weekly</h3>
+              <p>Commodity scrap indices, circular design case studies, and policy updates every Tuesday.</p>
+              <form class="blog-detail-cta-form" onsubmit="event.preventDefault(); showToast('Subscribed Successfully', 'You are now enrolled in the weekly Zero-Waste Digest.', 'success'); this.reset();">
+                <input type="email" class="form-control" placeholder="Your email address" required aria-label="Email address">
+                <button type="submit" class="btn btn-lime btn-block btn-sm">Subscribe</button>
+              </form>
+            </div>
+
+            <div class="blog-detail-widget">
+              <h3><i class="fa-solid fa-newspaper" aria-hidden="true"></i> More Insights</h3>
+              <div class="blog-detail-mini-list" id="sidebarArticleList"></div>
+              <a href="blog.html" class="blog-detail-widget-link">View all articles <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </aside>
         </div>
-      </div>
-    </section>
 
-    <!-- =========================================================================
-         SECTION 5: RELATED ARTICLES GRID
-         ========================================================================= -->
-    <section class="section">
-      <div class="container" style="max-width:920px;">
-        <h3 style="margin-bottom:2rem;color:var(--text-heading);">Related Research & Case Studies</h3>
-        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:1.5rem;">
-          
-          <div class="card card-hover">
-            <span class="badge badge-forest" style="margin-bottom:0.5rem;">Supply Chains</span>
-            <h5><a href="blog-details.html" style="color:var(--text-heading);">Closing the Loop: Achieving Net-Zero Logistics</a></h5>
-            <p style="font-size:0.85rem;color:var(--text-muted);margin:0.5rem 0 1rem;">Blueprint for enterprise linear-to-circular transition.</p>
-            <a href="blog-details.html" class="btn btn-ghost btn-sm" style="padding-left:0;">Read Study &rarr;</a>
+        <!-- Related Articles -->
+        <section class="blog-detail-section" aria-labelledby="relatedArticlesTitle">
+          <div class="blog-detail-section-head">
+            <div>
+              <span class="section-tag"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Keep Reading</span>
+              <h2 id="relatedArticlesTitle">Related Research &amp; Case Studies</h2>
+            </div>
+            <a href="blog.html" class="btn btn-outline btn-sm">Explore All Articles <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
           </div>
+          <div class="blog-detail-related-grid" id="relatedArticlesGrid"></div>
+        </section>
 
-          <div class="card card-hover">
-            <span class="badge badge-emerald" style="margin-bottom:0.5rem;">Energy & E-Waste</span>
-            <h5><a href="blog-details.html" style="color:var(--text-heading);">Hydrometallurgical Lithium Cell Recovery</a></h5>
-            <p style="font-size:0.85rem;color:var(--text-muted);margin:0.5rem 0 1rem;">Extracting battery-grade nickel and cobalt sustainably.</p>
-            <a href="blog-details.html" class="btn btn-ghost btn-sm" style="padding-left:0;">Read Study &rarr;</a>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         SECTION 6: INTERACTIVE READER DISCUSSION & COMMENT SECTION
-         ========================================================================= -->
-    <section class="section section-alt">
-      <div class="container" style="max-width:920px;">
-        <div class="card card-luxury" style="padding:2.5rem;">
-          <h4 style="margin-bottom:1.5rem;display:flex;align-items:center;justify-content:space-between;">
-            <span>Community Discussion (3 Comments)</span>
-            <span class="badge badge-lime">Moderated Science Forum</span>
-          </h4>
-
-          <!-- Existing Comments List -->
-          <div id="commentsList" style="display:flex;flex-direction:column;gap:1.25rem;margin-bottom:2.5rem;">
-            
-            <div style="padding:1.25rem;background:var(--bg-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);">
-              <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.5rem;">
-                <strong>Marcus Vance (Route Lead)</strong>
-                <span style="font-size:0.75rem;color:var(--text-muted);">2 days ago</span>
+        <!-- Discussion -->
+        <section class="blog-detail-section" aria-labelledby="discussionTitle">
+          <div class="card card-luxury blog-detail-discussion">
+            <div class="blog-detail-discussion-head">
+              <div>
+                <span class="section-tag"><i class="fa-solid fa-comments" aria-hidden="true"></i> Community</span>
+                <h2 id="discussionTitle">Community Discussion</h2>
+                <p>Moderated science forum for verified practitioners.</p>
               </div>
-              <p style="font-size:0.9rem;color:var(--text-muted);margin:0;">
-                The NIR sorting has made a massive difference in route efficiency. Our truck unloads are verified in minutes at Hub 04.
-              </p>
+              <span class="badge badge-lime" id="commentCountBadge">2 Comments</span>
             </div>
 
-            <div style="padding:1.25rem;background:var(--bg-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);">
-              <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.5rem;">
-                <strong>Dr. Clara Sorensen</strong>
-                <span style="font-size:0.75rem;color:var(--text-muted);">Yesterday</span>
-              </div>
-              <p style="font-size:0.9rem;color:var(--text-muted);margin:0;">
-                Fascinating read on the MWIR Raman scatter sensors! We are testing similar optics to detect microplastics in municipal compost batches.
-              </p>
-            </div>
+            <div id="commentsList" class="blog-comment-list"></div>
 
+            <div class="blog-detail-comment-form-wrap">
+              <h3>Add to the Discussion</h3>
+              <form id="commentForm" onsubmit="event.preventDefault(); addComment();">
+                <div class="blog-detail-comment-fields">
+                  <input type="text" class="form-control" id="commentAuthor" placeholder="Your Name or Title" required>
+                  <input type="email" class="form-control" id="commentEmail" placeholder="Your Email Address" required>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" id="commentText" placeholder="Share your perspective, research citation, or technical inquiry..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-sm">Post Comment</button>
+              </form>
+            </div>
           </div>
-
-          <!-- Add Comment Form -->
-          <h5 style="margin-bottom:1rem;">Add to the Discussion</h5>
-          <form id="commentForm" onsubmit="event.preventDefault(); addComment();">
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem;">
-              <input type="text" class="form-control" id="commentAuthor" placeholder="Your Name or Title" required>
-              <input type="email" class="form-control" id="commentEmail" placeholder="Your Email Address" required>
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" id="commentText" placeholder="Share your perspective, research citation, or technical inquiry..." required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-sm">Post Comment</button>
-          </form>
-        </div>
+        </section>
       </div>
-    </section>
-
+    </div>
   </main>
 
   <footer class="main-footer">
@@ -440,27 +399,7 @@
 
   <script src="assets/js/data.js"></script>
   <script src="assets/js/main.js"></script>
-  <script>
-    function addComment() {
-      const author = document.getElementById('commentAuthor').value.trim();
-      const text = document.getElementById('commentText').value.trim();
-      if (!author || !text) return;
-
-      const commentBox = document.createElement('div');
-      commentBox.style.cssText = 'padding:1.25rem;background:var(--bg-surface);border:1px solid var(--color-emerald);border-radius:var(--radius-md);animation:fadeIn 0.3s;';
-      commentBox.innerHTML = `
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.5rem;">
-          <strong>${escapeHtml(author)}</strong>
-          <span class="badge badge-emerald">Just Now</span>
-        </div>
-        <p style="font-size:0.9rem;color:var(--text-body);margin:0;">${escapeHtml(text)}</p>
-      `;
-
-      document.getElementById('commentsList').appendChild(commentBox);
-      document.getElementById('commentForm').reset();
-      showToast('Comment Posted', 'Your technical inquiry has been submitted.', 'success');
-    }
-  </script>
+  <script src="assets/js/blog-details.js"></script>
 </body>
 </html>
 
