@@ -273,6 +273,10 @@ textarea {
   padding-right: 1.5rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .section {
   padding: 5rem 0;
   position: relative;

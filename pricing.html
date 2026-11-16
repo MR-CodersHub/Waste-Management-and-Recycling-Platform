@@ -176,27 +176,34 @@
     <!-- =========================================================================
          SECTION 2: 3-TIER PRICING CARDS
          ========================================================================= -->
-    <section class="section section-alt" style="padding-top:3.5rem;padding-bottom:4.5rem;">
+    <section class="section section-alt pricing-section">
       <div class="container">
 
+        <div class="section-header text-center reveal">
+          <span class="section-tag"><i class="fa-solid fa-layer-group"></i> Flexible Plans</span>
+          <h2>Simple Pricing for Every Scale</h2>
+          <p class="section-desc">
+            Start with curbside household collection or scale into enterprise logistics. Every plan includes verified
+            weights, transparent manifests, and zero hidden surcharges.
+          </p>
+        </div>
+
         <!-- Monthly / Annual Toggle Switch (Moved Outside Hero) -->
-        <div class="text-center" style="margin-bottom:3rem;">
-          <div
-            style="display:inline-flex;align-items:center;background:var(--bg-surface);border:1px solid var(--color-border);padding:0.45rem;border-radius:var(--radius-full);gap:0.5rem;box-shadow:var(--shadow-sm);">
+        <div class="billing-toggle-wrap text-center reveal reveal-delay-1">
+          <div class="billing-toggle">
             <button class="filter-btn active" id="btnMonthly" onclick="setBillingCycle('monthly')">Monthly Billing</button>
             <button class="filter-btn" id="btnAnnual" onclick="setBillingCycle('annual')">
               Annual Billing <span class="badge badge-lime" style="font-size:0.7rem;margin-left:0.3rem;">Save 20%</span>
             </button>
           </div>
         </div>
-        <div
-          style="display:grid;grid-template-columns:repeat(auto-fit, minmax(310px, 1fr));gap:2.5rem;align-items:stretch;">
+        <div class="pricing-grid">
 
           <!-- Tier 1: Residential EcoStarter -->
           <div class="pricing-card reveal">
-            <span class="badge badge-forest" style="align-self:flex-start;">Household & Apartments</span>
-            <h3 style="margin-top:0.75rem;">EcoStarter Residential</h3>
-            <p style="font-size:0.875rem;color:var(--text-muted);">
+            <span class="badge badge-forest">Household & Apartments</span>
+            <h3 class="pricing-card-title">EcoStarter Residential</h3>
+            <p class="pricing-card-desc">
               Ideal for eco-conscious urban residents and small family homes wanting clean curbside collection.
             </p>
 
@@ -204,7 +211,7 @@
               <span id="priceStarter">$29</span>
               <span class="pricing-period">/ month</span>
             </div>
-            <div style="font-size:0.75rem;color:var(--text-muted);" id="billingNoteStarter">Billed monthly • Cancel
+            <div class="pricing-billing-note" id="billingNoteStarter">Billed monthly • Cancel
               anytime</div>
 
             <ul class="pricing-features">
@@ -224,10 +231,10 @@
 
           <!-- Tier 2: GreenBusiness Pro (Popular) -->
           <div class="pricing-card popular reveal reveal-delay-1">
-            <span class="pricing-popular-badge">Most Popular for Offices</span>
-            <span class="badge badge-emerald" style="align-self:flex-start;">Commercial Offices</span>
-            <h3 style="margin-top:0.75rem;">GreenBusiness Pro</h3>
-            <p style="font-size:0.875rem;color:var(--text-muted);">
+            <span class="pricing-popular-badge">Most Popular</span>
+            <span class="badge badge-emerald">Commercial Offices</span>
+            <h3 class="pricing-card-title">GreenBusiness Pro</h3>
+            <p class="pricing-card-desc">
               For medium offices, retail stores, and cafes needing weekly scheduled sweeps and audited reports.
             </p>
 
@@ -235,7 +242,7 @@
               <span id="pricePro" style="color:var(--color-emerald);">$149</span>
               <span class="pricing-period">/ month</span>
             </div>
-            <div style="font-size:0.75rem;color:var(--color-muted);" id="billingNotePro">Billed monthly • Includes 2
+            <div class="pricing-billing-note" id="billingNotePro">Billed monthly • Includes 2
               rolling carts</div>
 
             <ul class="pricing-features">
@@ -255,9 +262,9 @@
 
           <!-- Tier 3: CircularEnterprise Custom -->
           <div class="pricing-card reveal reveal-delay-2">
-            <span class="badge badge-forest" style="align-self:flex-start;">Campuses & Industrial</span>
-            <h3 style="margin-top:0.75rem;">CircularEnterprise</h3>
-            <p style="font-size:0.875rem;color:var(--text-muted);">
+            <span class="badge badge-forest">Campuses & Industrial</span>
+            <h3 class="pricing-card-title">CircularEnterprise</h3>
+            <p class="pricing-card-desc">
               High-tonnage custom logistics for high-rises, distribution centers, and manufacturing plants.
             </p>
 
@@ -265,7 +272,7 @@
               <span id="priceEnterprise">$499</span>
               <span class="pricing-period">/ month start</span>
             </div>
-            <div style="font-size:0.75rem;color:var(--text-muted);">Custom tonnage & rebate share model</div>
+            <div class="pricing-billing-note">Custom tonnage & rebate share model</div>
 
             <ul class="pricing-features">
               <li><i class="fa-solid fa-check check"></i> <strong>Unlimited Dynamic IoT-Triggered Hauls</strong></li>
@@ -291,9 +298,8 @@
          ========================================================================= -->
     <section class="section">
       <div class="container">
-        <div class="card card-luxury" style="padding:2.5rem;max-width:920px;margin:0 auto;">
-          <div
-            style="display:grid;grid-template-columns:1fr;gap:2rem; @media(min-width:992px){grid-template-columns:1.2fr 1fr;}">
+        <div class="card card-luxury pricing-quoter">
+          <div class="quoter-layout">
 
             <div>
               <span class="section-tag"><i class="fa-solid fa-sliders"></i> Custom Quoter</span>
@@ -384,14 +390,24 @@
           </p>
         </div>
 
-        <div class="table-responsive card" style="padding:0;overflow:hidden;border-radius:var(--radius-xl);">
-          <table class="data-table">
+        <div class="pricing-table-wrap reveal reveal-delay-1" role="region"
+          aria-label="Detailed plan comparison table" tabindex="0">
+          <table class="pricing-table">
             <thead>
               <tr>
-                <th style="width:34%;">Feature / Capability</th>
-                <th style="width:22%;">EcoStarter ($29/mo)</th>
-                <th style="width:22%;">GreenBusiness Pro ($149/mo)</th>
-                <th style="width:22%;">CircularEnterprise (Custom)</th>
+                <th scope="col" style="width:34%;">Feature / Capability</th>
+                <th scope="col" style="width:22%;">
+                  <span class="plan-name">EcoStarter</span>
+                  <span class="plan-price" id="tablePriceStarter">$29 / mo</span>
+                </th>
+                <th scope="col" style="width:22%;">
+                  <span class="plan-name">GreenBusiness Pro</span>
+                  <span class="plan-price" id="tablePricePro">$149 / mo</span>
+                </th>
+                <th scope="col" style="width:22%;">
+                  <span class="plan-name">CircularEnterprise</span>
+                  <span class="plan-price">Custom SLA</span>
+                </th>
               </tr>
             </thead>
             <tbody>
@@ -446,6 +462,7 @@
             </tbody>
           </table>
         </div>
+        <p class="pricing-table-hint"><i class="fa-solid fa-arrows-left-right"></i> Swipe to compare all plans</p>
       </div>
     </section>
 
@@ -454,35 +471,32 @@
          ========================================================================= -->
     <section class="section">
       <div class="container">
-        <div
-          style="display:grid;grid-template-columns:1fr;gap:2.5rem;align-items:center; @media(min-width:992px){grid-template-columns:1.2fr 0.8fr;}">
-          <div class="reveal">
+        <div class="pledge-layout">
+          <div class="pledge-content reveal">
             <span class="section-tag" style="background:#FFE4E6;color:#E11D48;">Our Integrity Pledge</span>
             <h2>Zero Hidden Surcharges & Fair Contamination Policy</h2>
             <p class="section-desc">
               Traditional waste haulers hide fuel surcharges, environmental fees, and punitive contamination fines in
               fine print. At ReCycleHub, we treat you as a circular supply partner.
             </p>
-            <div style="display:flex;flex-direction:column;gap:1rem;margin-top:1.5rem;">
-              <div style="display:flex;gap:0.75rem;">
-                <i class="fa-solid fa-check" style="color:var(--color-emerald);font-size:1.2rem;margin-top:0.2rem;"></i>
+            <div class="pledge-points">
+              <div class="pledge-point">
+                <i class="fa-solid fa-check"></i>
                 <div>
                   <strong>Photo-Verified Guidance:</strong> If non-conforming items appear in your bin, our drivers snap
                   a photo and advise your team politely. We never assess punitive fines on first occurrences.
                 </div>
               </div>
-              <div style="display:flex;gap:0.75rem;">
-                <i class="fa-solid fa-check" style="color:var(--color-emerald);font-size:1.2rem;margin-top:0.2rem;"></i>
+              <div class="pledge-point">
+                <i class="fa-solid fa-check"></i>
                 <div>
                   <strong>Transparent True-Up Overages:</strong> If your monthly weight exceeds your tier allowance,
                   excess material is billed at the exact category commodity rate ($0.30 to $0.45/kg).
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="reveal reveal-delay-2">
-            <div class="card card-forest" style="padding:2rem;">
+            <div class="card card-forest pledge-guarantee">
               <h4 style="color:#fff;margin-bottom:0.75rem;">30-Day Risk-Free Guarantee</h4>
               <p style="color:rgba(255,255,255,0.85);font-size:0.9rem;margin-bottom:1.5rem;">
                 If ReCycleHub does not improve your building's diversion rate within 30 days of onboarding, cancel with
@@ -490,6 +504,13 @@
               </p>
               <a href="contact.html?audit=trial" class="btn btn-lime btn-sm">Start 30-Day Trial</a>
             </div>
+          </div>
+
+          <div class="pledge-media reveal reveal-delay-2">
+            <img
+              src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1000&q=80"
+              alt="Business partners shaking hands on a transparent circular economy agreement"
+              decoding="async">
           </div>
         </div>
       </div>
@@ -616,6 +637,8 @@
       document.getElementById('priceStarter').textContent = starter;
       document.getElementById('pricePro').textContent = pro;
       document.getElementById('priceEnterprise').textContent = enterprise;
+      document.getElementById('tablePriceStarter').textContent = `${starter} / mo`;
+      document.getElementById('tablePricePro').textContent = `${pro} / mo`;
 
       document.getElementById('billingNoteStarter').textContent = isAnnual ? 'Billed annually ($276/yr)' : 'Billed monthly • Cancel anytime';
       document.getElementById('billingNotePro').textContent = isAnnual ? 'Billed annually ($1,428/yr)' : 'Billed monthly • Includes 2 rolling carts';
