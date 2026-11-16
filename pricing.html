@@ -150,26 +150,26 @@
 
   <main id="main-content">
     <!-- =========================================================================
-         SECTION 1: PRICING HEADER WITH BILLING CYCLE TOGGLE
+         SECTION 1: PRICING HERO (Cinematic Page Hero Banner)
          ========================================================================= -->
-    <section class="section" style="padding-top:4.5rem;padding-bottom:3.5rem;">
-      <div class="container text-center reveal">
-        <span class="section-tag"><i class="fa-solid fa-tags"></i> Transparent Tiers</span>
-        <h1>Predictable, Value-Backed <span style="color:var(--color-emerald);">Circularity Pricing</span></h1>
-        <p class="section-desc" style="max-width:680px;margin:0 auto 2rem;">
-          No fuel surcharges. No municipal tipping fee penalties. Simple monthly subscriptions or pay-per-kilogram
-          on-demand dispatches.
-        </p>
-
-        <!-- Monthly / Annual Toggle Switch -->
-        <div
-          style="display:inline-flex;align-items:center;background:var(--bg-surface-alt);border:1px solid var(--color-border);padding:0.35rem;border-radius:var(--radius-full);gap:0.5rem;">
-          <button class="filter-btn active" id="btnMonthly" onclick="setBillingCycle('monthly')">Monthly
-            Billing</button>
-          <button class="filter-btn" id="btnAnnual" onclick="setBillingCycle('annual')">
-            Annual Billing <span class="badge badge-lime" style="font-size:0.7rem;margin-left:0.3rem;">Save 20%</span>
-          </button>
+    <section class="page-hero" aria-label="Transparent Circular Pricing">
+      <img
+        src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=85"
+        alt="Clean corporate high-rise architecture and audited enterprise sustainability"
+        class="page-hero-bg">
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content reveal">
+        <div class="page-hero-badge">
+          <i class="fa-solid fa-tags"></i>
+          <span>Transparent Circular Pricing</span>
         </div>
+        <h1 class="page-hero-title">
+          Predictable, Value-Backed <br>
+          <span class="page-hero-accent">Circularity Plans</span>
+        </h1>
+        <p class="page-hero-desc">
+          No fuel surcharges. No municipal tipping fee penalties. Simple monthly subscriptions or pay-per-kilogram on-demand dispatches.
+        </p>
       </div>
     </section>
 
@@ -178,6 +178,17 @@
          ========================================================================= -->
     <section class="section section-alt" style="padding-top:3.5rem;padding-bottom:4.5rem;">
       <div class="container">
+
+        <!-- Monthly / Annual Toggle Switch (Moved Outside Hero) -->
+        <div class="text-center" style="margin-bottom:3rem;">
+          <div
+            style="display:inline-flex;align-items:center;background:var(--bg-surface);border:1px solid var(--color-border);padding:0.45rem;border-radius:var(--radius-full);gap:0.5rem;box-shadow:var(--shadow-sm);">
+            <button class="filter-btn active" id="btnMonthly" onclick="setBillingCycle('monthly')">Monthly Billing</button>
+            <button class="filter-btn" id="btnAnnual" onclick="setBillingCycle('annual')">
+              Annual Billing <span class="badge badge-lime" style="font-size:0.7rem;margin-left:0.3rem;">Save 20%</span>
+            </button>
+          </div>
+        </div>
         <div
           style="display:grid;grid-template-columns:repeat(auto-fit, minmax(310px, 1fr));gap:2.5rem;align-items:stretch;">
 

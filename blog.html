@@ -145,18 +145,34 @@
 
   <main id="main-content">
     <!-- =========================================================================
-         SECTION 1: BLOG HERO & FEATURED EDITORIAL SPOTLIGHT
+         SECTION 1: BLOG HERO (Cinematic Page Hero Banner)
          ========================================================================= -->
-    <section class="section" style="padding-top:4.5rem;padding-bottom:3.5rem;">
-      <div class="container">
-        <div class="section-header text-center reveal">
-          <span class="section-tag"><i class="fa-solid fa-newspaper"></i> Thought Leadership</span>
-          <h1>Circular Economy & <span style="color:var(--color-emerald);">Waste Tech Insights</span></h1>
-          <p class="section-desc" style="max-width:680px;margin:0 auto;">
-            In-depth perspectives from our environmental scientists, robotic engineers, and sustainable supply chain leaders.
-          </p>
+    <section class="page-hero" aria-label="Circular Knowledge Hub">
+      <img
+        src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=85"
+        alt="Thought leadership and environmental research environment"
+        class="page-hero-bg">
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content reveal">
+        <div class="page-hero-badge">
+          <i class="fa-solid fa-newspaper"></i>
+          <span>Thought Leadership &amp; Engineering</span>
         </div>
+        <h1 class="page-hero-title">
+          Circular Economy &amp; <br>
+          <span class="page-hero-accent">Waste Tech Insights</span>
+        </h1>
+        <p class="page-hero-desc">
+          In-depth perspectives from our environmental scientists, robotic engineers, and sustainable supply chain leaders.
+        </p>
+      </div>
+    </section>
 
+    <!-- =========================================================================
+         SECTION 2: FEATURED EDITORIAL SPOTLIGHT
+         ========================================================================= -->
+    <section class="section" style="padding-top:4rem;padding-bottom:3rem;">
+      <div class="container">
         <!-- Featured Big Card -->
         <div class="card card-luxury reveal" style="padding:0;overflow:hidden;border-radius:var(--radius-xl);">
           <div style="display:grid;grid-template-columns:1fr; @media(min-width:992px){grid-template-columns:1.2fr 1fr;}">

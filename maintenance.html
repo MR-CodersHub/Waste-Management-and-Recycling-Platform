@@ -145,41 +145,50 @@
   <main id="main-content" style="flex:1;">
     
     <!-- =========================================================================
-         SECTION 1: STATUS HERO WITH LIVE COUNTDOWN TIMER
+         SECTION 1: STATUS HERO (Cinematic Page Hero Banner)
          ========================================================================= -->
-    <section class="section text-center" style="padding-top:4rem;padding-bottom:2.5rem;">
-      <div class="container">
-        <span class="section-tag" style="background:#DBEAFE;color:#1D4ED8;">
-          <i class="fa-solid fa-gears"></i> Upgrading Core Platform
-        </span>
-        <h1 style="margin:1rem 0;">Upgrading to AI Optical Telematics v4.2</h1>
-        <p class="section-desc" style="max-width:640px;margin:0 auto 2.5rem;">
+    <section class="page-hero" aria-label="Platform Maintenance">
+      <img
+        src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1920&q=85"
+        alt="Automated robotics and high-tech hardware systems"
+        class="page-hero-bg">
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content reveal">
+        <div class="page-hero-badge">
+          <i class="fa-solid fa-gears"></i>
+          <span>Core Telematics Upgrade</span>
+        </div>
+        <h1 class="page-hero-title">
+          Upgrading to AI Optical <br>
+          <span class="page-hero-accent">Telematics Engine v4.2</span>
+        </h1>
+        <p class="page-hero-desc">
           We are deploying our next-generation neural classification network. Web booking is paused for regular database indexing, but our electric trucks are operating normally.
         </p>
-
-        <!-- Live Countdown Timer -->
-        <div style="display:flex;align-items:center;justify-content:center;gap:1.5rem;flex-wrap:wrap;">
-          <div class="card" style="padding:1.5rem 2rem;min-width:110px;">
-            <div style="font-family:var(--font-heading);font-size:2.5rem;font-weight:800;color:var(--color-forest);" id="timerHours">01</div>
-            <div style="font-size:0.75rem;color:var(--text-muted);text-transform:uppercase;font-weight:700;">Hours</div>
-          </div>
-          <div class="card" style="padding:1.5rem 2rem;min-width:110px;">
-            <div style="font-family:var(--font-heading);font-size:2.5rem;font-weight:800;color:var(--color-emerald);" id="timerMinutes">42</div>
-            <div style="font-size:0.75rem;color:var(--text-muted);text-transform:uppercase;font-weight:700;">Minutes</div>
-          </div>
-          <div class="card" style="padding:1.5rem 2rem;min-width:110px;">
-            <div style="font-family:var(--font-heading);font-size:2.5rem;font-weight:800;color:var(--color-forest);" id="timerSeconds">38</div>
-            <div style="font-size:0.75rem;color:var(--text-muted);text-transform:uppercase;font-weight:700;">Seconds</div>
-          </div>
-        </div>
       </div>
     </section>
 
     <!-- =========================================================================
          SECTION 2: UPGRADE PROGRESS & SYSTEM CHANGELOG
          ========================================================================= -->
-    <section class="section section-alt" style="padding:3rem 0;">
+    <section class="section section-alt" style="padding:3.5rem 0;">
       <div class="container" style="max-width:760px;">
+
+        <!-- Live Countdown Timer (Moved Outside Hero) -->
+        <div style="display:flex;align-items:center;justify-content:center;gap:1.5rem;flex-wrap:wrap;margin-bottom:2.5rem;">
+          <div class="card" style="padding:1.25rem 1.75rem;min-width:110px;text-align:center;box-shadow:var(--shadow-md);">
+            <div style="font-family:var(--font-heading);font-size:2.25rem;font-weight:800;color:var(--color-forest);" id="timerHours">01</div>
+            <div style="font-size:0.75rem;color:var(--text-muted);text-transform:uppercase;font-weight:700;">Hours</div>
+          </div>
+          <div class="card" style="padding:1.25rem 1.75rem;min-width:110px;text-align:center;box-shadow:var(--shadow-md);">
+            <div style="font-family:var(--font-heading);font-size:2.25rem;font-weight:800;color:var(--color-emerald);" id="timerMinutes">42</div>
+            <div style="font-size:0.75rem;color:var(--text-muted);text-transform:uppercase;font-weight:700;">Minutes</div>
+          </div>
+          <div class="card" style="padding:1.25rem 1.75rem;min-width:110px;text-align:center;box-shadow:var(--shadow-md);">
+            <div style="font-family:var(--font-heading);font-size:2.25rem;font-weight:800;color:var(--color-forest);" id="timerSeconds">38</div>
+            <div style="font-size:0.75rem;color:var(--text-muted);text-transform:uppercase;font-weight:700;">Seconds</div>
+          </div>
+        </div>
         <div class="card card-luxury" style="padding:2rem;">
           <h4 style="margin-bottom:1rem;display:flex;align-items:center;justify-content:space-between;">
             <span>Upgrade Pipeline Status</span>

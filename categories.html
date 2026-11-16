@@ -145,24 +145,44 @@
 
   <main id="main-content">
     <!-- =========================================================================
-         SECTION 1: CATEGORY EXPLORER HERO & QUICK SEARCH
+         SECTION 1: CATEGORY EXPLORER HERO (Cinematic Page Hero Banner)
          ========================================================================= -->
-    <section class="section" style="padding-top:4.5rem;padding-bottom:3.5rem;">
-      <div class="container text-center reveal">
-        <span class="section-tag"><i class="fa-solid fa-layer-group"></i> Material Classification</span>
-        <h1>Mastering The 7 Primary <span style="color:var(--color-emerald);">Recycling Streams</span>.</h1>
-        <p class="section-desc" style="max-width:700px;margin-left:auto;margin-right:auto;margin-bottom:2.5rem;">
+    <section class="page-hero" aria-label="Recycling Categories Explorer">
+      <img
+        src="https://images.unsplash.com/photo-1604187351574-c75ca79f5807?auto=format&fit=crop&w=1920&q=85"
+        alt="Sorted raw materials and sustainable circular categories"
+        class="page-hero-bg">
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content reveal">
+        <div class="page-hero-badge">
+          <i class="fa-solid fa-layer-group"></i>
+          <span>Material Classification &amp; Guides</span>
+        </div>
+        <h1 class="page-hero-title">
+          Mastering The 7 Primary <br>
+          <span class="page-hero-accent">Recycling Streams</span>
+        </h1>
+        <p class="page-hero-desc">
           Accurate segregation at the source is the key to 99.4% circular purity. Learn what materials we accept, preparation steps, and commodity buyback rates.
         </p>
+      </div>
+    </section>
 
-        <div style="max-width:560px;margin:0 auto 2rem;">
+    <!-- =========================================================================
+         SEARCH & STREAM FILTER BAR (Moved Outside Hero)
+         ========================================================================= -->
+    <section class="stream-filter-section" style="background:var(--bg-surface);padding:2.5rem 0 1.5rem;border-bottom:1px solid var(--color-border);">
+      <div class="container text-center">
+        <!-- Live Instant Search Bar -->
+        <div style="width:100%;max-width:560px;margin:0 auto 1.5rem;">
           <div class="input-icon-group">
-            <i class="fa-solid fa-magnifying-glass input-icon"></i>
-            <input type="text" id="streamSearchInput" class="form-control" placeholder="Search any item (e.g. plastic bottle, battery, milk carton)..." oninput="filterStreamCards()">
+            <i class="fa-solid fa-magnifying-glass input-icon" style="color:var(--color-emerald);"></i>
+            <input type="text" id="streamSearchInput" class="form-control" placeholder="Search any item (e.g. plastic bottle, battery, milk carton)..." oninput="filterStreamCards()" style="background:var(--bg-surface-alt);border:1px solid var(--color-border);border-radius:var(--radius-full);padding-left:2.75rem;">
           </div>
         </div>
 
-        <div class="filter-tabs" style="justify-content:center;">
+        <!-- Filter tabs -->
+        <div class="filter-tabs" style="justify-content:center;margin:0;flex-wrap:wrap;">
           <button class="filter-btn active" onclick="filterByBadge('all')">All Streams (7)</button>
           <button class="filter-btn" onclick="filterByBadge('plastic')">Plastics</button>
           <button class="filter-btn" onclick="filterByBadge('paper')">Paper</button>

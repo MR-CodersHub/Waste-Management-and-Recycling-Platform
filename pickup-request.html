@@ -150,44 +150,54 @@
 
   <main id="main-content">
     <!-- =========================================================================
-         SECTION 1: BOOKING WIZARD HEADER & STEPPER
+         SECTION 1: BOOKING WIZARD HERO (Cinematic Page Hero Banner)
          ========================================================================= -->
-    <section class="section" style="padding-top:4rem;padding-bottom:1.5rem;">
-      <div class="container text-center reveal">
-        <span class="section-tag"><i class="fa-solid fa-truck-ramp-box"></i> Direct Depot Logistics</span>
-        <h1>Schedule Your <span style="color:var(--color-emerald);">Zero-Waste Pickup</span></h1>
-        <p class="section-desc" style="max-width:640px;margin:0 auto 2.5rem;">
-          Complete our 4-step dispatch form to reserve an electric vehicle collection slot and receive your verified
-          reference tracking ID.
-        </p>
-
-        <!-- Stepper Component -->
-        <div class="stepper-header" style="max-width:760px;margin:0 auto;">
-          <div class="step-item active">
-            <div class="step-bubble">1</div>
-            <div class="step-title">Stream & Tier</div>
-          </div>
-          <div class="step-item">
-            <div class="step-bubble">2</div>
-            <div class="step-title">Weight & Photo</div>
-          </div>
-          <div class="step-item">
-            <div class="step-bubble">3</div>
-            <div class="step-title">Slot & Address</div>
-          </div>
-          <div class="step-item">
-            <div class="step-bubble">4</div>
-            <div class="step-title">Review & Confirm</div>
-          </div>
+    <section class="page-hero" aria-label="Schedule Zero-Waste Pickup">
+      <img
+        src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1920&q=85"
+        alt="Modern zero-emission logistics dispatch fleet and waste collection vehicle"
+        class="page-hero-bg">
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content reveal">
+        <div class="page-hero-badge">
+          <i class="fa-solid fa-truck-ramp-box"></i>
+          <span>Direct Depot Logistics</span>
         </div>
+        <h1 class="page-hero-title">
+          Schedule On-Demand <br>
+          <span class="page-hero-accent">Zero-Waste Pickups</span>
+        </h1>
+        <p class="page-hero-desc">
+          Complete our 4-step dispatch form to reserve an electric vehicle collection slot and receive your verified reference tracking ID.
+        </p>
       </div>
     </section>
 
     <!-- =========================================================================
          SECTION 2: MAIN 4-STEP BOOKING ENGINE & FLOATING LIVE ESTIMATOR
          ========================================================================= -->
-    <section class="section" style="padding-top:1.5rem;padding-bottom:5rem;">
+    <section class="section" style="padding-top:3.5rem;padding-bottom:5rem;">
       <div class="container">
+
+        <!-- 4 Steps Booking Stepper (Moved Outside Hero) -->
+        <div class="stepper-header" style="max-width:760px;margin:0 auto 3rem;width:100%;">
+          <div class="step-item active">
+            <div class="step-bubble">1</div>
+            <div class="step-title">Stream &amp; Tier</div>
+          </div>
+          <div class="step-item">
+            <div class="step-bubble">2</div>
+            <div class="step-title">Weight &amp; Photo</div>
+          </div>
+          <div class="step-item">
+            <div class="step-bubble">3</div>
+            <div class="step-title">Slot &amp; Address</div>
+          </div>
+          <div class="step-item">
+            <div class="step-bubble">4</div>
+            <div class="step-title">Review &amp; Confirm</div>
+          </div>
+        </div>
         <div
           style="display:grid;grid-template-columns:1fr;gap:2.5rem;align-items:flex-start; @media(min-width:1024px){grid-template-columns:2.2fr 1.2fr;}">
 

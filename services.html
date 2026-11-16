@@ -150,27 +150,43 @@
 
   <main id="main-content">
     <!-- =========================================================================
-         SECTION 1: SERVICES HERO WITH CATEGORY FILTER TABS
+         SECTION 1: SERVICES HERO (Cinematic Page Hero Banner)
          ========================================================================= -->
-    <section class="section" style="padding-top:4.5rem;padding-bottom:3.5rem;">
-      <div class="container text-center reveal">
-        <span class="section-tag"><i class="fa-solid fa-recycle"></i> Comprehensive Circular Logistics</span>
-        <h1>Engineered Solutions for Every <span style="color:var(--color-emerald);">Waste Stream</span>.</h1>
-        <p class="section-desc" style="max-width:700px;margin-left:auto;margin-right:auto;margin-bottom:2.5rem;">
-          From urban households and multi-family residential communities to Fortune 500 corporate campuses and
-          industrial manufacturing complexes.
-        </p>
-
-        <!-- Interactive Quick Jump Filter Pills -->
-        <div class="filter-tabs" style="justify-content:center;">
-          <a href="#residential" class="filter-btn active">Residential Collection</a>
-          <a href="#commercial" class="filter-btn">Commercial & Office</a>
-          <a href="#industrial" class="filter-btn">Industrial & HazMat</a>
-          <a href="#events" class="filter-btn">Event Greening</a>
-          <a href="#solutionFinder" class="filter-btn">Interactive Solution Finder</a>
+    <section class="page-hero" aria-label="Circular Services Directory">
+      <img
+        src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1920&q=85"
+        alt="Advanced automated materials recovery facility and recycling logistics"
+        class="page-hero-bg">
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content reveal">
+        <div class="page-hero-badge">
+          <i class="fa-solid fa-truck-fast"></i>
+          <span>Comprehensive Circular Logistics</span>
         </div>
+        <h1 class="page-hero-title">
+          Engineered Solutions For Every <br>
+          <span class="page-hero-accent">Urban Waste Stream</span>
+        </h1>
+        <p class="page-hero-desc">
+          From urban residential communities and high-rise developments to Fortune 500 corporate campuses and industrial manufacturing complexes.
+        </p>
       </div>
     </section>
+
+    <!-- =========================================================================
+         SERVICES STREAM NAVIGATION (Moved Outside Hero)
+         ========================================================================= -->
+    <nav class="services-nav-bar" aria-label="Services Navigation" style="background:var(--bg-surface);border-bottom:1px solid var(--color-border);padding:1.5rem 0;">
+      <div class="container">
+        <div class="filter-tabs" style="justify-content:center;margin:0;flex-wrap:wrap;">
+          <a href="#residential" class="filter-btn active">Residential Collection</a>
+          <a href="#commercial" class="filter-btn">Commercial &amp; Office</a>
+          <a href="#industrial" class="filter-btn">Industrial &amp; HazMat</a>
+          <a href="#events" class="filter-btn">Event Greening</a>
+          <a href="#solutionFinder" class="filter-btn">Solution Finder</a>
+        </div>
+      </div>
+    </nav>
 
     <!-- =========================================================================
          SECTION 2: RESIDENTIAL ZERO-WASTE COLLECTION
