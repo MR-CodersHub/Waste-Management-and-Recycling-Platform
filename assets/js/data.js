@@ -120,6 +120,38 @@ const WASTE_CATEGORIES = [
     instructions: 'Store in original leakproof containers with clearly marked labels. Never mix differing chemical compounds.',
     image: 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=800&q=80',
     description: 'Strict regulatory neutralization, secure chemical reclamation, and certified industrial destruction.'
+  },
+  {
+    id: 'textile',
+    name: 'Textiles & Apparel',
+    shortName: 'Textile',
+    icon: 'fa-solid fa-shirt',
+    badgeClass: 'badge-textile',
+    color: '#BE185D',
+    bgColor: '#FCE7F3',
+    ratePerKg: 0.40,
+    co2PerKg: 2.6,
+    accepted: ['Clean clothing & footwear', 'Bed linens & towels', 'Curtains & upholstery fabric', 'Undamaged handbags & belts'],
+    rejected: ['Wet, mildewed or oily rags', 'Carpets & rubber mats', 'Single-use PPE', 'Mattresses & foam'],
+    instructions: 'Launder and fully dry all garments, bag by fiber type, and pair footwear securely with cable ties.',
+    image: 'https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=800&q=80',
+    description: 'Sorted by fiber and color, then resold, rewoven into new yarn, or shredded into insulation and wiping cloths.'
+  },
+  {
+    id: 'construction',
+    name: 'Construction & Demolition',
+    shortName: 'C&D',
+    icon: 'fa-solid fa-helmet-safety',
+    badgeClass: 'badge-construction',
+    color: '#C2410C',
+    bgColor: '#FFEDD5',
+    ratePerKg: 0.18,
+    co2PerKg: 1.6,
+    accepted: ['Clean concrete, brick & masonry', 'Untreated lumber & pallets', 'Scrap metal fixtures & rebar', 'Cardboard packaging from sites'],
+    rejected: ['Asbestos-containing materials', 'Lead-painted demolition debris', 'Contaminated drywall & insulation', 'Liquids, solvents & aerosols'],
+    instructions: 'Separate inert rubble, untreated wood, and metals on site; keep loads dry and never mix in hazardous coatings.',
+    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80',
+    description: 'Crushed rubble becomes recycled aggregate while clean timber is chipped for engineered board and biomass fuel.'
   }
 ];
 

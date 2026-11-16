@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>7 Recycling Categories & Waste Sorting Guide – ReCycleHub</title>
-  <meta name="description" content="Comprehensive sorting guide and accepted materials directory for Plastics, Paper, Glass, Metals, E-Waste, Organic Compost, and Hazardous Waste.">
+  <title>9 Recycling Categories & Waste Sorting Guide – ReCycleHub</title>
+  <meta name="description" content="Comprehensive sorting guide and accepted materials directory for Plastics, Paper, Glass, Metals, E-Waste, Organic Compost, Hazardous Waste, Textiles, and Construction Debris.">
   
   <!-- Favicon & Touch Icons -->
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
@@ -159,7 +159,7 @@
           <span>Material Classification &amp; Guides</span>
         </div>
         <h1 class="page-hero-title">
-          Mastering The 7 Primary <br>
+          Mastering The 9 Primary <br>
           <span class="page-hero-accent">Recycling Streams</span>
         </h1>
         <p class="page-hero-desc">
@@ -183,7 +183,7 @@
 
         <!-- Filter tabs -->
         <div class="filter-tabs" style="justify-content:center;margin:0;flex-wrap:wrap;">
-          <button class="filter-btn active" onclick="filterByBadge('all')">All Streams (7)</button>
+          <button class="filter-btn active" onclick="filterByBadge('all')">All Streams (9)</button>
           <button class="filter-btn" onclick="filterByBadge('plastic')">Plastics</button>
           <button class="filter-btn" onclick="filterByBadge('paper')">Paper</button>
           <button class="filter-btn" onclick="filterByBadge('glass')">Glass</button>
@@ -191,16 +191,18 @@
           <button class="filter-btn" onclick="filterByBadge('ewaste')">E-Waste</button>
           <button class="filter-btn" onclick="filterByBadge('organic')">Organics</button>
           <button class="filter-btn" onclick="filterByBadge('hazardous')">Hazardous</button>
+          <button class="filter-btn" onclick="filterByBadge('textile')">Textiles</button>
+          <button class="filter-btn" onclick="filterByBadge('construction')">Construction</button>
         </div>
       </div>
     </section>
 
     <!-- =========================================================================
-         SECTION 2: COMPLETE 7-STREAM DETAILED CARDS GRID
+         SECTION 2: COMPLETE 9-STREAM DETAILED CARDS GRID
          ========================================================================= -->
     <section class="section section-alt" style="padding-top:3rem;">
       <div class="container">
-        <div id="categoryCardsGrid" style="display:grid;grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));gap:2rem;">
+        <div id="categoryCardsGrid" class="category-stream-grid">
           <!-- Dynamically populated via data.js or server-rendered for SEO -->
         </div>
       </div>
@@ -262,43 +264,43 @@
           </p>
         </div>
 
-        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:2rem;">
-          
-          <div class="card card-forest reveal">
-            <div style="font-size:1.75rem;color:var(--color-lime);margin-bottom:0.75rem;"><i class="fa-solid fa-bottle-water"></i></div>
+        <div class="rebirth-grid">
+
+          <article class="card card-forest rebirth-card reveal">
+            <div class="rebirth-icon"><i class="fa-solid fa-bottle-water"></i></div>
             <h4>PET Beverage Bottles</h4>
-            <div style="font-size:0.85rem;color:var(--color-lime);font-weight:700;margin-bottom:0.5rem;">&rarr; High-Performance Fleece & New Bottles</div>
-            <p style="font-size:0.85rem;color:rgba(255,255,255,0.8);">
+            <p class="rebirth-outcome">&rarr; High-Performance Fleece &amp; New Bottles</p>
+            <p class="rebirth-copy">
               25 recycled PET bottles provide enough circular polyester yarn to spin an all-weather fleece jacket or be blow-molded into 100% PCR beverage containers.
             </p>
-          </div>
+          </article>
 
-          <div class="card card-forest reveal reveal-delay-1">
-            <div style="font-size:1.75rem;color:var(--color-lime);margin-bottom:0.75rem;"><i class="fa-solid fa-wine-bottle"></i></div>
+          <article class="card card-forest rebirth-card reveal reveal-delay-1">
+            <div class="rebirth-icon"><i class="fa-solid fa-wine-bottle"></i></div>
             <h4>Sorted Glass Cullet</h4>
-            <div style="font-size:0.85rem;color:var(--color-lime);font-weight:700;margin-bottom:0.5rem;">&rarr; Store Shelf Bottles in 30 Days</div>
-            <p style="font-size:0.85rem;color:rgba(255,255,255,0.8);">
+            <p class="rebirth-outcome">&rarr; Store Shelf Bottles in 30 Days</p>
+            <p class="rebirth-copy">
               Glass cullet melts at 300°C lower temperatures than raw silica sand, returning to grocery shelves as sparkling clean jars in under a month.
             </p>
-          </div>
+          </article>
 
-          <div class="card card-forest reveal reveal-delay-2">
-            <div style="font-size:1.75rem;color:var(--color-lime);margin-bottom:0.75rem;"><i class="fa-solid fa-box-open"></i></div>
+          <article class="card card-forest rebirth-card reveal reveal-delay-2">
+            <div class="rebirth-icon"><i class="fa-solid fa-box-open"></i></div>
             <h4>Corrugated Cardboard</h4>
-            <div style="font-size:0.85rem;color:var(--color-lime);font-weight:700;margin-bottom:0.5rem;">&rarr; 100% Recycled Packaging Boxes</div>
-            <p style="font-size:0.85rem;color:rgba(255,255,255,0.8);">
+            <p class="rebirth-outcome">&rarr; 100% Recycled Packaging Boxes</p>
+            <p class="rebirth-copy">
               Hydrapulped fibers are re-pressed up to 7 times into resilient e-commerce shipping boxes, saving 17 mature pine trees per metric ton.
             </p>
-          </div>
+          </article>
 
-          <div class="card card-forest reveal reveal-delay-3">
-            <div style="font-size:1.75rem;color:var(--color-lime);margin-bottom:0.75rem;"><i class="fa-solid fa-seedling"></i></div>
-            <h4>Kitchen & Yard Compost</h4>
-            <div style="font-size:0.85rem;color:var(--color-lime);font-weight:700;margin-bottom:0.5rem;">&rarr; OMRI-Certified Farm Soil & Biogas</div>
-            <p style="font-size:0.85rem;color:rgba(255,255,255,0.8);">
+          <article class="card card-forest rebirth-card reveal reveal-delay-3">
+            <div class="rebirth-icon"><i class="fa-solid fa-seedling"></i></div>
+            <h4>Kitchen &amp; Yard Compost</h4>
+            <p class="rebirth-outcome">&rarr; OMRI-Certified Farm Soil &amp; Biogas</p>
+            <p class="rebirth-copy">
               Aerobic digestors convert kitchen scraps into nutrient-dense organic humus for regional vineyards and capture methane for clean municipal grid power.
             </p>
-          </div>
+          </article>
 
         </div>
       </div>
@@ -315,31 +317,37 @@
           <p class="section-desc">Avoid these common errors that cause MRF equipment jams and landfill diversion failures.</p>
         </div>
 
-        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:1.5rem;">
-          <div class="card reveal">
-            <strong style="color:#EF4444;display:block;margin-bottom:0.25rem;">1. "Wish-Cycling" Non-Recyclables</strong>
-            <p style="font-size:0.85rem;color:var(--text-muted);margin:0;">Throwing items in the bin hoping they can be recycled (e.g. garden hoses, bowling balls, ceramic mugs) damages conveyor optical belts.</p>
-          </div>
-          <div class="card reveal">
-            <strong style="color:#EF4444;display:block;margin-bottom:0.25rem;">2. Plastic Bags in Curbside Bins</strong>
-            <p style="font-size:0.85rem;color:var(--text-muted);margin:0;">Thin films wrap around spinning mechanical sorting axles, requiring emergency plant shutdowns. Return them to retail collection points.</p>
-          </div>
-          <div class="card reveal">
-            <strong style="color:#EF4444;display:block;margin-bottom:0.25rem;">3. Wet or Soiled Food Containers</strong>
-            <p style="font-size:0.85rem;color:var(--text-muted);margin:0;">Peanut butter jars and unrinsed milk jugs ruin adjacent dry paper. Always give containers a quick 3-second cold rinse.</p>
-          </div>
-          <div class="card reveal">
-            <strong style="color:#EF4444;display:block;margin-bottom:0.25rem;">4. Loose Lithium-Ion Batteries in Trash</strong>
-            <p style="font-size:0.85rem;color:var(--text-muted);margin:0;">Crushed lithium batteries cause severe truck and facility fires. Always schedule dedicated hazardous or e-waste collection.</p>
-          </div>
-          <div class="card reveal">
-            <strong style="color:#EF4444;display:block;margin-bottom:0.25rem;">5. Pyrex, Mirrors & Light Bulbs with Bottles</strong>
-            <p style="font-size:0.85rem;color:var(--text-muted);margin:0;">Treated glass has a different melting point than container cullet and will create structural defects in recycled glass.</p>
-          </div>
-          <div class="card reveal">
-            <strong style="color:#EF4444;display:block;margin-bottom:0.25rem;">6. Black Plastic Food Trays</strong>
-            <p style="font-size:0.85rem;color:var(--text-muted);margin:0;">Carbon black pigment absorbs near-infrared optical light, blinding optical scanners. Clean and sort into our specialized polymer bin.</p>
-          </div>
+        <div class="pitfall-grid">
+          <article class="card pitfall-card reveal">
+            <div class="pitfall-icon"><i class="fa-solid fa-trash-can"></i></div>
+            <h4>1. "Wish-Cycling" Non-Recyclables</h4>
+            <p>Throwing items in the bin hoping they can be recycled (e.g. garden hoses, bowling balls, ceramic mugs) damages conveyor optical belts.</p>
+          </article>
+          <article class="card pitfall-card reveal">
+            <div class="pitfall-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+            <h4>2. Plastic Bags in Curbside Bins</h4>
+            <p>Thin films wrap around spinning mechanical sorting axles, requiring emergency plant shutdowns. Return them to retail collection points.</p>
+          </article>
+          <article class="card pitfall-card reveal">
+            <div class="pitfall-icon"><i class="fa-solid fa-droplet"></i></div>
+            <h4>3. Wet or Soiled Food Containers</h4>
+            <p>Peanut butter jars and unrinsed milk jugs ruin adjacent dry paper. Always give containers a quick 3-second cold rinse.</p>
+          </article>
+          <article class="card pitfall-card reveal">
+            <div class="pitfall-icon"><i class="fa-solid fa-battery-full"></i></div>
+            <h4>4. Loose Lithium-Ion Batteries in Trash</h4>
+            <p>Crushed lithium batteries cause severe truck and facility fires. Always schedule dedicated hazardous or e-waste collection.</p>
+          </article>
+          <article class="card pitfall-card reveal">
+            <div class="pitfall-icon"><i class="fa-solid fa-lightbulb"></i></div>
+            <h4>5. Pyrex, Mirrors &amp; Light Bulbs with Bottles</h4>
+            <p>Treated glass has a different melting point than container cullet and will create structural defects in recycled glass.</p>
+          </article>
+          <article class="card pitfall-card reveal">
+            <div class="pitfall-icon"><i class="fa-solid fa-box"></i></div>
+            <h4>6. Black Plastic Food Trays</h4>
+            <p>Carbon black pigment absorbs near-infrared optical light, blinding optical scanners. Clean and sort into our specialized polymer bin.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -349,19 +357,19 @@
          ========================================================================= -->
     <section class="section">
       <div class="container">
-        <div class="card card-luxury" style="padding:3rem 2.5rem;border-radius:var(--radius-xl);text-align:center;">
+        <div class="card card-forest" style="padding:3rem 2.5rem;border-radius:var(--radius-xl);text-align:center;">
           <div style="max-width:720px;margin:0 auto;" class="reveal">
-            <span class="section-tag"><i class="fa-solid fa-file-pdf"></i> Free Guide</span>
-            <h2>Get the Printable Office & Kitchen Sorting Poster</h2>
-            <p class="section-desc" style="margin-bottom:2rem;">
+            <span class="section-tag" style="background:rgba(182, 217, 87, 0.2);color:var(--color-lime);"><i class="fa-solid fa-file-pdf"></i> Free Guide</span>
+            <h2 style="color:#fff;">Get the Printable Office & Kitchen Sorting Poster</h2>
+            <p class="section-desc" style="color:rgba(250,252,248,0.85);margin-bottom:2rem;">
               Download our high-resolution, color-coded visual reference guide to pin on your breakroom wall or residential garage recycling station.
             </p>
 
             <div style="display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap;">
-              <button class="btn btn-primary btn-lg" onclick="showToast('Guide Downloaded', 'ReCycleHub 7-Stream Sorting Poster (PDF) downloaded.', 'success')">
+              <button class="btn btn-lime btn-lg" onclick="showToast('Guide Downloaded', 'ReCycleHub 9-Stream Sorting Poster (PDF) downloaded.', 'success')">
                 <i class="fa-solid fa-download"></i> Download Poster (High-Res PDF)
               </button>
-              <a href="pickup-request.html" class="btn btn-lime btn-lg">
+              <a href="pickup-request.html" class="btn btn-outline-white btn-lg">
                 <i class="fa-solid fa-truck-pickup"></i> Schedule Pickup Now
               </a>
             </div>
@@ -476,20 +484,20 @@
           <div class="category-body">
             <div class="category-rate-tag">$${cat.ratePerKg.toFixed(2)}/kg credit • ${cat.co2PerKg}x CO₂ offset</div>
             <h4>${cat.name}</h4>
-            <p>${cat.description}</p>
-            
-            <div style="margin-bottom:1rem;font-size:0.8rem;">
-              <strong style="color:var(--color-emerald);display:block;margin-bottom:0.25rem;"><i class="fa-solid fa-check"></i> Accepted Items:</strong>
-              <div style="color:var(--text-muted);">${cat.accepted.slice(0, 3).join(', ')}...</div>
+            <p class="category-summary">${cat.description}</p>
+
+            <div class="category-list category-list-accepted">
+              <strong><i class="fa-solid fa-check"></i> Accepted Items:</strong>
+              <div>${cat.accepted.slice(0, 3).join(', ')}...</div>
             </div>
 
-            <div style="margin-bottom:1.25rem;font-size:0.8rem;">
-              <strong style="color:#EF4444;display:block;margin-bottom:0.25rem;"><i class="fa-solid fa-xmark"></i> Rejected / Contaminants:</strong>
-              <div style="color:var(--text-muted);">${cat.rejected.slice(0, 2).join(', ')}...</div>
+            <div class="category-list category-list-rejected">
+              <strong><i class="fa-solid fa-xmark"></i> Rejected / Contaminants:</strong>
+              <div>${cat.rejected.slice(0, 2).join(', ')}...</div>
             </div>
 
             <div class="category-footer">
-              <span style="font-size:0.775rem;color:var(--text-muted);">
+              <span class="category-prep">
                 <i class="fa-solid fa-hand-holding-hand"></i> Prep: ${cat.instructions.slice(0, 32)}...
               </span>
               <a href="pickup-request.html?cat=${cat.id}" class="btn btn-outline btn-sm">Book Stream</a>
