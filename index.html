@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,600;1,700&family=Sora:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
 
   <!-- FontAwesome Icons -->
@@ -155,94 +155,128 @@
 
   <main id="main-content">
     <!-- =========================================================================
-         SECTION 1: HERO SHOWCASE (Eco-Tech Luxury with Live Metrics)
+         SECTION 1: HERO SHOWCASE (Eco-Tech Luxury 3-Slide Carousel)
          ========================================================================= -->
-    <section class="section"
-      style="padding-top:4rem;padding-bottom:5rem;background:radial-gradient(circle at 85% 20%, rgba(182, 217, 87, 0.12) 0%, transparent 60%);">
-      <div class="container">
-        <div
-          style="display:grid;grid-template-columns:1fr;gap:3.5rem;align-items:center; @media(min-width:1024px){grid-template-columns:1.15fr 0.85fr;}">
+    <section class="hero-slider-section" aria-label="Eco-Tech Highlights Slider">
+      <div class="hero-slider-wrapper">
 
-          <!-- Hero Text -->
-          <div class="reveal">
-            <span class="section-tag">
-              <i class="fa-solid fa-sparkles"></i> The Future of Urban Circularity
-            </span>
-            <h1 style="margin-bottom:1.25rem;">
-              Transforming Waste Into <span style="color:var(--color-emerald);">Verifiable High-Grade</span> Resources.
+        <!-- Slide 1 -->
+        <article class="hero-slide active" data-index="0">
+          <img
+            src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1920&q=85"
+            alt="Advanced optical sorting recycling facility"
+            class="hero-slide-bg"
+            loading="eager">
+          <div class="hero-slide-overlay"></div>
+          <div class="hero-slide-container">
+            <div class="hero-badge-pill">
+              <span class="badge-star">★</span>
+              <span>4.9/5 from 1,200+ Verified Communities</span>
+              <span class="badge-divider">•</span>
+              <span>Zero-Landfill Certified</span>
+            </div>
+            <h1 class="hero-slider-title">
+              Where Waste Becomes <em class="hero-accent">Pure Value</em> &amp; Cities Breathe Cleaner
             </h1>
-            <p class="section-desc" style="max-width:580px;margin-bottom:2rem;">
-              ReCycleHub unifies on-demand residential and commercial waste collection with AI optical sorting
-              facilities. Zero landfills. Real-time carbon offset accounting.
+            <p class="hero-slider-desc">
+              Science-backed, AI-driven material recovery that builds auditable trust between communities and recyclers — from everyday doorstep pickups to certified industrial processing.
             </p>
-
-            <div style="display:flex;align-items:center;flex-wrap:wrap;gap:1rem;margin-bottom:3rem;">
-              <a href="pickup-request.html" class="btn btn-lime btn-lg">
-                <i class="fa-solid fa-calendar-plus"></i> Schedule Free Pickup
+            <div class="hero-slider-actions">
+              <a href="pickup-request.html" class="btn-hero-primary">
+                <i class="fa-solid fa-calendar-check"></i>
+                <span>Schedule Free Pickup</span>
               </a>
-              <a href="#trackingSection" class="btn btn-outline btn-lg">
-                <i class="fa-solid fa-location-crosshairs"></i> Track Pickup
+              <a href="#trackingSection" class="btn-hero-glass">
+                <i class="fa-solid fa-location-crosshairs"></i>
+                <span>Track Live Dispatch</span>
               </a>
-            </div>
-
-            <!-- Trust Badges & Metrics -->
-            <div
-              style="display:grid;grid-template-columns:repeat(3, 1fr);gap:1.5rem;padding-top:2rem;border-top:1px solid var(--color-border);">
-              <div>
-                <div class="stat-counter" data-target="99.4"
-                  style="font-family:var(--font-heading);font-size:2rem;font-weight:800;color:var(--color-forest);">99.4
-                </div>
-                <div style="font-size:0.8rem;color:var(--text-muted);font-weight:600;">% Sort Purity</div>
-              </div>
-              <div>
-                <div class="stat-counter" data-target="18450"
-                  style="font-family:var(--font-heading);font-size:2rem;font-weight:800;color:var(--color-emerald);">
-                  18,450</div>
-                <div style="font-size:0.8rem;color:var(--text-muted);font-weight:600;">Tons Diverted</div>
-              </div>
-              <div>
-                <div class="stat-counter" data-target="100"
-                  style="font-family:var(--font-heading);font-size:2rem;font-weight:800;color:var(--color-forest);">100
-                </div>
-                <div style="font-size:0.8rem;color:var(--text-muted);font-weight:600;">% EV Logistics</div>
-              </div>
             </div>
           </div>
+        </article>
 
-          <!-- Hero Visual Card -->
-          <div class="reveal reveal-delay-2" style="position:relative;">
-            <div
-              style="position:relative;border-radius:var(--radius-xl);overflow:hidden;box-shadow:var(--shadow-xl);border:1px solid var(--color-border);">
-              <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1200&q=80"
-                alt="Clean modern recycling and material recovery center"
-                style="width:100%;height:480px;object-fit:cover;">
-
-              <!-- Floating Card 1: Carbon Saved -->
-              <div
-                style="position:absolute;bottom:20px;left:20px;background:var(--bg-surface-glass);backdrop-filter:blur(16px);border:1px solid var(--color-border);padding:1rem 1.25rem;border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);display:flex;align-items:center;gap:0.85rem;">
-                <div
-                  style="width:44px;height:44px;border-radius:var(--radius-md);background:var(--color-mint);color:var(--color-emerald);display:flex;align-items:center;justify-content:center;font-size:1.3rem;">
-                  <i class="fa-solid fa-leaf"></i>
-                </div>
-                <div>
-                  <div style="font-size:0.75rem;color:var(--text-muted);text-transform:uppercase;font-weight:700;">Daily
-                    Metric</div>
-                  <div
-                    style="font-family:var(--font-heading);font-size:1.1rem;font-weight:800;color:var(--text-heading);">
-                    42.8 Tons CO₂ Offset</div>
-                </div>
-              </div>
-
-              <!-- Floating Card 2: Fleet Status -->
-              <div
-                style="position:absolute;top:20px;right:20px;background:var(--color-forest-dark);color:#fff;border:1px solid rgba(255,255,255,0.15);padding:0.6rem 1.15rem;border-radius:var(--radius-full);display:flex;align-items:center;gap:0.5rem;font-size:0.825rem;font-weight:700;">
-                <span class="status-dot completed"></span>
-                <span>Electric Fleet Live</span>
-              </div>
+        <!-- Slide 2 -->
+        <article class="hero-slide" data-index="1">
+          <img
+            src="https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=1920&q=85"
+            alt="Zero emission electric collection fleet and automated sorting"
+            class="hero-slide-bg"
+            loading="lazy">
+          <div class="hero-slide-overlay"></div>
+          <div class="hero-slide-container">
+            <div class="hero-badge-pill">
+              <i class="fa-solid fa-bolt" style="color: var(--color-lime); font-size: 0.85rem;"></i>
+              <span>100% Zero-Emission Electric Fleet</span>
+              <span class="badge-divider">•</span>
+              <span>99.4% Optical MRF Purity</span>
+            </div>
+            <h2 class="hero-slider-title">
+              Smart Electric Fleet for a <em class="hero-accent">Zero-Landfill</em> Circular World
+            </h2>
+            <p class="hero-slider-desc">
+              Ultrasonic IoT-monitored smart bins and high-capacity electric compactor trucks operating daily across municipal zones with zero direct tailpipe emissions.
+            </p>
+            <div class="hero-slider-actions">
+              <a href="services.html" class="btn-hero-primary">
+                <i class="fa-solid fa-truck-fast"></i>
+                <span>Explore Fleet Logistics</span>
+              </a>
+              <a href="categories.html" class="btn-hero-glass">
+                <i class="fa-solid fa-recycle"></i>
+                <span>View 7 Recycling Streams</span>
+              </a>
             </div>
           </div>
+        </article>
 
-        </div>
+        <!-- Slide 3 -->
+        <article class="hero-slide" data-index="2">
+          <img
+            src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1920&q=85"
+            alt="Clean sustainable community and green circular economy"
+            class="hero-slide-bg"
+            loading="lazy">
+          <div class="hero-slide-overlay"></div>
+          <div class="hero-slide-container">
+            <div class="hero-badge-pill">
+              <i class="fa-solid fa-leaf" style="color: var(--color-lime); font-size: 0.85rem;"></i>
+              <span>18,450+ Tons Diverted from Landfills</span>
+              <span class="badge-divider">•</span>
+              <span>ISO 14001 Audited</span>
+            </div>
+            <h2 class="hero-slider-title">
+              Precision AI Sorting for an <em class="hero-accent">Audited Green</em> Future
+            </h2>
+            <p class="hero-slider-desc">
+              Empowering forward-thinking residents and enterprise organizations with instant digital chain-of-custody manifests, tangible eco-reward points, and Scope 3 ESG compliance.
+            </p>
+            <div class="hero-slider-actions">
+              <a href="pickup-request.html" class="btn-hero-primary">
+                <i class="fa-solid fa-bolt"></i>
+                <span>Book Enterprise Audit</span>
+              </a>
+              <a href="about.html" class="btn-hero-glass">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Audit Methodology</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Circular Navigation Arrow Buttons -->
+      <button type="button" class="hero-slider-nav hero-slider-prev" aria-label="Previous Slide">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button type="button" class="hero-slider-nav hero-slider-next" aria-label="Next Slide">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+
+      <!-- Bottom Pagination Indicators -->
+      <div class="hero-slider-dots" role="tablist" aria-label="Slider Pagination">
+        <button type="button" class="hero-slider-dot active" data-slide="0" role="tab" aria-selected="true" aria-label="Slide 1"></button>
+        <button type="button" class="hero-slider-dot" data-slide="1" role="tab" aria-selected="false" aria-label="Slide 2"></button>
+        <button type="button" class="hero-slider-dot" data-slide="2" role="tab" aria-selected="false" aria-label="Slide 3"></button>
       </div>
     </section>
 

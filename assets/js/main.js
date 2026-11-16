@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initAccordions();
   initCounters();
   initQuickPostalChecker();
+  initHeroSlider();
 });
 
 /* --- Theme Management (Light / Dark) --- */
@@ -422,4 +423,144 @@ function escapeHtml(str) {
 
 window.showToast = showToast;
 window.escapeHtml = escapeHtml;
+
+/* --- Hero Slider (3-Slide Showcase Carousel) --- */
+function initHeroSlider() {
+  const slider = document.querySelector('.hero-slider-section');
+  if (!slider) return;
+
+  const slides = slider.querySelectorAll('.hero-slide');
+  const dots = slider.querySelectorAll('.hero-slider-dot');
+  const prevBtn = slider.querySelector('.hero-slider-prev');
+  const nextBtn = slider.querySelector('.hero-slider-next');
+
+  if (!slides.length) return;
+
+  let currentSlide = 0;
+  let autoplayTimer = null;
+  const slideInterval = 6000;
+
+  function goToSlide(targetIndex) {
+    // Current slide deactivate
+    slides[currentSlide].classList.remove('active');
+    if (dots[currentSlide]) {
+      dots[currentSlide].classList.remove('active');
+      dots[currentSlide].setAttribute('aria-selected', 'false');
+    }
+
+    // New slide index with loop-around
+    currentSlide = (targetIndex + slides.length) % slides.length;
+
+    // New slide activate
+    slides[currentSlide].classList.add('active');
+    if (dots[currentSlide]) {
+      dots[currentSlide].classList.add('active');
+      dots[currentSlide].setAttribute('aria-selected', 'true');
+    }
+  }
+
+  function nextSlide() {
+    goToSlide(currentSlide + 1);
+  }
+
+  function prevSlide() {
+    goToSlide(currentSlide - 1);
+  }
+
+  function startAutoplay() {
+    stopAutoplay();
+    autoplayTimer = setInterval(nextSlide, slideInterval);
+  }
+
+  function stopAutoplay() {
+    if (autoplayTimer) {
+      clearInterval(autoplayTimer);
+      autoplayTimer = null;
+    }
+  }
+
+  // Next / Prev Button Controls
+  if (nextBtn) {
+    nextBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      nextSlide();
+      startAutoplay();
+    });
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      prevSlide();
+      startAutoplay();
+    });
+  }
+
+  // Dot Indicator Controls
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+      const slideIndex = parseInt(dot.getAttribute('data-slide'), 10);
+      if (!isNaN(slideIndex)) {
+        goToSlide(slideIndex);
+        startAutoplay();
+      }
+    });
+  });
+
+  // Pause on hover, resume on mouse leave
+  slider.addEventListener('mouseenter', stopAutoplay);
+  slider.addEventListener('mouseleave', startAutoplay);
+
+  // Keyboard navigation when slider is focused or on keydown
+  window.addEventListener('keydown', (e) => {
+    // Only if slider is in visible viewport
+    const rect = slider.getBoundingClientRect();
+    const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+    if (!isVisible) return;
+
+    if (e.key === 'ArrowRight') {
+      const isRtl = document.documentElement.getAttribute('dir') === 'rtl';
+      isRtl ? prevSlide() : nextSlide();
+      startAutoplay();
+    } else if (e.key === 'ArrowLeft') {
+      const isRtl = document.documentElement.getAttribute('dir') === 'rtl';
+      isRtl ? nextSlide() : prevSlide();
+      startAutoplay();
+    }
+  });
+
+  // Mobile Touch Swipe Handling
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  slider.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+
+  slider.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+  }, { passive: true });
+
+  function handleSwipe() {
+    const swipeThreshold = 50;
+    const diff = touchEndX - touchStartX;
+    const isRtl = document.documentElement.getAttribute('dir') === 'rtl';
+
+    if (Math.abs(diff) > swipeThreshold) {
+      if (diff < 0) {
+        // Swiped left
+        isRtl ? prevSlide() : nextSlide();
+      } else {
+        // Swiped right
+        isRtl ? nextSlide() : prevSlide();
+      }
+      startAutoplay();
+    }
+  }
+
+  // Initiate autoplay
+  startAutoplay();
+}
+
 

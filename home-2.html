@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,600;1,700&family=Sora:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
@@ -150,81 +150,82 @@
 
   <main id="main-content">
     <!-- =========================================================================
-         SECTION 1: ENTERPRISE & SMART CITY HERO
+         SECTION 1: ENTERPRISE & SMART CITY HERO (Split 2-Column Showcase)
          ========================================================================= -->
-    <section class="section section-forest"
-      style="padding-top:4.5rem;padding-bottom:5.5rem;background:linear-gradient(135deg, #0F3628 0%, #174D3A 100%);position:relative;overflow:hidden;">
-      <div class="container">
-        <div
-          style="display:grid;grid-template-columns:1fr;gap:3.5rem;align-items:center; @media(min-width:1024px){grid-template-columns:1.2fr 0.8fr;}">
+    <section class="home2-hero-section" aria-label="Smart City &amp; Enterprise Circular Logistics">
+      <div class="home2-hero-grid">
 
-          <div class="reveal">
-            <span class="section-tag" style="background:rgba(56, 189, 248, 0.2);color:#38BDF8;">
-              <i class="fa-solid fa-microchip"></i> Smart City Infrastructure
-            </span>
-            <h1 style="color:#fff;margin-bottom:1.25rem;">
-              Autonomous Zero-Waste Logistics For <span style="color:var(--color-lime);">Smart Metropolises</span>.
+        <!-- Left Column: Content Panel -->
+        <div class="home2-hero-content">
+          <div class="home2-hero-inner reveal">
+            <span class="home2-hero-tag">Smart City &amp; Enterprise Circularity</span>
+            <h1 class="home2-hero-title">
+              Every Enterprise Deserves a <em class="home2-hero-accent">Zero-Waste</em> Circular Future
             </h1>
-            <p style="color:rgba(250,252,248,0.85);font-size:1.15rem;margin-bottom:2.25rem;line-height:1.7;">
-              Powering high-density corporate towers, manufacturing parks, and municipal districts with ultrasonic IoT
-              smart bins, heavy electric compaction fleets, and automated ISO 14001 compliance reporting.
+            <p class="home2-hero-desc">
+              We combine AI optical sorting, IoT smart bin telematics, and heavy electric compaction fleets to build the auditable zero-landfill infrastructure your organization has always needed.
             </p>
 
-            <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:2.5rem;">
-              <a href="#simulatorSection" class="btn btn-lime btn-lg">
-                <i class="fa-solid fa-chart-line"></i> Calculate Corporate ROI
+            <div class="home2-hero-actions">
+              <a href="#simulatorSection" class="btn-home2-primary">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Calculate ROI</span>
               </a>
-              <a href="service-details.html" class="btn btn-outline-white btn-lg">
-                <i class="fa-solid fa-file-contract"></i> Explore Enterprise SLA
+              <a href="service-details.html" class="btn-home2-outline">
+                <i class="fa-solid fa-file-contract"></i>
+                <span>Our SLA Story</span>
               </a>
             </div>
 
-            <!-- Live IoT Fleet Sensor Simulation Ticker -->
-            <div
-              style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:var(--radius-lg);padding:1.25rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem;">
-              <div style="display:flex;align-items:center;gap:0.75rem;">
-                <span class="status-dot completed" style="box-shadow:0 0 10px #10B981;"></span>
-                <div>
-                  <div style="font-size:0.75rem;color:rgba(255,255,255,0.6);text-transform:uppercase;">Connected IoT
-                    Bins</div>
-                  <strong style="color:#fff;font-size:1.1rem;">12,480 Active Nodes</strong>
+            <!-- Bottom Stats Metric Strip matching reference image -->
+            <div class="home2-hero-stats">
+              <div class="home2-stat-item">
+                <div class="home2-stat-val">
+                  <span>4.9</span>
+                  <i class="fa-solid fa-star home2-stat-star"></i>
                 </div>
+                <div class="home2-stat-lbl">Average Rating</div>
               </div>
-              <div>
-                <div style="font-size:0.75rem;color:rgba(255,255,255,0.6);text-transform:uppercase;">Average Fill Level
+
+              <div class="home2-stat-item">
+                <div class="home2-stat-val">
+                  <span class="stat-counter" data-target="850">850</span>+
                 </div>
-                <strong style="color:var(--color-lime);font-size:1.1rem;">64.2% Optimal</strong>
+                <div class="home2-stat-lbl">5-Star Reviews</div>
               </div>
-              <div>
-                <div style="font-size:0.75rem;color:rgba(255,255,255,0.6);text-transform:uppercase;">Monthly Fleet Km
-                  Saved</div>
-                <strong style="color:#fff;font-size:1.1rem;">42,800 km</strong>
+
+              <div class="home2-stat-item">
+                <div class="home2-stat-val">100%</div>
+                <div class="home2-stat-lbl">Electric Fleet</div>
               </div>
             </div>
           </div>
-
-          <!-- Hero Image & Smart Telematics Card -->
-          <div class="reveal reveal-delay-2" style="position:relative;">
-            <div
-              style="border-radius:var(--radius-xl);overflow:hidden;border:1px solid rgba(255,255,255,0.15);box-shadow:var(--shadow-xl);">
-              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80"
-                alt="Modern green commercial skyscrapers and smart city architecture"
-                style="width:100%;height:460px;object-fit:cover;">
-            </div>
-
-            <div
-              style="position:absolute;bottom:-20px;right:-20px;background:var(--bg-surface);border:1px solid var(--color-border);padding:1.25rem 1.5rem;border-radius:var(--radius-lg);box-shadow:var(--shadow-xl);max-width:320px;">
-              <div style="display:flex;align-items:center;gap:0.65rem;margin-bottom:0.5rem;">
-                <i class="fa-solid fa-tower-broadcast" style="color:var(--color-emerald);font-size:1.2rem;"></i>
-                <strong style="font-size:0.9rem;color:var(--text-heading);">Smart Chute Telemetry</strong>
-              </div>
-              <p style="font-size:0.775rem;color:var(--text-muted);margin:0;">
-                Sector 4 Compactor chute reached 85% capacity. Dispatch order #RCH-89215 generated autonomously.
-              </p>
-            </div>
-          </div>
-
         </div>
+
+        <!-- Right Column: Edge-to-Edge Image with Floating Badge -->
+        <div class="home2-hero-media reveal reveal-delay-2">
+          <img
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=85"
+            alt="Futuristic sustainable commercial enterprise skyscraper and smart zero-emission city"
+            class="home2-hero-img">
+
+          <!-- Subtle Gradient Overlay for depth -->
+          <div class="home2-hero-media-overlay"></div>
+
+          <!-- Floating Badge Card matching reference image -->
+          <div class="home2-floating-badge">
+            <div class="floating-badge-number">2,400+</div>
+            <div class="floating-badge-label">Active Commercial Pickups</div>
+            <div class="floating-badge-stars" aria-label="5 Star Rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
