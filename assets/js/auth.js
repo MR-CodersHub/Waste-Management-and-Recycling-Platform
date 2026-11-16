@@ -127,12 +127,6 @@
         notify('Password Recovery', 'Password recovery is not connected in this frontend demo. Please contact support for help.', 'info');
       });
     }
-
-    document.querySelectorAll('[data-social-provider]').forEach(button => {
-      button.addEventListener('click', () => {
-        notify(`${button.dataset.socialProvider} Sign-In`, 'Social authentication is not connected in this frontend demo.', 'info');
-      });
-    });
   }
 
   function initRegistrationNotice() {
