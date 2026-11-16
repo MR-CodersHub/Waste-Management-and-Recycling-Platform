@@ -146,6 +146,13 @@ function initProfileMenu() {
   const toggleBtn = menu.querySelector('.profile-toggle-btn');
   if (!toggleBtn) return;
 
+  const links = Array.from(menu.querySelectorAll('.dropdown-link'));
+
+  const openMenu = () => {
+    menu.classList.add('open');
+    toggleBtn.setAttribute('aria-expanded', 'true');
+  };
+
   const closeMenu = () => {
     menu.classList.remove('open');
     toggleBtn.setAttribute('aria-expanded', 'false');
@@ -154,12 +161,58 @@ function initProfileMenu() {
   toggleBtn.addEventListener('click', (e) => {
     e.preventDefault();
     e.stopPropagation();
-    const isOpen = menu.classList.toggle('open');
-    toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    if (menu.classList.contains('open')) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
   });
 
-  menu.querySelectorAll('.dropdown-link').forEach(link => {
+  toggleBtn.addEventListener('keydown', (e) => {
+    if (e.key !== 'ArrowDown' && e.key !== 'ArrowUp') return;
+    if (!links.length) return;
+
+    e.preventDefault();
+    e.stopPropagation();
+    openMenu();
+    const target = e.key === 'ArrowDown' ? links[0] : links[links.length - 1];
+    target.focus();
+  });
+
+  menu.addEventListener('keydown', (e) => {
+    if (!links.length) return;
+
+    const currentIndex = links.indexOf(document.activeElement);
+
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      openMenu();
+      const nextIndex = currentIndex < 0 ? 0 : (currentIndex + 1) % links.length;
+      links[nextIndex].focus();
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      openMenu();
+      const previousIndex = currentIndex < 0 ? links.length - 1 : (currentIndex - 1 + links.length) % links.length;
+      links[previousIndex].focus();
+    } else if (e.key === 'Home') {
+      e.preventDefault();
+      openMenu();
+      links[0].focus();
+    } else if (e.key === 'End') {
+      e.preventDefault();
+      openMenu();
+      links[links.length - 1].focus();
+    }
+  });
+
+  links.forEach(link => {
     link.addEventListener('click', closeMenu);
+  });
+
+  menu.addEventListener('focusout', () => {
+    window.setTimeout(() => {
+      if (!menu.contains(document.activeElement)) closeMenu();
+    }, 0);
   });
 
   document.addEventListener('click', (e) => {
@@ -167,7 +220,10 @@ function initProfileMenu() {
   });
 
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeMenu();
+    if (e.key !== 'Escape') return;
+    const shouldReturnFocus = menu.contains(document.activeElement);
+    closeMenu();
+    if (shouldReturnFocus) toggleBtn.focus();
   });
 }
 

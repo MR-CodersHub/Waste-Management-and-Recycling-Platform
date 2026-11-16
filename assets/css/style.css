@@ -540,6 +540,7 @@ textarea {
   font-size: 0.925rem;
   color: var(--text-body);
   border-radius: var(--radius-sm);
+  white-space: nowrap;
   transition: all var(--transition-fast);
 }
 
@@ -570,7 +571,10 @@ textarea {
   opacity: 0;
   visibility: hidden;
   transform: translateY(10px);
-  transition: all var(--transition-fast);
+  transition:
+    opacity var(--transition-fast),
+    transform var(--transition-fast),
+    visibility 0s linear var(--transition-fast);
   z-index: 100;
 }
 
@@ -578,6 +582,7 @@ textarea {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+  transition-delay: 0s;
 }
 
 .dropdown-link {
@@ -688,18 +693,33 @@ textarea {
 }
 
 .header-actions .profile-menu:hover .dropdown-menu,
-.header-actions .profile-menu:focus-within .dropdown-menu,
 .header-actions .profile-menu.open .dropdown-menu {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+  transition-delay: 0s;
 }
 
 @media (max-width: 1279px) {
   .header-actions .theme-toggle-btn,
-  .header-actions .rtl-toggle-btn,
+  .header-actions .rtl-toggle-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 1079px) {
   .header-actions .profile-menu {
     display: none;
+  }
+}
+
+@media (min-width: 1080px) and (max-width: 1279px) {
+  .header-container {
+    gap: 1.25rem;
+  }
+
+  .nav-link {
+    padding-inline: 0.5rem;
   }
 }
 
