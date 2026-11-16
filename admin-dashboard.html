@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin EcoOps Control Tower – ReCycleHub</title>
+  <title>Admin Control Tower – ReCycleHub</title>
   <meta name="description" content="Central administrative dashboard for managing municipal waste collection requests, fleet dispatch, driver assignment, and circular recycling analytics.">
   
   <!-- Favicon & Touch Icons -->
@@ -22,126 +22,6 @@
 </head>
 <body class="dashboard-page">
 
-  <!-- Top Announcement Bar -->
-  <div class="topbar">
-    <div class="container topbar-content">
-      <div class="topbar-ticker">
-        <span class="topbar-badge">Live EcoOps</span>
-        <span>Electric fleet active across all metro sectors • 99.4% MRF optical sorting purity achieved today</span>
-      </div>
-      <div class="topbar-actions">
-        <a href="tel:1800732925" class="topbar-link">
-          <i class="fa-solid fa-phone"></i> <span>1-800-RECYCLE</span>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Main Navigation Header -->
-  <header class="main-header">
-    <div class="container header-container">
-      <a href="index.html" class="brand-logo" aria-label="ReCycleHub Homepage">
-        <div class="brand-icon">
-          <i class="fa-solid fa-recycle"></i>
-        </div>
-        <span>ReCycle<span class="accent">Hub</span></span>
-      </a>
-
-      <!-- Desktop Navigation Menu -->
-      <nav aria-label="Primary Navigation">
-        <ul class="nav-menu">
-          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="home-2.html" class="nav-link">Home 2</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-          <li class="nav-item"><a href="categories.html" class="nav-link">Categories</a></li>
-          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
-          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
-
-      <!-- Action Buttons -->
-      <div class="header-actions">
-        <button class="header-icon-btn theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
-          <i class="fa-solid fa-moon"></i>
-        </button>
-        <button class="header-icon-btn header-text-btn rtl-toggle-btn" title="Toggle RTL/LTR"
-          aria-label="Toggle Layout Direction">
-          <span class="rtl-toggle-label">RTL</span>
-        </button>
-        <div class="nav-item profile-menu">
-          <button class="header-icon-btn profile-toggle-btn" aria-label="Open Profile Menu" aria-haspopup="true"
-            aria-expanded="false">
-            <i class="fa-solid fa-user"></i>
-          </button>
-          <ul class="dropdown-menu profile-dropdown">
-            <li>
-              <a href="login.html" class="dropdown-link">
-                <div class="dropdown-icon"><i class="fa-solid fa-right-to-bracket"></i></div>
-                <span>Login/Signup</span>
-              </a>
-            </li>
-            <li>
-              <a href="user-dashboard.html" class="dropdown-link">
-                <div class="dropdown-icon"><i class="fa-solid fa-user"></i></div>
-                <span>Customer Dashboard</span>
-              </a>
-            </li>
-            <li>
-              <a href="admin-dashboard.html" class="dropdown-link">
-                <div class="dropdown-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                <span>Admin Dashboard</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <a href="pickup-request.html" class="btn btn-lime btn-sm header-cta-btn">
-          <i class="fa-solid fa-truck-pickup"></i> <span class="cta-label">Book Pickup</span>
-        </a>
-        <button class="mobile-toggle" aria-label="Open Mobile Menu">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <!-- Mobile Drawer Menu -->
-  <div class="drawer-backdrop"></div>
-  <aside class="mobile-drawer" aria-label="Mobile Navigation Drawer">
-    <div class="drawer-header">
-      <a href="index.html" class="brand-logo">
-        <div class="brand-icon"><i class="fa-solid fa-recycle"></i></div>
-        <span>ReCycle<span class="accent">Hub</span></span>
-      </a>
-      <button class="drawer-close" aria-label="Close Mobile Menu">&times;</button>
-    </div>
-    <ul class="drawer-nav">
-      <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-      <li><a href="home-2.html"><i class="fa-solid fa-city"></i> Home 2</a></li>
-      <li><a href="about.html"><i class="fa-solid fa-leaf"></i> About</a></li>
-      <li><a href="services.html"><i class="fa-solid fa-boxes-stacked"></i> Services</a></li>
-      <li><a href="categories.html"><i class="fa-solid fa-tags"></i> Categories</a></li>
-      <li><a href="pricing.html"><i class="fa-solid fa-tags"></i> Pricing</a></li>
-      <li><a href="blog.html"><i class="fa-solid fa-newspaper"></i> Blog</a></li>
-      <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
-      <li class="drawer-nav-divider" role="presentation"></li>
-      <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Login/Signup</a></li>
-      <li><a href="user-dashboard.html"><i class="fa-solid fa-user"></i> Customer Dashboard</a></li>
-      <li><a href="admin-dashboard.html"><i class="fa-solid fa-shield-halved"></i> Admin Dashboard</a></li>
-    </ul>
-    <div class="drawer-footer">
-      <div style="display:flex;gap:0.5rem;">
-        <button class="btn btn-outline btn-sm btn-block theme-toggle-btn" aria-label="Toggle Theme">
-          <i class="fa-solid fa-moon"></i>
-        </button>
-        <button class="btn btn-outline btn-sm btn-block rtl-toggle-btn" aria-label="Toggle Layout Direction">
-          <span class="rtl-toggle-label">RTL</span>
-        </button>
-      </div>
-      <a href="pickup-request.html" class="btn btn-lime btn-block">Book Pickup</a>
-    </div>
-  </aside>
 
   <div class="dashboard-wrapper">
     
@@ -150,35 +30,31 @@
       <div class="sidebar-header">
         <a href="index.html" class="sidebar-brand">
           <div class="brand-icon" style="width:36px;height:36px;font-size:1.1rem;"><i class="fa-solid fa-recycle"></i></div>
-          <span>Eco<span style="color:var(--color-lime);">Ops</span></span>
+          <span>ReCycleHub</span>
         </a>
-        <span class="sidebar-brand-badge">Admin</span>
       </div>
 
       <ul class="sidebar-nav">
         <li class="sidebar-heading">Dispatch Command</li>
         <li class="sidebar-item active">
-          <a href="#overview"><i class="fa-solid fa-gauge-high"></i> Overview & Metrics</a>
+          <a href="#overview" data-view-link="overview" data-page-title="Dispatch Control Tower"><i class="fa-solid fa-gauge-high"></i> Overview & Metrics</a>
         </li>
         <li class="sidebar-item">
-          <a href="#requestsTableSection"><i class="fa-solid fa-clipboard-list"></i> Customer Requests</a>
+          <a href="#requestsTableSection" data-view-link="requestsTableSection" data-page-title="Customer Requests"><i class="fa-solid fa-clipboard-list"></i> Customer Requests</a>
         </li>
         <li class="sidebar-item">
-          <a href="#calendarSection"><i class="fa-solid fa-calendar-days"></i> Route Calendar</a>
+          <a href="#calendarSection" data-view-link="calendarSection" data-page-title="Route Calendar"><i class="fa-solid fa-calendar-days"></i> Route Calendar</a>
         </li>
         <li class="sidebar-item">
-          <a href="#fleetSection"><i class="fa-solid fa-truck"></i> Fleet & Drivers</a>
+          <a href="#fleetSection" data-view-link="fleetSection" data-page-title="Fleet & Drivers"><i class="fa-solid fa-truck"></i> Fleet & Drivers</a>
         </li>
         
         <li class="sidebar-heading">Analytics & Compliance</li>
         <li class="sidebar-item">
-          <a href="#chartsSection"><i class="fa-solid fa-chart-pie"></i> Stream Analytics</a>
+          <a href="#chartsSection" data-view-link="chartsSection" data-page-title="Stream Analytics"><i class="fa-solid fa-chart-pie"></i> Stream Analytics</a>
         </li>
         <li class="sidebar-item">
-          <a href="#reportsSection"><i class="fa-solid fa-file-csv"></i> CSV Manifest Reports</a>
-        </li>
-        <li class="sidebar-item">
-          <a href="index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Website</a>
+          <a href="#reportsSection" data-view-link="reportsSection" data-page-title="CSV Manifest Reports"><i class="fa-solid fa-file-csv"></i> CSV Manifest Reports</a>
         </li>
       </ul>
 
@@ -187,10 +63,12 @@
           <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=120&q=80" alt="Admin Director">
           <div class="user-mini-info">
             <h6>Julian Mercer</h6>
-            <span>EcoOps Director</span>
+            <span>Admin Director</span>
           </div>
         </div>
-        <a href="login.html" title="Sign Out" style="color:rgba(255,255,255,0.6);"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+        <a href="login.html" class="dash-signout-btn" title="Sign Out">
+          <i class="fa-solid fa-arrow-right-from-bracket"></i> Sign Out
+        </a>
       </div>
     </aside>
 
@@ -209,28 +87,50 @@
         </div>
 
         <div class="dash-topbar-right">
-          <div class="input-icon-group dash-search-input" style="display:none; @media(min-width:768px){display:block;}">
+          <button class="dash-icon-btn theme-toggle-btn" type="button" title="Toggle Light/Dark Theme"
+            aria-label="Toggle Theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <button class="dash-icon-btn rtl-toggle-btn" type="button" title="Toggle RTL/LTR"
+            aria-label="Toggle Layout Direction">
+            <span class="rtl-toggle-label">RTL</span>
+          </button>
+
+          <div class="input-icon-group dash-search-input">
             <i class="fa-solid fa-magnifying-glass input-icon"></i>
             <input type="text" class="form-control" id="adminSearchInput" placeholder="Search ref, customer, address..." style="padding-top:0.5rem;padding-bottom:0.5rem;">
           </div>
 
           <button class="btn btn-outline btn-sm" id="btnExportCsv" title="Export Manifest Report">
-            <i class="fa-solid fa-download"></i> <span style="display:none; @media(min-width:640px){display:inline;}">Export CSV</span>
+            <i class="fa-solid fa-download"></i> <span class="dash-export-label">Export CSV</span>
           </button>
+
+          <span class="dash-role-badge dash-role-badge--admin">Admin</span>
         </div>
       </header>
 
       <div class="dashboard-body">
-        
+
+        <div class="dash-view is-active" data-view="overview">
+
+        <div class="dash-page-intro">
+          <div>
+            <span class="dash-eyebrow"><i class="fa-solid fa-gauge-high"></i> Dispatch control tower</span>
+            <h2>Operations Overview</h2>
+            <p>A live snapshot of collection demand, fleet allocation, and recovered material across all metro sectors.</p>
+          </div>
+          <span class="dash-intro-meta"><i class="fa-solid fa-clock"></i> Shift: 07:00 – 19:00</span>
+        </div>
+
         <!-- =========================================================================
-             SECTION 2: 5 KEY METRIC OVERVIEW CARDS
+             5 KEY METRIC OVERVIEW CARDS
              ========================================================================= -->
         <section id="adminOverviewMetrics" style="display:grid;grid-template-columns:repeat(auto-fit, minmax(210px, 1fr));gap:1.25rem;margin-bottom:2rem;">
           
           <div class="metric-card">
             <div class="metric-header">
               <span class="metric-label">TOTAL DISPATCH REQUESTS</span>
-              <div class="metric-icon-wrap" style="background:var(--color-mint);color:var(--color-forest);">
+              <div class="metric-icon-wrap metric-icon-wrap--mint">
                 <i class="fa-solid fa-boxes-packing"></i>
               </div>
             </div>
@@ -244,11 +144,11 @@
           <div class="metric-card">
             <div class="metric-header">
               <span class="metric-label">PENDING APPROVAL</span>
-              <div class="metric-icon-wrap" style="background:#FEF3C7;color:#D97706;">
+              <div class="metric-icon-wrap metric-icon-wrap--amber">
                 <i class="fa-solid fa-clock"></i>
               </div>
             </div>
-            <div class="metric-value" id="metricPending" style="color:#D97706;">1</div>
+            <div class="metric-value metric-value--amber" id="metricPending">1</div>
             <div class="metric-footer">
               <span style="color:var(--text-muted);">Awaiting route slot allocation</span>
             </div>
@@ -257,11 +157,11 @@
           <div class="metric-card">
             <div class="metric-header">
               <span class="metric-label">SCHEDULED / ASSIGNED</span>
-              <div class="metric-icon-wrap" style="background:#DBEAFE;color:#2563EB;">
+              <div class="metric-icon-wrap metric-icon-wrap--blue">
                 <i class="fa-solid fa-truck-fast"></i>
               </div>
             </div>
-            <div class="metric-value" id="metricScheduled" style="color:#2563EB;">2</div>
+            <div class="metric-value metric-value--blue" id="metricScheduled">2</div>
             <div class="metric-footer">
               <span style="color:var(--text-muted);">Electric fleet active on route</span>
             </div>
@@ -270,11 +170,11 @@
           <div class="metric-card">
             <div class="metric-header">
               <span class="metric-label">COMPLETED / RECOVERED</span>
-              <div class="metric-icon-wrap" style="background:#DCFCE7;color:#16A34A;">
+              <div class="metric-icon-wrap metric-icon-wrap--green">
                 <i class="fa-solid fa-circle-check"></i>
               </div>
             </div>
-            <div class="metric-value" id="metricCompleted" style="color:#16A34A;">3</div>
+            <div class="metric-value metric-value--green" id="metricCompleted">3</div>
             <div class="metric-footer">
               <span style="color:var(--text-muted);">Manifests authenticated</span>
             </div>
@@ -283,7 +183,7 @@
           <div class="metric-card">
             <div class="metric-header">
               <span class="metric-label">TOTAL DIVERTED (KG)</span>
-              <div class="metric-icon-wrap" style="background:var(--color-lime-soft);color:var(--color-forest-dark);">
+              <div class="metric-icon-wrap metric-icon-wrap--lime">
                 <i class="fa-solid fa-weight-hanging"></i>
               </div>
             </div>
@@ -295,9 +195,55 @@
 
         </section>
 
+        <div class="dash-info-grid">
+          <div class="dash-info-card">
+            <div class="dash-info-card__top">
+              <span class="dash-info-card__icon"><i class="fa-solid fa-truck-fast"></i></span>
+              <span class="badge badge-emerald">On route</span>
+            </div>
+            <span class="dash-info-card__value">2 / 3</span>
+            <h4>Electric fleet active</h4>
+            <p>Two of three collection vehicles are currently serving assigned routes.</p>
+          </div>
+          <div class="dash-info-card">
+            <div class="dash-info-card__top">
+              <span class="dash-info-card__icon"><i class="fa-solid fa-clock"></i></span>
+              <span class="badge badge-lime">Attention</span>
+            </div>
+            <span class="dash-info-card__value">1</span>
+            <h4>Awaiting approval</h4>
+            <p>One customer request is waiting for a route slot allocation.</p>
+          </div>
+          <div class="dash-info-card">
+            <div class="dash-info-card__top">
+              <span class="dash-info-card__icon"><i class="fa-solid fa-leaf"></i></span>
+              <span class="badge badge-emerald">Verified</span>
+            </div>
+            <span class="dash-info-card__value">1,035 kg</span>
+            <h4>CO₂ offset today</h4>
+            <p>Emissions avoided through electric collection and certified recovery.</p>
+          </div>
+        </div>
+
+        <div class="dash-note">
+          <i class="fa-solid fa-circle-info"></i>
+          <div><strong>Shift handover:</strong> all pending requests should be assigned before 18:00. Use <strong>Customer Requests</strong> to review the queue and <strong>Route Calendar</strong> to check remaining capacity.</div>
+        </div>
+        </div>
+
         <!-- =========================================================================
-             SECTION 3: INTERACTIVE VISUAL ANALYTICS CHARTS
+             STREAM ANALYTICS PAGE
              ========================================================================= -->
+        <div class="dash-view" data-view="chartsSection">
+        <div class="dash-page-intro">
+          <div>
+            <span class="dash-eyebrow"><i class="fa-solid fa-chart-pie"></i> Analytics</span>
+            <h2>Stream Analytics</h2>
+            <p>Track inbound volume trends and material mix across the nine recovery streams in real time.</p>
+          </div>
+          <span class="dash-intro-meta"><i class="fa-solid fa-rotate"></i> Synced with live manifests</span>
+        </div>
+
         <section id="chartsSection" class="charts-grid">
           
           <div class="chart-card">
@@ -327,9 +273,74 @@
 
         </section>
 
+        <div class="dash-info-grid">
+          <div class="dash-info-card">
+            <div class="dash-info-card__top">
+              <span class="dash-info-card__icon"><i class="fa-solid fa-arrow-trend-up"></i></span>
+              <span class="badge badge-emerald">+14%</span>
+            </div>
+            <h4>Weekly volume rising</h4>
+            <p>Saturday peak reached 780 kg, the highest inbound day in the current week.</p>
+          </div>
+          <div class="dash-info-card">
+            <div class="dash-info-card__top">
+              <span class="dash-info-card__icon"><i class="fa-solid fa-layer-group"></i></span>
+              <span class="badge badge-lime">Top stream</span>
+            </div>
+            <h4>Paper &amp; cardboard leads</h4>
+            <p>Recovered fibre is the largest single component of this week's intake.</p>
+          </div>
+          <div class="dash-info-card">
+            <div class="dash-info-card__top">
+              <span class="dash-info-card__icon"><i class="fa-solid fa-shield-halved"></i></span>
+              <span class="badge badge-emerald">Purity</span>
+            </div>
+            <h4>99.4% optical purity</h4>
+            <p>Sorting accuracy remains above the certified recovery threshold.</p>
+          </div>
+        </div>
+        </div>
+
         <!-- =========================================================================
-             SECTION 4: CUSTOMER PICKUP REQUEST MANAGEMENT DATA TABLE
+             CUSTOMER PICKUP REQUESTS PAGE
              ========================================================================= -->
+        <div class="dash-view" data-view="requestsTableSection">
+        <div class="dash-page-intro">
+          <div>
+            <span class="dash-eyebrow"><i class="fa-solid fa-clipboard-list"></i> Dispatch queue</span>
+            <h2>Customer Pickup Requests</h2>
+            <p>Approve new collections, assign routes, and monitor every request through to certified completion.</p>
+          </div>
+          <span class="dash-intro-meta"><i class="fa-solid fa-list-check"></i> 6 requests in queue</span>
+        </div>
+
+        <div class="dash-info-grid">
+          <div class="dash-info-card">
+            <div class="dash-info-card__top">
+              <span class="dash-info-card__icon"><i class="fa-solid fa-inbox"></i></span>
+            </div>
+            <span class="dash-info-card__value">1</span>
+            <h4>Pending approval</h4>
+            <p>Requests waiting for a route slot and driver assignment.</p>
+          </div>
+          <div class="dash-info-card">
+            <div class="dash-info-card__top">
+              <span class="dash-info-card__icon"><i class="fa-solid fa-truck-fast"></i></span>
+            </div>
+            <span class="dash-info-card__value">2</span>
+            <h4>Scheduled / assigned</h4>
+            <p>Collections already allocated to an electric fleet vehicle.</p>
+          </div>
+          <div class="dash-info-card">
+            <div class="dash-info-card__top">
+              <span class="dash-info-card__icon"><i class="fa-solid fa-circle-check"></i></span>
+            </div>
+            <span class="dash-info-card__value">3</span>
+            <h4>Completed</h4>
+            <p>Recoveries weighed, authenticated, and added to manifests.</p>
+          </div>
+        </div>
+
         <section id="requestsTableSection" class="table-card">
           <div class="table-header-bar">
             <div>
@@ -381,11 +392,22 @@
             </table>
           </div>
         </section>
+        </div>
 
         <!-- =========================================================================
-             SECTION 5: COLLECTION SCHEDULING CALENDAR & FLEET OVERVIEW
+             ROUTE CALENDAR PAGE
              ========================================================================= -->
-        <section id="calendarSection" style="display:grid;grid-template-columns:1fr;gap:1.5rem;margin-bottom:2rem; @media(min-width:1024px){grid-template-columns:1.5fr 1fr;}">
+        <div class="dash-view" data-view="calendarSection">
+        <div class="dash-page-intro">
+          <div>
+            <span class="dash-eyebrow"><i class="fa-solid fa-calendar-days"></i> Logistics schedule</span>
+            <h2>Route Calendar</h2>
+            <p>Plan collection slots across the month and see which days already have active pickups assigned.</p>
+          </div>
+          <span class="dash-intro-meta"><i class="fa-solid fa-calendar-day"></i> November 2026</span>
+        </div>
+
+        <section style="margin-bottom:2rem;">
           
           <div class="calendar-card">
             <div class="calendar-header">
@@ -437,7 +459,54 @@
             </div>
           </div>
 
-          <!-- Fleet Active Drivers Card -->
+        </section>
+
+        <div class="dash-note">
+          <i class="fa-solid fa-circle-info"></i>
+          <div><strong>Reading the calendar:</strong> a green dot marks a day with scheduled collections and the highlighted cell is today. Slots can be reassigned from the <strong>Customer Requests</strong> page without changing the calendar itself.</div>
+        </div>
+        </div>
+
+        <!-- =========================================================================
+             FLEET & DRIVERS PAGE
+             ========================================================================= -->
+        <div class="dash-view" data-view="fleetSection">
+        <div class="dash-page-intro">
+          <div>
+            <span class="dash-eyebrow"><i class="fa-solid fa-truck"></i> Fleet operations</span>
+            <h2>Fleet &amp; Drivers</h2>
+            <p>See which electric vehicles are on shift, their assigned sectors, and the number of active stops per driver.</p>
+          </div>
+          <span class="dash-intro-meta"><i class="fa-solid fa-bolt"></i> Zero-emission fleet</span>
+        </div>
+
+        <div class="dash-info-grid">
+          <div class="dash-info-card">
+            <div class="dash-info-card__top">
+              <span class="dash-info-card__icon"><i class="fa-solid fa-users"></i></span>
+            </div>
+            <span class="dash-info-card__value">3</span>
+            <h4>Drivers on shift</h4>
+            <p>Certified operators currently deployed across collection routes.</p>
+          </div>
+          <div class="dash-info-card">
+            <div class="dash-info-card__top">
+              <span class="dash-info-card__icon"><i class="fa-solid fa-route"></i></span>
+            </div>
+            <span class="dash-info-card__value">11</span>
+            <h4>Active stops</h4>
+            <p>Total pickup points assigned to drivers for the current shift.</p>
+          </div>
+          <div class="dash-info-card">
+            <div class="dash-info-card__top">
+              <span class="dash-info-card__icon"><i class="fa-solid fa-plug"></i></span>
+            </div>
+            <span class="dash-info-card__value">3</span>
+            <h4>Vehicles available</h4>
+            <p>Electric trucks and vans ready for dispatch or already on route.</p>
+          </div>
+        </div>
+
           <div class="card" id="fleetSection" style="padding:1.5rem;">
             <h5 style="margin-bottom:1rem;"><i class="fa-solid fa-truck-fast" style="color:var(--color-emerald);margin-right:0.5rem;"></i> Active Fleet Drivers</h5>
             <div style="display:flex;flex-direction:column;gap:0.85rem;font-size:0.85rem;">
@@ -468,12 +537,48 @@
 
             </div>
           </div>
-
-        </section>
+        </div>
 
         <!-- =========================================================================
-             SECTION 6: REPORTS & DEPOT CONTROLS
+             CSV MANIFEST REPORTS PAGE
              ========================================================================= -->
+        <div class="dash-view" data-view="reportsSection">
+        <div class="dash-page-intro">
+          <div>
+            <span class="dash-eyebrow"><i class="fa-solid fa-file-csv"></i> Compliance</span>
+            <h2>CSV Manifest Reports</h2>
+            <p>Export certified collection records for regulatory filings, internal audits, and client reporting.</p>
+          </div>
+          <span class="dash-intro-meta"><i class="fa-solid fa-shield-halved"></i> EPA / ISO 14001 ready</span>
+        </div>
+
+        <div class="dash-info-grid">
+          <div class="dash-info-card">
+            <div class="dash-info-card__top">
+              <span class="dash-info-card__icon"><i class="fa-solid fa-file-lines"></i></span>
+              <span class="badge badge-emerald">Included</span>
+            </div>
+            <h4>What's in the export</h4>
+            <p>Tracking references, client addresses, material streams, verified weights, and offsets.</p>
+          </div>
+          <div class="dash-info-card">
+            <div class="dash-info-card__top">
+              <span class="dash-info-card__icon"><i class="fa-solid fa-scale-balanced"></i></span>
+              <span class="badge badge-lime">Certified</span>
+            </div>
+            <h4>NTEP-scale verified</h4>
+            <p>Every weight is captured from calibrated scales and tied to a signed digital manifest.</p>
+          </div>
+          <div class="dash-info-card">
+            <div class="dash-info-card__top">
+              <span class="dash-info-card__icon"><i class="fa-solid fa-calendar-check"></i></span>
+              <span class="badge badge-emerald">Monthly</span>
+            </div>
+            <h4>Filing cadence</h4>
+            <p>Generate a consolidated report at month end or on demand for an individual client.</p>
+          </div>
+        </div>
+
         <section id="reportsSection" class="card" style="padding:2rem;">
           <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem;">
             <div>
@@ -493,90 +598,16 @@
           </div>
         </section>
 
+        <div class="dash-note">
+          <i class="fa-solid fa-circle-check"></i>
+          <div><strong>Ready to file.</strong> All completed collections this shift have verified weights and authenticated manifests. Review the queue in <strong>Customer Requests</strong> if any record still needs approval before export.</div>
+        </div>
+        </div>
+
       </div>
     </div>
   </div>
 
-  <footer class="main-footer">
-    <div class="container">
-      <div class="footer-top">
-        <!-- Column 1: Company -->
-        <div class="footer-col footer-brand">
-          <a href="index.html" class="brand-logo" aria-label="ReCycleHub Homepage">
-            <div class="brand-icon"><i class="fa-solid fa-recycle"></i></div>
-            <span>ReCycle<span class="accent">Hub</span></span>
-          </a>
-          <p>ReCycleHub is an eco-tech platform pioneering high-purity material recovery, zero-emission collection logistics, and circular enterprise accountability.</p>
-          <div class="footer-socials">
-<a href="https://www.instagram.com" class="social-icon-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
-<a href="https://www.facebook.com" class="social-icon-btn" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
-<a href="https://x.com" class="social-icon-btn" aria-label="X / Twitter" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
-<a href="https://www.youtube.com" class="social-icon-btn" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
-          </div>
-        </div>
-
-        <!-- Column 2: Quick Links -->
-        <div class="footer-col footer-col-links">
-          <h5>Quick Links</h5>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="home-2.html">Home 2</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="categories.html">Categories</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-
-        <!-- Column 3: Contact Us -->
-        <div class="footer-col">
-          <h5>Contact Us</h5>
-          <div class="contact-item">
-            <i class="fa-solid fa-location-dot"></i>
-            <div>
-              <div>450 Circular Blvd, Sector 9</div>
-              <div>San Francisco, CA 94107</div>
-            </div>
-          </div>
-          <div class="contact-item">
-            <i class="fa-solid fa-phone"></i>
-            <a href="tel:1800732925">1-800-RECYCLE (732-925)</a>
-          </div>
-          <div class="contact-item">
-            <i class="fa-solid fa-envelope"></i>
-            <a href="mailto:support@recyclehub.org">support@recyclehub.org</a>
-          </div>
-          <div class="contact-item">
-            <i class="fa-solid fa-clock"></i>
-            <div>Mon – Sun: 07:00 AM – 07:00 PM</div>
-          </div>
-        </div>
-
-        <!-- Column 4: Newsletter -->
-        <div class="footer-col">
-          <h5>Newsletter</h5>
-          <p class="newsletter-desc">Subscribe to receive the latest updates, news, offers, and circular economy insights.</p>
-          <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Subscribed', 'Thank you for joining our circular community!', 'success'); this.reset();">
-            <input type="email" class="form-control" placeholder="Enter your email address" required aria-label="Email address">
-            <button type="submit" class="btn btn-lime">Subscribe</button>
-          </form>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div class="footer-copyright">&copy; 2026 ReCycleHub Platform Inc. All rights reserved.</div>
-        <div class="footer-legal">
-          <a href="privacy-policy.html">Privacy Policy</a>
-          <span>|</span>
-          <a href="terms-conditions.html">Terms &amp; Conditions</a>
-          <span>|</span>
-          <a href="sitemap.html">Sitemap</a>
-        </div>
-      </div>
-    </div>
-  </footer>
 
   <script src="assets/js/data.js"></script>
   <script src="assets/js/charts.js"></script>

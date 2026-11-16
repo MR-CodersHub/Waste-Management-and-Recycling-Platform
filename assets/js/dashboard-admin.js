@@ -412,7 +412,9 @@ function initAdminDashboard() {
   }
 
   // 6. Draw Dashboard Charts
-  if (window.EcoCharts) {
+  window.refreshDashboardCharts = () => {
+    if (!window.EcoCharts) return;
+
     // Bar Chart
     window.EcoCharts.renderBarChart(
       'adminWeeklyChart',
@@ -428,9 +430,10 @@ function initAdminDashboard() {
       [28, 210, 42, 65, 145, 85],
       ['#0284C7', '#D97706', '#0D9488', '#475569', '#7C3AED', '#16A34A']
     );
-  }
+  };
 
   // Initial runs
+  window.refreshDashboardCharts();
   renderMetrics();
   renderTable();
 }

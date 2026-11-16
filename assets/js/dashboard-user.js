@@ -251,16 +251,19 @@ function initUserDashboard() {
   });
 
   // 6. Draw User Impact Chart
-  if (window.EcoCharts) {
+  window.refreshDashboardCharts = () => {
+    if (!window.EcoCharts) return;
+
     window.EcoCharts.renderLineChart(
       'userImpactTrendChart',
       ['Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov'],
       [14, 28, 45, 62, 88, 120],
       '#2E9870'
     );
-  }
+  };
 
   // Initial runs
+  window.refreshDashboardCharts();
   renderUserStats();
   renderActivePickup();
   renderHistoryTable();

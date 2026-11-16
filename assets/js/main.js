@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initHeader();
   initMobileDrawer();
   initActiveNav();
+  initDashboardViews();
   initProfileMenu();
   initScrollProgress();
   initBackToTop();
@@ -136,6 +137,51 @@ function initActiveNav() {
     if (!href) return;
     link.classList.toggle('active', href === activePage);
   });
+}
+
+/* --- Dashboard Page Views --- */
+function initDashboardViews() {
+  const dashboardBody = document.querySelector('.dashboard-body');
+  const views = Array.from(document.querySelectorAll('.dashboard-body .dash-view'));
+  if (!dashboardBody || !views.length) return;
+
+  const links = Array.from(document.querySelectorAll('[data-view-link]'));
+  const title = document.querySelector('.dash-page-title');
+  const sidebar = document.querySelector('.dashboard-sidebar');
+
+  const showView = viewId => {
+    const view = views.find(item => item.dataset.view === viewId);
+    if (!view) return;
+
+    views.forEach(item => item.classList.toggle('is-active', item === view));
+
+    links.forEach(link => {
+      const isActive = link.dataset.viewLink === viewId;
+      link.classList.toggle('active', isActive);
+      const item = link.closest('.sidebar-item');
+      if (item) item.classList.toggle('active', isActive);
+    });
+
+    const activeLink = links.find(link => link.dataset.viewLink === viewId);
+    if (title && activeLink) {
+      title.textContent = activeLink.dataset.pageTitle || activeLink.textContent.trim();
+    }
+
+    if (sidebar) sidebar.classList.remove('show');
+    if (typeof window.refreshDashboardCharts === 'function') window.refreshDashboardCharts();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  links.forEach(link => {
+    link.addEventListener('click', event => {
+      event.preventDefault();
+      showView(link.dataset.viewLink);
+    });
+  });
+
+  const requestedView = new URLSearchParams(window.location.search).get('view');
+  const firstLink = links[0];
+  showView(requestedView || (firstLink && firstLink.dataset.viewLink));
 }
 
 /* --- Profile Dropdown Menu --- */
